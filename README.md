@@ -7,37 +7,36 @@
 ## <p align="center">Universidad Peruana de Ciencias Aplicadas</p>
 
 <p align="center">Ingeniería de Software</p>
-<p align="center">1ASI0657  Fundamentos de Arquitectura de Software 202610 </p>
-<p align="center"><strong>NRC:</strong> 7940</p>
-<p align="center"><strong>Profesor:</strong> Daniel Enrique Mori Yzaguirre</p>
+<p align="center">9075 — Arquitecturas de Software Emergentes</p>
+<p align="center"><strong>Profesor:</strong> Wilder Aurelio Vega Calero</p>
 
 
 # <p align="center">TRABAJO FINAL</p>
 
-<p align="center"><strong>Nombre del Producto: </strong> GigU</p>
+<p align="center"><strong>Nombre del Producto: </strong> Triple B</p>
 
 ### Integrantes:
 
 | Código     | Nombres y Apellidos            |
 | ---------- | ------------------------------ |
-| U202310222 | Oblitas Davila, Mariano Moises |
-| U20201B298 | Ybañez Esquerre, Miguel Angel  |
-| U202218531 | Mio Mejia, Andy Alejandro      |
+| U202120836 | Gonza Morales, Anderson        |
+| U202222745 | Guerrero Tomas, Nelson         |
+| U202118152 | Gutierrez Tume Stanley Jeremy         |
+| U20231f226 | Rafael Augusto Tasayco Almonacid         |
+| U | Pierna rota        |
 
-<p align="center"><strong>Abril 2026</strong></p>
+<p align="center"><strong>Septiembre 2026</strong></p>
 
 <div style="page-break-before: always;"></div>
 
 # Registro de versiones del informe
 
 | Versión | Fecha | Autores | Descripción |
-| :------ | :--------- | :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AV1 | 17/04/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se elaboró la primera versión del informe del Trabajo Final de GigU para el curso de Fundamentos de Arquitectura de Software. Se desarrolló la carátula, el registro inicial de versiones, la tabla de contenidos, el Student Outcome, el Capítulo I de introducción, el Capítulo II de Requirements & Analysis y el Capítulo III de Requirements Specification, incluyendo entrevistas, needfinding, User Personas, User Stories, Impact Map y Product Backlog. |
-| AV2 | 04/05/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se actualizó el informe con el Capítulo IV: Product Architecture Design. Se definieron los principios de diseño, estilos y patrones arquitectónicos, diagramas de contexto, contenedores, componentes, base de datos, tácticas, architectural drivers, quality attribute scenarios, restricciones y concerns. Además, se desarrollaron las iteraciones ADD para `PullEngagementService` y `GigMarketplaceService`, incluyendo backlogs arquitectónicos, selección de drivers, elementos a refinar, conceptos de diseño, responsabilidades, interfaces, eventos, vistas C4/UML, ADRs y análisis Kanban. Finalmente, se corrigió la trazabilidad entre Primary User Stories y User Stories, integrando el portafolio dentro de la gestión del perfil freelancer para evitar redundancias. |
-| TB1 | 14/05/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se actualizó el informe con el Capítulo V: Product Implementation, Validation & Deployment. Se desarrollaron las secciones de Testing Suites & General Patterns, Software Configuration Management —configuración del entorno de desarrollo, Source Code Management con GitFlow, convenciones de estilo y configuración de despliegue— y la implementación de microservicios para el Sprint 1, incluyendo Sprint Backlog, evidencias de desarrollo, testing, ejecución, documentación OpenAPI y despliegue en Google Cloud Run y Vercel, junto con el tablero Kanban y los insights de colaboración del equipo. Se incluyeron además las conclusiones y recomendaciones del proyecto. |
-| AV3 | 06/06/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se actualizó el informe con el Sprint 2 —sección 5.3.2 del Capítulo V—: se implementó y desplegó la mensajería asíncrona y la comunicación en tiempo real de GigU —notificaciones en tiempo real y base del chat por eventos— usando Google Cloud Pub/Sub con entrega push por webhook, WebSocket + STOMP en Spring Boot y un webhook interno entre `PullEngagementService` y `ChatNotificationService`. Se corrigió además el botón de envío de solicitudes —Send Request— del portal del cliente. Se documentaron el Sprint Backlog 2, las evidencias de desarrollo, testing, ejecución, documentación OpenAPI y despliegue en Cloud Run, Pub/Sub y Vercel, los insights de colaboración del equipo y el tablero Kanban, cerrando todas las tarjetas pendientes del Sprint 1. Se actualizó el Student Outcome con las acciones de aprendizaje del Sprint 2. |
-| AV4 | 20/06/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se actualizó el informe con el Sprint 3 —sección 5.3.3 del Capítulo V—, centrado en el endurecimiento técnico de GigU: almacenamiento de imágenes en Supabase Storage mediante un puerto/adaptador hexagonal para portafolio del freelancer y media de los servicios, resiliencia ante fallos de servicios externos con Resilience4j —Circuit Breaker en `GigMarketplaceService` y `PullEngagementService`—, externalización de la configuración de Pub/Sub a un archivo JSON en Google Cloud Storage —`ExternalEdaConfigLoader`— y rediseño/pulido del frontend con fidelidad al Figma. Se documentaron el Sprint Backlog 3, las evidencias de desarrollo, testing, ejecución, documentación OpenAPI y despliegue, los insights de colaboración del equipo y el tablero Kanban —9 tarjetas Done y 2 In-Process: tests basados en contratos y optimización de velocidad del frontend—. Adicionalmente se migraron los tableros Kanban de Jira a Notion —product backlog y sprints—, se ampliaron las User Stories y Technical Stories del Product Backlog —US51–US52, SP09–SP13— y se actualizó el Student Outcome con las acciones de aprendizaje del Sprint 3. |
-| TF | 09/07/2026 | Oblitas Davila, Mariano Moises; Ybañez Esquerre, Miguel Angel; Mio Mejia, Andy Alejandro | Se actualizó el informe para la entrega final del Trabajo Final de GigU. Se completó el Sprint 4 —sección 5.3.4 del Capítulo V—, cerrando los work-items pendientes del Sprint 3: tests basados en contratos entre microservicios con Spring Cloud Contract (`GIGU-84`) y optimización de velocidad del frontend mediante lazy-loading de rutas y code-splitting (`GIGU-83`). Además, se incorporaron el refinamiento de tags y controles de precio del gig (`GIGU-85`), los tests de reglas de negocio de engagement (`GIGU-86`) y la consolidación del despliegue cloud (`GIGU-87`). Se documentaron el Sprint Backlog 4, evidencias de desarrollo, testing, ejecución, documentación, despliegue, colaboración del equipo y tablero Kanban, cerrando el Sprint 4 con 5 tarjetas Done y 0 pendientes. También se actualizó el Capítulo IV para reflejar la arquitectura vigente: Vercel Rewrites, Google Cloud Pub/Sub, Google Cloud Run, Supabase Storage, Resilience4j y configuración externalizada en Google Cloud Storage. Finalmente, se actualizó la sección 5.1.1 con el estado real de la suite de pruebas backend: JUnit, Mockito, Testcontainers, Spring Cloud Contract y JaCoCo. |
+| :------ | :--------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TB1 | 19/09/2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson | Se elaboró la primera versión del informe del Trabajo Final de Triple B para el curso de Arquitecturas de Software Emergentes. Se adaptó el informe previo del curso de Fundamentos de Arquitectura de Software, actualizando la carátula, el registro de versiones, el Student Outcome (SO3) y los Capítulos I, II y III para reflejar el nuevo nombre del producto y la incorporación de la Inteligencia Artificial como componente emergente central: el Agente IA autónomo que actúa como intermediario entre estudiantes y empleadores. Se añadió el Epic EP13 (Agente IA Autónomo) con las User Stories US51–US56. Se desarrolló íntegramente el nuevo Capítulo IV (Strategic-Level Software Design), incluyendo las secciones de Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design (EventStorming, Candidate Contexts, Domain Message Flows, Bounded Context Canvases, Context Mapping) y Software Architecture (System Landscape, Context Level, Container Level y Deployment Diagrams). |
+| TP1 | //2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson; Gutierrez Tume Stanley , Jeremy; Tasayco Almonacid, Rafael Augusto; Pierna Rota | .... |
+| TB2 | //2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson; Gutierrez Tume Stanley , Jeremy; Tasayco Almonacid, Rafael Augusto; Pierna Rota | .... |
+| TF1 | //2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson; Gutierrez Tume Stanley , Jeremy; Tasayco Almonacid, Rafael Augusto; Pierna Rota | .... |
 <div style="page-break-before: always;"></div>
 
 # Tabla de Contenidos
@@ -91,114 +90,36 @@
   * [3.3. Impact Map](#33-impact-map)
   * [3.4. Product Backlog](#34-product-backlog)
 
-* [Capítulo IV: Product Architecture Design](#capítulo-iv-product-architecture-design)
+* [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
 
-  * [4.1. Design Concepts, ViewPoints & ER Diagrams](#41-design-concepts-viewpoints--er-diagrams)
+  * [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
 
-    * [4.1.1. Principles Statements](#411-principles-statements)
-    * [4.1.2. Approaches Statements: Architectural Styles & Patterns](#412-approaches-statements-architectural-styles--patterns)
-    * [4.1.3. Context Diagram](#413-context-diagram)
-    * [4.1.4. Approach-driven ViewPoints Diagrams](#414-approach-driven-viewpoints-diagrams)
-    * [4.1.5. Relational/Non-Relational Database Diagram](#415-relationalnon-relational-database-diagram)
-    * [4.1.6. Design Patterns](#416-design-patterns)
-    * [4.1.7. Tactics](#417-tactics)
+    * [4.1.1. Design Purpose](#411-design-purpose)
+    * [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
 
-  * [4.2. Architectural Drivers](#42-architectural-drivers)
+      * [4.1.2.1. Primary Functionality: Primary User Stories](#4121-primary-functionality-primary-user-stories)
+      * [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+      * [4.1.2.3. Constraints](#4123-constraints)
 
-    * [4.2.1. Design Purpose](#421-design-purpose)
-    * [4.2.2. Primary Functionality: Primary User Stories](#422-primary-functionality-primary-user-stories)
-    * [4.2.3. Quality Attribute Scenarios](#423-quality-attribute-scenarios)
-    * [4.2.4. Constraints](#424-constraints)
-    * [4.2.5. Architectural Concerns](#425-architectural-concerns)
+    * [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+    * [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+    * [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
 
-  * [4.3. ADD Iterations](#43-add-iterations)
+  * [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
 
-    * [4.3.1. Iteration 1: PullEngagementService — Transactional Core](#431-iteration-1-pullengagementservice--transactional-core)
+    * [4.2.1. EventStorming](#421-eventstorming)
+    * [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+    * [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+    * [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+    * [4.2.5. Context Mapping](#425-context-mapping)
 
-      * [4.3.1.1. Architectural Design Backlog 1](#4311-architectural-design-backlog-1)
-      * [4.3.1.2. Establish Iteration Goal by Selecting Drivers](#4312-establish-iteration-goal-by-selecting-drivers)
-      * [4.3.1.3. Choose One or More Elements of the System to Refine](#4313-choose-one-or-more-elements-of-the-system-to-refine)
-      * [4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers](#4314-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
-      * [4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4315-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
-      * [4.3.1.6. Sketch Views: C4 & UML, and Record Design Decisions](#4316-sketch-views-c4--uml-and-record-design-decisions)
-      * [4.3.1.7. Analysis of Current Design and Review Iteration Goal: Kanban Board](#4317-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+  * [4.3. Software Architecture](#43-software-architecture)
 
-    * [4.3.2. Iteration 2: GigMarketplaceService — Catalog & Discovery](#432-iteration-2-gigmarketplaceservice--catalog--discovery)
+    * [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+    * [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+    * [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+    * [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 
-      * [4.3.2.1. Architectural Design Backlog 2](#4321-architectural-design-backlog-2)
-      * [4.3.2.2. Establish Iteration Goal by Selecting Drivers](#4322-establish-iteration-goal-by-selecting-drivers)
-      * [4.3.2.3. Choose One or More Elements of the System to Refine](#4323-choose-one-or-more-elements-of-the-system-to-refine)
-      * [4.3.2.4. Choose One or More Design Concepts That Satisfy the Selected Drivers](#4324-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
-      * [4.3.2.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4325-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
-      * [4.3.2.6. Sketch Views: C4 & UML, and Record Design Decisions](#4326-sketch-views-c4--uml-and-record-design-decisions)
-      * [4.3.2.7. Analysis of Current Design and Review Iteration Goal: Kanban Board](#4327-analysis-of-current-design-and-review-iteration-goal-kanban-board)
-
-* [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
-
-  * [5.1. Testing Suites & General Patterns](#51-testing-suites--general-patterns)
-
-    * [5.1.1. Backend Application Core Testing Suite](#511-backend-application-core-testing-suite)
-    * [5.1.2. Pattern Based Backend Application(s)](#512-pattern-based-backend-applications)
-    * [5.1.3. Pattern Based Custom Software Library](#513-pattern-based-custom-software-library)
-    * [5.1.4. Framework Pattern Driven Refactoring Report](#514-framework-pattern-driven-refactoring-report)
-
-  * [5.2. Software Configuration Management](#52-software-configuration-management)
-
-    * [5.2.1. Software Development Environment Configuration](#521-software-development-environment-configuration)
-    * [5.2.2. Source Code Management](#522-source-code-management)
-    * [5.2.3. Source Code Style Guide & Conventions](#523-source-code-style-guide--conventions)
-    * [5.2.4. Software Deployment Configuration](#524-software-deployment-configuration)
-
-  * [5.3. Microservices Implementation](#53-microservices-implementation)
-
-    * [5.3.1. Sprint 1](#531-sprint-1)
-
-      * [5.3.1.1. Sprint Backlog 1](#5311-sprint-backlog-1)
-      * [5.3.1.2. Development Evidence for Sprint Review](#5312-development-evidence-for-sprint-review)
-      * [5.3.1.3. Testing Suite Evidence for Sprint Review](#5313-testing-suite-evidence-for-sprint-review)
-      * [5.3.1.4. Execution Evidence for Sprint Review](#5314-execution-evidence-for-sprint-review)
-      * [5.3.1.5. Microservices Documentation Evidence for Sprint Review](#5315-microservices-documentation-evidence-for-sprint-review)
-      * [5.3.1.6. Software Deployment Evidence for Sprint Review](#5316-software-deployment-evidence-for-sprint-review)
-      * [5.3.1.7. Team Collaboration Insights during Sprint](#5317-team-collaboration-insights-during-sprint)
-      * [5.3.1.8. Kanban Board](#5318-kanban-board)
-
-    * [5.3.2. Sprint 2](#532-sprint-2)
-
-      * [5.3.2.1. Sprint Backlog 2](#5321-sprint-backlog-2)
-      * [5.3.2.2. Development Evidence for Sprint Review](#5322-development-evidence-for-sprint-review)
-      * [5.3.2.3. Testing Suite Evidence for Sprint Review](#5323-testing-suite-evidence-for-sprint-review)
-      * [5.3.2.4. Execution Evidence for Sprint Review](#5324-execution-evidence-for-sprint-review)
-      * [5.3.2.5. Microservices Documentation Evidence for Sprint Review](#5325-microservices-documentation-evidence-for-sprint-review)
-      * [5.3.2.6. Software Deployment Evidence for Sprint Review](#5326-software-deployment-evidence-for-sprint-review)
-      * [5.3.2.7. Team Collaboration Insights during Sprint](#5327-team-collaboration-insights-during-sprint)
-      * [5.3.2.8. Kanban Board](#5328-kanban-board)
-
-    * [5.3.3. Sprint 3](#533-sprint-3)
-
-      * [5.3.3.1. Sprint Backlog 3](#5331-sprint-backlog-3)
-      * [5.3.3.2. Development Evidence for Sprint Review](#5332-development-evidence-for-sprint-review)
-      * [5.3.3.3. Testing Suite Evidence for Sprint Review](#5333-testing-suite-evidence-for-sprint-review)
-      * [5.3.3.4. Execution Evidence for Sprint Review](#5334-execution-evidence-for-sprint-review)
-      * [5.3.3.5. Microservices Documentation Evidence for Sprint Review](#5335-microservices-documentation-evidence-for-sprint-review)
-      * [5.3.3.6. Software Deployment Evidence for Sprint Review](#5336-software-deployment-evidence-for-sprint-review)
-      * [5.3.3.7. Team Collaboration Insights during Sprint](#5337-team-collaboration-insights-during-sprint)
-      * [5.3.3.8. Kanban Board](#5338-kanban-board)
-
-    * [5.3.4. Sprint 4](#534-sprint-4)
-
-      * [5.3.4.1. Sprint Backlog 4](#5341-sprint-backlog-4)
-      * [5.3.4.2. Development Evidence for Sprint Review](#5342-development-evidence-for-sprint-review)
-      * [5.3.4.3. Testing Suite Evidence for Sprint Review](#5343-testing-suite-evidence-for-sprint-review)
-      * [5.3.4.4. Execution Evidence for Sprint Review](#5344-execution-evidence-for-sprint-review)
-      * [5.3.4.5. Microservices Documentation Evidence for Sprint Review](#5345-microservices-documentation-evidence-for-sprint-review)
-      * [5.3.4.6. Software Deployment Evidence for Sprint Review](#5346-software-deployment-evidence-for-sprint-review)
-      * [5.3.4.7. Team Collaboration Insights during Sprint](#5347-team-collaboration-insights-during-sprint)
-      * [5.3.4.8. Kanban Board](#5348-kanban-board)
-
-  * [5.4. Microservices Deployment](#54-microservices-deployment)
-
-    * [5.4.1. Cloud Architecture Diagram](#541-cloud-architecture-diagram)
-    * [5.4.2. Cloud Architecture Deployment](#542-cloud-architecture-deployment)
 
 * [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
@@ -212,14 +133,14 @@
 
 # Student Outcome
 
-ABET – EAC - Student Outcome 7: Aprendizaje Continuo y Autónomo.
+ABET – EAC - Student Outcome 3: Capacidad de comunicarse efectivamente con un rango de audiencias.
 
-**Criterio:** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
+**Criterio:** La capacidad de comunicar los resultados del trabajo de forma oral y escrita, adaptando el mensaje al nivel técnico de la audiencia, tanto a pares del área de ingeniería como a audiencias no especializadas.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Oblitas Davila, Mariano Moises** **AV1:** Elaboré la carátula del informe y desarrollé el Capítulo I, adaptando la estructura previa del proyecto GigU al nuevo curso de Fundamentos de Arquitectura de Software y reorganizando la información inicial de la startup, la solución y los segmentos objetivo.<br><br>**Oblitas Davila, Mariano Moises** **AV2:** Desarrollé y revisé secciones del Capítulo IV relacionadas con Product Architecture Design, incluyendo principios de diseño, enfoques arquitectónicos, diagramas, architectural drivers, restricciones, concerns, trazabilidad entre Primary User Stories y User Stories, y coherencia entre las iteraciones ADD, los microservicios, los endpoints y los eventos de dominio.<br><br>**Ybañez Esquerre, Miguel Angel** **AV1:** Desarrollé la estructura base del Capítulo II, alineando los apartados de Competidores, Entrevistas y Needfinding con la guía del nuevo curso para preparar la siguiente fase de análisis del producto.<br><br>**Ybañez Esquerre, Miguel Angel** **AV2:** Completé y refiné el Capítulo IV, consolidando las iteraciones ADD, la organización de los Epics de producto, la trazabilidad entre Primary User Stories y User Stories reales del Product Backlog, y el ajuste del alcance del portafolio dentro de la gestión del perfil freelancer para evitar redundancias funcionales.<br><br>**Mio Mejia, Andy Alejandro** **AV1:** Desarrollé la estructura base del Capítulo III, organizando las secciones de To-Be Scenario Mapping, User Stories, Impact Map y Product Backlog conforme a los requerimientos del curso.<br><br>**Mio Mejia, Andy Alejandro** **AV2:** Desarrollé contenido de ADD Iteration 1 para `PullEngagementService`, incluyendo backlog arquitectónico, selección de drivers, refinamiento de elementos, conceptos de diseño, asignación de responsabilidades, definición de interfaces y relación entre atributos de calidad y decisiones arquitectónicas.<br><br>**Oblitas Davila, Mariano Moises** **TB1:** Implementé los cuatro microservicios del backend en Spring Boot con Clean Architecture y desarrollé las evidencias de implementación, ejecución y despliegue del Sprint 1, aplicando nuevos conocimientos de Google Cloud Run, contenedores y despliegue serverless.<br><br>**Ybañez Esquerre, Miguel Angel** **TB1:** Desarrollé el Capítulo V en sus secciones de Software Configuration Management y configuración de despliegue, integrando el frontend con los microservicios y configurando la publicación en Vercel y GitHub Actions, lo que implicó aprender sobre GitFlow, CI/CD y Vercel Rewrites.<br><br>**Mio Mejia, Andy Alejandro** **TB1:** Elaboré el Sprint Backlog 1 y el tablero Kanban en Notion, las evidencias de testing y la documentación de los servicios, aplicando nuevos conocimientos sobre suites de pruebas —JUnit, Testcontainers— y documentación de APIs con OpenAPI/Swagger.<br><br>**Oblitas Davila, Mariano Moises** **AV3:** Implementé la comunicación en tiempo real del Sprint 2 —WebSocket + STOMP en Spring Boot—, el endpoint de recepción de eventos por Google Cloud Pub/Sub push y el webhook interno de notificaciones entre `PullEngagementService` y `ChatNotificationService`, aplicando nuevos conocimientos de mensajería asíncrona y comunicación bidireccional.<br><br>**Ybañez Esquerre, Miguel Angel** **AV3:** Integré el frontend con el WebSocket de notificaciones y chat en tiempo real, corregí el botón *Send Request* del portal del cliente y configuré los Vercel Rewrites y la variable `VITE_CHAT_WS_URL`, aprendiendo sobre clientes STOMP/WebSocket y enrutamiento de tiempo real.<br><br>**Mio Mejia, Andy Alejandro** **AV3:** Configuré el topic y la suscripción push de Google Cloud Pub/Sub, redesplegué el servicio de chat en Cloud Run con su trigger y verifiqué el flujo de extremo a extremo, aplicando nuevos conocimientos sobre Pub/Sub y entrega push por webhook.<br><br>**Oblitas Davila, Mariano Moises** **AV4:** Implementé el almacenamiento de imágenes en Supabase Storage mediante un puerto/adaptador hexagonal —portafolio del freelancer y media de los servicios—, la resiliencia con Resilience4j —Circuit Breaker en `GigMarketplaceService` y `PullEngagementService`— y la externalización de la configuración de Pub/Sub a un archivo JSON en Google Cloud Storage, aplicando nuevos conocimientos de almacenamiento de objetos en la nube, patrones de resiliencia y configuración externalizada.<br><br>**Ybañez Esquerre, Miguel Angel** **AV4:** Migré los tableros Kanban de Jira a Notion —product backlog y sprints—, actualicé las referencias del informe y amplié el Product Backlog con nuevas User Stories y Technical Stories —US51–US52, SP09–SP13—, aplicando nuevos conocimientos sobre gestión de backlog en Notion y trazabilidad entre el producto y los sprints.<br><br>**Mio Mejia, Andy Alejandro** **AV4:** Rediseñé la vista de mensajes y las páginas de dashboard y perfil del freelancer buscando fidelidad con el Figma, y mejoré el flujo de subida de media del gig —previsualización, imagen principal y eliminación—, aplicando nuevos conocimientos de diseño de interfaces y de rendimiento en el frontend.<br><br>**Oblitas Davila, Mariano Moises** **TF:** Consolidé el cierre técnico del Trabajo Final actualizando la arquitectura vigente del proyecto, la evidencia de despliegue cloud y la documentación del Sprint 4. Revisé la coherencia entre microservicios, Clean Architecture, C4, Cloud Run, Vercel Rewrites, Supabase, Pub/Sub, WebSocket, Resilience4j y testing, asegurando que el informe refleje el estado real implementado del sistema.<br><br>**Ybañez Esquerre, Miguel Angel** **TF:** Actualicé y consolidé la documentación final del Sprint 4, incluyendo la organización del backlog, el tablero Kanban en Notion, la trazabilidad de work-items cerrados y las evidencias de colaboración del equipo. Además, reforcé la relación entre Product Backlog, Primary User Stories, sprints y entregables finales para sustentar el cierre del Trabajo Final.<br><br>**Mio Mejia, Andy Alejandro** **TF:** Apoyé en la consolidación de evidencias visuales y funcionales del producto final, incluyendo la optimización del frontend, el flujo de demostración, la presentación de la experiencia de usuario y la validación de que las funcionalidades principales de GigU se muestren correctamente como producto desplegado y funcional. | En AV1, el equipo actualizó la estructura del proyecto para alinearlo con el enfoque de arquitectura de software del nuevo curso. Se reorganizó el informe según la guía oficial y se establecieron bases claras para continuar el desarrollo de los capítulos de análisis, especificación y arquitectura.<br><br>En AV2, el equipo aplicó nuevos conocimientos de arquitectura de software para desarrollar el Capítulo IV, conectando requisitos funcionales, atributos de calidad, restricciones, microservicios, bounded contexts, ADD, vistas C4/UML y decisiones arquitectónicas. Esta entrega permitió fortalecer la coherencia técnica del informe y mantener trazabilidad entre el Product Backlog y el diseño arquitectónico propuesto.<br><br>En TB1, el equipo aplicó conocimientos nuevos de implementación, configuración y despliegue de software para desarrollar el Capítulo V, llevando la arquitectura diseñada a un producto desplegado y validado: cuatro microservicios en Google Cloud Run, frontend y landing en Vercel, con evidencias de desarrollo, testing, ejecución y documentación para el Sprint 1.<br><br>En AV3 —Sprint 2—, el equipo aplicó aprendizaje continuo al incorporar mensajería asíncrona y comunicación en tiempo real —Google Cloud Pub/Sub con entrega push, WebSocket + STOMP y un webhook interno entre microservicios—, cerrando los work-items que dependían de la mensajería y dejando la solución con notificaciones y chat en tiempo real desplegados y verificados.<br><br>En AV4 —Sprint 3—, el equipo aplicó aprendizaje continuo al endurecer técnicamente la solución —almacenamiento de imágenes en Supabase Storage, resiliencia con Circuit Breaker usando Resilience4j, externalización de la configuración de Pub/Sub a un JSON en Google Cloud Storage y pulido del frontend con fidelidad al Figma— y al migrar la gestión del backlog y los sprints de Jira a Notion, dejando dos work-items en curso —tests basados en contratos y optimización de velocidad del frontend— planificados para una iteración posterior.<br><br>En TF, el equipo consolidó el cierre del Trabajo Final aplicando aprendizaje continuo sobre arquitectura cloud native, microservicios, testing automatizado, contratos entre servicios, optimización frontend y despliegue en producción. Esta entrega permitió alinear el informe con el estado real del producto implementado: cuatro microservicios desplegados, frontend en producción, storage, mensajería, resiliencia, pruebas y evidencias organizadas por sprint. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Oblitas Davila, Mariano Moises** **AV1:** Reconocí la necesidad de revisar y adaptar el trabajo previo a una nueva estructura académica orientada a arquitectura, lo que implicó reforzar conceptos de formulación del problema, Lean UX y organización formal de entregables.<br><br>**Oblitas Davila, Mariano Moises** **AV2:** Reconocí la necesidad de revisar documentación previa, detectar inconsistencias entre capítulos y actualizar el diseño arquitectónico conforme avanzaban las decisiones del equipo, especialmente en la relación entre Product Backlog, Primary User Stories, architectural drivers, microservicios e iteraciones ADD.<br><br>**Ybañez Esquerre, Miguel Angel** **AV1:** Identifiqué la importancia de seguir aprendiendo sobre técnicas de análisis de competidores, entrevistas y needfinding para sustentar correctamente la fase de levantamiento y análisis de requisitos del proyecto.<br><br>**Ybañez Esquerre, Miguel Angel** **AV2:** Reconocí la importancia de profundizar en ADD, bounded contexts, trazabilidad PUS-US y refinamiento de Epics para adaptar la arquitectura del producto a las exigencias del curso y evitar duplicidades funcionales en el informe.<br><br>**Mio Mejia, Andy Alejandro** **AV1:** Reconocí la necesidad de profundizar en la especificación de requisitos, especialmente en la construcción de artefactos como User Stories, Impact Map y Product Backlog, para adaptar el proyecto a las exigencias del curso.<br><br>**Mio Mejia, Andy Alejandro** **AV2:** Reconocí la necesidad de profundizar en métodos de diseño arquitectónico, especialmente ADD, para transformar requisitos funcionales y atributos de calidad en componentes, responsabilidades, interfaces y decisiones justificadas dentro de una arquitectura basada en microservicios.<br><br>**Oblitas Davila, Mariano Moises** **TB1:** Reconocí la necesidad de profundizar en despliegue en la nube, contenedores y configuración de servicios administrados para llevar los microservicios diseñados a un entorno productivo real.<br><br>**Ybañez Esquerre, Miguel Angel** **TB1:** Reconocí la importancia de dominar prácticas de Software Configuration Management —GitFlow, Conventional Commits, semantic versioning y automatización de despliegue— para mantener consistencia durante el ciclo de vida del producto.<br><br>**Mio Mejia, Andy Alejandro** **TB1:** Reconocí la necesidad de aprender sobre estrategias de testing automatizado y documentación de APIs para sustentar la calidad y la trazabilidad de los servicios implementados.<br><br>**Oblitas Davila, Mariano Moises** **AV3:** Reconocí la necesidad de profundizar en patrones de mensajería asíncrona y comunicación en tiempo real —Pub/Sub, WebSocket/STOMP y webhooks— para desacoplar las notificaciones del flujo principal sin comprometer la disponibilidad.<br><br>**Ybañez Esquerre, Miguel Angel** **AV3:** Reconocí la importancia de aprender sobre integración de WebSocket en el frontend y enrutamiento de tiempo real, así como sobre diagnóstico de defectos en producción para corregir el flujo de solicitudes del cliente.<br><br>**Mio Mejia, Andy Alejandro** **AV3:** Reconocí la necesidad de profundizar en la configuración de servicios de mensajería administrados —Google Cloud Pub/Sub— y triggers push para sostener un flujo de eventos confiable entre microservicios.<br><br>**Oblitas Davila, Mariano Moises** **AV4:** Reconocí la necesidad de profundizar en almacenamiento de objetos en la nube, patrones de resiliencia —Circuit Breaker— y externalización de configuración para aumentar la robustez, la disponibilidad y la mantenibilidad de los microservicios.<br><br>**Ybañez Esquerre, Miguel Angel** **AV4:** Reconocí la importancia de aprender herramientas de gestión ágil como Notion para mantener la trazabilidad del backlog y los sprints, y de planificar las pruebas basadas en contratos entre microservicios como siguiente paso de calidad.<br><br>**Mio Mejia, Andy Alejandro** **AV4:** Reconocí la necesidad de profundizar en la fidelidad de diseño —Figma— y en técnicas de optimización de rendimiento del frontend —lazy-loading, code-splitting— para mejorar la experiencia de usuario.<br><br>**Oblitas Davila, Mariano Moises** **TF:** Reconocí la necesidad de revisar críticamente la arquitectura implementada frente a la documentación final, corrigiendo tecnologías reemplazadas y actualizando decisiones de despliegue, mensajería, resiliencia y testing para que el informe no describa una arquitectura teórica, sino la solución realmente construida.<br><br>**Ybañez Esquerre, Miguel Angel** **TF:** Reconocí la importancia de mantener trazabilidad entre gestión ágil, backlog, sprints, work-items y evidencias finales, especialmente al cerrar el proyecto. Esto permitió sustentar el avance del equipo de forma verificable y conectar la ejecución técnica con la planificación del producto.<br><br>**Mio Mejia, Andy Alejandro** **TF:** Reconocí la necesidad de validar la experiencia final del usuario y la presentación del producto, asegurando que las mejoras de frontend, optimización de carga, navegación y demostración funcional permitan comunicar claramente el valor de GigU como plataforma desplegada. | El equipo evidenció desde AV1 que continuar el mismo producto en un nuevo curso exige aprendizaje permanente, reorganización técnica y comprensión de nuevos enfoques de arquitectura. Esta adaptación permitió establecer una base más sólida para el desarrollo progresivo del trabajo final.<br><br>En AV2, el equipo demostró aprendizaje continuo al aplicar conceptos arquitectónicos más avanzados, como ADD, DDD, bounded contexts, microservicios, quality attribute scenarios, tácticas, patrones, eventos de dominio y decisiones arquitectónicas. Esto permitió que el informe evolucione desde una especificación funcional hacia una propuesta arquitectónica más coherente, trazable y defendible.<br><br>En TB1, el equipo demostró aprendizaje continuo al incorporar prácticas de implementación, configuración y despliegue —Clean Architecture aplicada, GitFlow, CI/CD, despliegue en la nube, testing automatizado y documentación OpenAPI—, completando el ciclo desde la especificación y el diseño hasta un producto desplegado, probado y documentado.<br><br>En AV3 —Sprint 2—, el equipo reforzó el aprendizaje continuo al adoptar mensajería asíncrona y comunicación en tiempo real —Google Cloud Pub/Sub, WebSocket + STOMP y webhooks internos entre microservicios—, cerrando las tarjetas pendientes del Sprint 1 y consolidando un producto con notificaciones y chat en tiempo real operando en la nube.<br><br>En AV4 —Sprint 3—, el equipo reforzó el aprendizaje continuo al adoptar prácticas de robustez y operación —almacenamiento de imágenes, resiliencia con Circuit Breaker y configuración externalizada— y herramientas de gestión ágil —Notion para el backlog y los sprints—, reconociendo además el trabajo pendiente —tests basados en contratos y optimización de rendimiento— como parte natural de la mejora continua del producto.<br><br>En TF, el equipo evidenció aprendizaje permanente al cerrar el proyecto con una revisión integral de arquitectura, implementación, testing, despliegue y gestión de sprints. La entrega final permitió reconocer que el desarrollo profesional en software requiere ajustar decisiones conforme avanza el producto, validar evidencias reales en repositorios y nube, y mantener coherencia entre documentación, código, pruebas y demostración funcional. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diversas especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Gonza Morales, Anderson** **AV1:** Elaboré la adaptación del informe al nuevo curso de Arquitecturas de Software Emergentes, reescribiendo los Capítulos I, II y III para explicar la incorporación del Agente IA autónomo a un público con conocimiento de ingeniería de software. Redacté además el nuevo Capítulo IV (Strategic-Level Software Design), comunicando decisiones arquitectónicas como bounded contexts, ADD, DDD y diagramas C4 de forma clara y estructurada.<br><br>**Guerrero Tomas, Nelson** **AV1:** Contribuí al desarrollo del Lean UX Process, las User Stories del Agente IA (US51–US56) y los artefactos del Capítulo III, redactando los requisitos funcionales del nuevo Epic EP13 en lenguaje accesible tanto para el equipo técnico como para perfiles de negocio. | En AV1, el equipo demostró capacidad de comunicación escrita al adaptar el informe a un nuevo contexto académico y tecnológico. Se reescribieron secciones de análisis, especificación y diseño arquitectónico de forma clara y trazable, conectando la problemática del negocio con decisiones técnicas concretas mediante lenguaje accesible para distintas audiencias. |
+| **Comunica en forma oral ideas y/o resultados con objetividad a público de diversas especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Gonza Morales, Anderson** **AV1:** Expliqué las decisiones de diseño del nuevo Capítulo IV a mis compañeros de equipo, presentando la nueva estructura de bounded contexts, el rol del Agente IA autónomo y el impacto en la arquitectura del sistema de forma comprensible para distintos perfiles del equipo.<br><br>**Guerrero Tomas, Nelson** **AV1:** Participé en las discusiones de equipo para validar los nuevos User Stories y el flujo del Agente IA, explicando el impacto funcional de cada escenario de forma accesible para perfiles con distintos niveles de experiencia técnica. | En AV1, el equipo evidenció comunicación oral efectiva al coordinar la adaptación del informe y la incorporación de la IA. Las discusiones permitieron alinear criterios entre integrantes con distintos perfiles y garantizar que las decisiones arquitectónicas fueran comprensibles para el conjunto del equipo antes de ser documentadas. |
 
 <div style="page-break-before: always;"></div>
 
@@ -229,44 +150,26 @@ ABET – EAC - Student Outcome 7: Aprendizaje Continuo y Autónomo.
 
 ### 1.1.1. Descripción de la Startup
 
-Somos GigU, un equipo de estudiantes de la Universidad Peruana de Ciencias Aplicadas comprometidos con la innovación tecnológica y la creación de oportunidades para nuestra comunidad universitaria.
+Somos Triple B (Bueno, Bonito y Barato), un equipo de estudiantes de la Universidad Peruana de Ciencias Aplicadas comprometidos con la innovación tecnológica y la creación de oportunidades para la comunidad universitaria latinoamericana.
 
-Nuestra misión es ofrecer una plataforma que permita a los estudiantes universitarios ofrecer sus habilidades y conocimientos a través de servicios freelance, generando ingresos adicionales mientras desarrollan experiencia profesional en su campo.
+Nuestra misión es ofrecer una plataforma que permita a los estudiantes universitarios ofrecer sus habilidades y conocimientos a través de servicios freelance, y conectarlos de forma proactiva con clientes, microempresas, emprendedores y empleadores que requieren servicios profesionales o puestos de practicante, todo ello potenciado por un **Agente de Inteligencia Artificial autónomo** que actúa como intermediario inteligente entre la oferta y la demanda.
 
-Nuestra visión es convertirnos en la principal plataforma de trabajo freelance para estudiantes en Perú y Latinoamérica, facilitando la conexión entre talento joven y clientes que buscan soluciones creativas y eficientes en múltiples áreas como desarrollo de software, diseño, tutorías, gestión empresarial, entre otros.
+Nuestra visión es convertirnos en la principal plataforma de trabajo freelance para estudiantes en Perú y Latinoamérica, diferenciándonos por un Agente IA que identifica oportunidades compatibles con el perfil del estudiante, ajusta el CV automáticamente, realiza postulaciones en nombre del estudiante y coordina entrevistas; facilitando la conexión entre talento joven y clientes que buscan soluciones creativas y eficientes en múltiples áreas como desarrollo de software, diseño, tutorías, gestión empresarial, entre otros.
 
-Nuestro producto principal es GigU, una plataforma que conecta a estudiantes con clientes interesados en servicios freelance. Los freelancers pueden publicar sus servicios, definir tarifas y cotizar precios de manera inteligente con base en factores como el tiempo estimado de trabajo, la complejidad del servicio y las tarifas del mercado. La plataforma también proporciona comunicación con clientes y procesamiento seguro de pagos.
-
-GigU no solo ayuda a los estudiantes a generar ingresos mientras estudian, sino que también les permite desarrollar habilidades clave como la gestión del tiempo, la negociación, la resolución de problemas y el trato con clientes reales, preparándose así para la vida profesional.
-
-Además, con GigU, los estudiantes tienen una forma flexible, accesible y efectiva de adquirir experiencia laboral y construir una red de clientes y contactos profesionales desde el inicio de su carrera.
-
+Nuestro producto principal es **Triple B**, una plataforma que conecta a estudiantes con clientes interesados en servicios freelance o puestos de practicante. Los freelancers pueden publicar sus servicios, definir tarifas y cotizar precios de manera inteligente con base en factores como el tiempo estimado de trabajo, la complejidad del servicio y las tarifas del mercado. El **Agente IA autónomo** escanea las publicaciones disponibles a nivel latinoamericano, identifica las oportunidades compatibles con el perfil y CV del estudiante, ajusta el CV si es necesario, postula automáticamente en su nombre y coordina la fecha y hora de reuniones o entrevistas con el empleador, notificando al estudiante en cada paso del proceso.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Nombre                             | Detalle                                                                                                                                                                                                                                                                                                                                                       |
-| Nombre: Ybañez Esquerre, Miguel Angel | <img src="imgs/team/miguel.jpg" alt="Miguel" title="Foto de Miguel" width="520"/> |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| **Código:** U20201B298|                               |
-| **Carrera:** Ingeniería de Software    |                               |
-| **Habilidades:** Miguel Ángel Ybañez Esquerre – Estudiante de 23 años de Ingeniería de Software en la UPC. Me caracterizo por mi creatividad, capacidad analítica y enfoque práctico para resolver problemas. Apasionado por el desarrollo web y los agentes de inteligencia artificial, con experiencia en desarrollo de videojuegos en Unity y realidad virtual con Meta Quest. Siempre en búsqueda de explorar nuevas tecnologías y llevar las ideas a soluciones reales. |                               |
+| Nombre | Detalle |
+| :--- | :--- |
+| **Gonza Morales, Anderson** <br>**Código:** U202120836 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Apasionado por el diseño de arquitecturas de software emergentes y el desarrollo de soluciones tecnológicas innovadoras. Interesado en la integración de agentes de inteligencia artificial en plataformas de trabajo digital. Aporta habilidades en backend con Spring Boot, diseño arquitectónico y documentación técnica. |
+| **Guerrero Tomas, Nelson** <br>**Código:** U202222745 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Con enfoque en el análisis de requisitos, especificación de User Stories y modelado de negocio. Interesado en la automatización de procesos con IA y en el diseño de productos centrados en el usuario. Aporta habilidades en Lean UX, needfinding, product backlog y comunicación de ideas técnicas a audiencias diversas. |
 
-| Nombre: Oblitas Davila, Mariano Moises | <img src="imgs/team/mariano.png" alt="Mariano" title="Foto de Mariano" width="320"/> |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| **Código:** U202310222  |                               |
-| **Carrera:** Ingeniería de Software |                               |
-| **Habilidades:** Estudiante de 20 años de Ingeniería de Software en la UPC. Me caracterizo por mi creatividad, eficacia y capacidad para resolver problemas de manera racional. Apasionado por la programación y el desarrollo de software, busco constantemente innovar y aprender nuevas tecnologías. |          |
-
-| Nombre: Mio Mejia, Andy Alejandro | <img src="imgs/team/andy.jpg" alt="Andy" title="Foto de Andy" width="320"/> |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| **Código:** U202218531  |                               |
-| **Carrera:** Ingeniería de Software |                               |
-| **Habilidades:** Soy estudiante de 7mo ciclo de Ingeniería de Software con sólidos fundamentos en programación, desarrollo web y análisis de datos. Apasionado por la Inteligencia Artificial, desarrollo Web Robusto, sistemas inteligentes y soluciones tecnológicas escalables. Poseo capacidad para aprender rápidamente y trabajar en entornos ágiles (Scrum). Me gustaría aplicar mis conocimientos técnicos en Python (avanzado), C++ y frameworks modernos para contribuir al desarrollo de software robusto y de alta usabilidad. |          |
 
 ## 1.2. Solution Profile
 
 ### 1.2.1. Nombre del producto
-GigU
+Triple B
 
 ### 1.2.2. Antecedentes y problemática
 
@@ -323,59 +226,65 @@ En el 2.º trimestre de 2025, el INEI reportó que la tasa de desempleo nacional
 
 En el contexto universitario peruano, los estudiantes enfrentan grandes desafíos para insertarse en el mercado laboral mientras cursan sus estudios. Esta situación se relaciona con factores económicos, académicos y laborales: el 65% de los estudiantes universitarios tiene entre 18 y 25 años, el 24% pertenece a hogares en situación de pobreza o pobreza extrema, y la falta de recursos económicos aparece como una causa relevante de interrupción de estudios universitarios (Ministerio de Educación del Perú, 2023).
 
-Hemos observado que no existen plataformas efectivas y especializadas que conecten directamente a estudiantes universitarios con oportunidades laborales formales, flexibles y alineadas a sus carreras, lo cual perpetúa la falta de experiencia profesional al egresar. Aunque existen plataformas freelance globales, estas no resuelven completamente el problema para estudiantes que recién comienzan, debido a barreras como alta competencia, dificultad para construir reputación inicial, posibles comisiones, baja validación académica y menor adaptación al mercado local (Banco Mundial, 2024).
+Hemos observado que no existen plataformas efectivas y especializadas que conecten directamente a estudiantes universitarios con oportunidades laborales formales, flexibles y alineadas a sus carreras, lo cual perpetúa la falta de experiencia profesional al egresar. Aunque existen plataformas freelance globales, estas no resuelven completamente el problema para estudiantes que recién comienzan, debido a barreras como alta competencia, dificultad para construir reputación inicial, posibles comisiones, baja validación académica y menor adaptación al mercado local (Banco Mundial, 2024). Adicionalmente, incluso cuando el estudiante ya cuenta con un perfil publicado, sigue siendo responsabilidad suya buscar activamente las oportunidades, adaptar su CV y postular manualmente a cada oferta, lo que demanda tiempo que compete con su carga académica.
 
-Este problema afecta principalmente a estudiantes universitarios que necesitan generar ingresos, adquirir experiencia práctica y construir un portafolio profesional antes de egresar. También afecta a emprendedores, microempresas y particulares que requieren servicios accesibles y confiables, pero no cuentan con un canal especializado para encontrar talento universitario verificado.
+Este problema afecta principalmente a estudiantes universitarios que necesitan generar ingresos, adquirir experiencia práctica y construir un portafolio profesional antes de egresar. También afecta a emprendedores, microempresas y particulares que requieren servicios accesibles y confiables a nivel latinoamericano, pero no cuentan con un canal especializado para encontrar y contratar talento universitario verificado de forma ágil.
 
-¿Cómo podemos ayudar a los estudiantes universitarios en el Perú a insertarse en el mercado laboral de forma formal, flexible y segura durante su etapa académica, permitiéndoles desarrollar habilidades prácticas, generar ingresos y mejorar su empleabilidad desde los primeros ciclos?
+¿Cómo podemos ayudar a los estudiantes universitarios en Perú y Latinoamérica a insertarse en el mercado laboral de forma formal, flexible y proactiva durante su etapa académica, permitiéndoles desarrollar habilidades prácticas, generar ingresos y mejorar su empleabilidad sin que tengan que dedicar tiempo extra a la búsqueda manual de oportunidades?
 
 #### 1.2.3.2. Lean UX Assumptions
 
 **¿Quién es el usuario?**
-Estudiantes universitarios peruanos, principalmente entre los 17 y 24 años, que buscan generar ingresos y experiencia profesional compatible con sus horarios académicos.
+Estudiantes universitarios peruanos y latinoamericanos, principalmente entre los 17 y 25 años, que buscan generar ingresos y experiencia profesional compatible con sus horarios académicos. También son usuarios los empleadores, microempresas y emprendedores de Latinoamérica que publican servicios requeridos o puestos de practicante.
 
 **¿Dónde encaja nuestro producto en su vida?**
-GigU se integra como una herramienta esencial para complementar su formación académica con experiencia laboral real, generar ingresos y conectarse con profesionales, clientes o mentores, sin sacrificar su rendimiento académico.
+Triple B se integra como una herramienta esencial para complementar la formación académica del estudiante con experiencia laboral real. El **Agente IA autónomo** actúa en segundo plano: escanea publicaciones de servicios o puestos de practicante a nivel latinoamericano, identifica las compatibles con el perfil y CV del estudiante, ajusta el CV si es necesario, postula en su nombre y coordina entrevistas con el empleador, notificando al estudiante solo cuando necesita su confirmación.
 
 **¿Qué problemas tiene nuestro producto y cómo se pueden resolver?**
 
 * Posible desconfianza hacia la formalidad de las oportunidades.
-  Solución: verificación de empleadores o clientes y contratos inteligentes.
+  Solución: verificación de empleadores o clientes y contratos inteligentes gestionados por la plataforma.
 
-* Dificultad para encontrar tareas relacionadas a su carrera.
-  Solución: sistema de categorización inteligente por carreras y habilidades.
+* El estudiante no tiene tiempo para buscar y postular manualmente a cada oportunidad.
+  Solución: el Agente IA realiza la búsqueda y postulación automática; el estudiante solo confirma entrevistas.
+
+* Dificultad para adaptar el CV a cada oferta específica.
+  Solución: el Agente IA ajusta automáticamente el CV del estudiante resaltando las habilidades más relevantes para cada oportunidad.
 
 * Baja retención o uso esporádico.
-  Solución: gamificación, badges y recompensas por participación activa.
+  Solución: el Agente IA mantiene al estudiante activo notificándole sobre oportunidades relevantes y el estado de sus postulaciones.
 
 **¿Cómo y cuándo es usado nuestro producto?**
-El producto es usado principalmente durante los tiempos libres o entre clases. Los estudiantes lo utilizan para buscar encargos, postular a proyectos freelance, recibir feedback y conectarse con mentores o empresas pequeñas que necesitan apoyo técnico o creativo.
+El estudiante actualiza su perfil y CV en la plataforma. A partir de ahí, el Agente IA opera de forma autónoma y continua: detecta oportunidades, postula y coordina. El estudiante recibe notificaciones cuando hay una entrevista por confirmar o cuando una postulación progresa. Los empleadores interactúan con la plataforma publicando sus necesidades y coordinando con el Agente IA la agenda de entrevistas.
 
 **¿Qué características son importantes?**
 
-* Perfiles profesionales con historial académico y de proyectos.
-* Oportunidades freelance o part time verificadas.
-* Inteligencia artificial para emparejar tareas con habilidades.
-* Retroalimentación entre estudiantes y clientes.
-* Panel de seguimiento de experiencia acumulada.
-* Integración con LinkedIn y portafolios.
-* Sistema de reputación y badges.
-* Chat seguro entre clientes y postulantes.
-* Acceso a microcursos gratuitos recomendados según proyectos.
+* Perfil del estudiante con CV, historial académico y portafolio.
+* Agente IA autónomo que escanea, filtra y postula oportunidades a nivel latinoamericano.
+* Ajuste automático del CV según el perfil de cada oportunidad.
+* Coordinación automática de entrevistas con el empleador.
+* Panel de seguimiento del estado de cada postulación gestionada por el Agente IA.
+* Retroalimentación entre estudiantes y clientes/empleadores.
+* Chat seguro para coordinación de entrevistas y confirmaciones.
+* Integración con LinkedIn y portafolios para enriquecer el perfil.
+* Sistema de reputación y badges por proyectos completados.
 
 **¿Cómo debe verse nuestro producto y cómo comportarse?**
-Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser fluido, con tiempos de carga bajos y navegación clara. La experiencia de usuario debe motivar la interacción constante, con notificaciones relevantes y recomendaciones que generen valor real para el usuario.
+Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser fluido, transparente sobre las acciones del Agente IA y con notificaciones claras sobre el estado de cada postulación. El estudiante debe sentir que tiene control en todo momento, pudiendo ver, pausar o rechazar cualquier acción del Agente IA antes de que se materialice.
 
 #### 1.2.3.3. Lean UX Hypothesis Statements
 
-* Creemos que al conectar estudiantes universitarios con oportunidades laborales compatibles con sus carreras y horarios, lograremos que desarrollen experiencia profesional antes de egresar.
-  Sabremos que hemos tenido éxito cuando más del 50% de los usuarios activos complete al menos una tarea remunerada en su primer mes.
+* Creemos que al conectar estudiantes universitarios con oportunidades laborales compatibles con sus carreras y horarios mediante el Agente IA, lograremos que desarrollen experiencia profesional antes de egresar sin que tengan que invertir tiempo en la búsqueda manual.
+  Sabremos que hemos tenido éxito cuando más del 50% de los usuarios activos reciba al menos una entrevista gestionada por el Agente IA en su primer mes.
 
-* Creemos que implementar un sistema de reputación y gamificación aumentará la participación y compromiso con la plataforma.
-  Sabremos que hemos tenido éxito cuando el tiempo promedio de uso semanal supere los 45 minutos por usuario activo.
+* Creemos que el Agente IA autónomo que postula automáticamente en nombre del estudiante reducirá la fricción de entrada al mercado laboral freelance y aumentará la tasa de contratación exitosa.
+  Sabremos que hemos tenido éxito cuando la tasa de conversión de postulación a entrevista confirmada supere el 30% de las postulaciones automáticas generadas por el Agente IA.
 
-* Creemos que ofrecer oportunidades relacionadas a sus habilidades y carrera aumentará su satisfacción y fidelización.
-  Sabremos que hemos tenido éxito cuando al menos el 70% de los usuarios califique la relevancia de las recomendaciones como alta o muy alta.
+* Creemos que el ajuste automático del CV por parte del Agente IA para cada oportunidad específica aumentará la relevancia percibida por los empleadores y mejorará la tasa de aceptación.
+  Sabremos que hemos tenido éxito cuando al menos el 60% de los empleadores califique el CV recibido como muy relevante para la oportunidad publicada.
+
+* Creemos que implementar un sistema de reputación y transparencia sobre las acciones del Agente IA aumentará la confianza del estudiante en la plataforma y reducirá el abandono.
+  Sabremos que hemos tenido éxito cuando el tiempo promedio de uso semanal supere los 30 minutos y la tasa de retención al tercer mes sea superior al 60%.
 
 #### 1.2.3.4. Lean UX Canvas
 
@@ -385,23 +294,27 @@ Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser
 
 #### **Estudiantes Universitarios Freelancers**
 
-Estudiantes de cualquier ciclo universitario que buscan ofrecer sus servicios de manera independiente para adquirir experiencia laboral, generar ingresos y construir una red de clientes. Estos estudiantes pueden pertenecer a diversas especialidades como diseño gráfico, programación, marketing digital, redacción, tutorías académicas, entre otros.
+Estudiantes de cualquier ciclo universitario en Perú y Latinoamérica que buscan ofrecer sus servicios de manera independiente o postular a puestos de practicante para adquirir experiencia laboral, generar ingresos y construir un portafolio profesional. Pueden pertenecer a diversas especialidades como diseño gráfico, programación, marketing digital, redacción, tutorías académicas, gestión empresarial, entre otros.
 
 **Características:**
 
-* Buscan oportunidades de trabajo flexible que les permitan combinar sus estudios con el trabajo freelance.
-* Necesitan herramientas que los ayuden a promocionar sus habilidades y construir una cartera de clientes.
-* Valoran la facilidad de pago y la seguridad en la gestión de contratos.
+* Buscan oportunidades de trabajo flexible compatibles con sus horarios académicos.
+* No tienen tiempo para buscar y postular manualmente; valoran que el **Agente IA** lo haga de forma autónoma en su nombre.
+* Necesitan que su CV sea presentado de la manera más relevante posible para cada oportunidad.
+* Valoran recibir notificaciones solo cuando necesitan tomar una decisión (confirmar entrevista, aceptar oferta).
+* Requieren seguridad en la gestión de contratos y pagos.
 
-#### **Personas y Emprendimientos que buscan contratar servicios freelance**
+#### **Empleadores, Microempresas y Emprendedores**
 
-Individuos o empresas que requieren servicios especializados sin la necesidad de contratar empleados a tiempo completo. Esto incluye emprendedores, startups, pequeñas empresas y particulares que buscan soluciones rápidas y accesibles para sus proyectos.
+Individuos, microempresas, startups o emprendimientos a nivel latinoamericano que requieren servicios profesionales puntuales o desean incorporar practicantes universitarios sin la necesidad de contratar personal permanente.
 
 **Características:**
 
-* Buscan talento accesible y de calidad para tareas específicas.
-* Prefieren plataformas que garanticen la seguridad en la contratación y el cumplimiento del trabajo.
-* Valoran las recomendaciones y validaciones de otros clientes para elegir freelancers confiables.
+* Publican sus necesidades o puestos de practicante en la plataforma.
+* Reciben postulaciones curadas por el **Agente IA**, con CVs ya ajustados al perfil requerido.
+* Valoran el ahorro de tiempo en la revisión de candidatos: el Agente IA filtra y presenta solo los perfiles más compatibles.
+* Prefieren plataformas que garanticen la seriedad y verificación académica de los postulantes.
+* Coordinan fechas y horas de entrevista directamente con el Agente IA de forma automática.
 
 <div style="page-break-before: always;"></div>
 
@@ -409,32 +322,43 @@ Individuos o empresas que requieren servicios especializados sin la necesidad de
 
 ## 2.1. Competidores
 
-En el mercado freelance existen múltiples plataformas consolidadas, pero ninguna está 100% orientada al talento universitario. Por ello, los competidores identificados para GigU son plataformas freelance generalistas que, aunque comparten funcionalidades similares, no cubren a profundidad las necesidades específicas de los estudiantes universitarios que buscan dar sus primeros pasos profesionales.
+En el mercado freelance existen múltiples plataformas consolidadas, pero ninguna está 100% orientada al talento universitario. Por ello, los competidores identificados para Triple B son plataformas freelance generalistas que, aunque comparten funcionalidades similares, no cubren a profundidad las necesidades específicas de los estudiantes universitarios que buscan dar sus primeros pasos profesionales.
 
 ### 2.1.1. Análisis competitivo
 
-A continuación se presenta el análisis competitivo comparando a GigU con las principales alternativas del mercado freelance. Se evalúan dimensiones como perfil estratégico, segmento objetivo, propuesta de valor, canales, relaciones con el cliente y ventajas competitivas.
+A continuación se presenta el análisis competitivo comparando a Triple B con las principales alternativas del mercado freelance. Se evalúan dimensiones como perfil estratégico, segmento objetivo, propuesta de valor, canales, relaciones con el cliente y ventajas competitivas.
 
-<img src="imgs/Competidores1.png" alt="Competidores1" title="Competidores1"/>
-<img src="imgs/Competidores2.png" alt="Competidores2" title="Competidores2"/>
-<img src="imgs/Competidores3.png" alt="Competidores3" title="Competidores3"/>
-<img src="imgs/Competidores4.png" alt="Competidores4" title="Competidores4"/>
-<img src="imgs/Competidores5.png" alt="Competidores5" title="Competidores5"/>
-<img src="imgs/Competidores6.png" alt="Competidores6" title="Competidores6"/>
+
+| Categoría | Subcategoría | Triple B (Agente IA) | Fiverr | Freelancer | Workana |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Plataforma digital potenciada por IA que conecta a estudiantes universitarios de Latinoamérica con clientes, delegando la búsqueda y postulación a un Agente autónomo. | Fiverr es una plataforma global donde freelancers ofrecen servicios en múltiples categorías, los clientes contratan directamente según precio, reputación y tiempo de entrega, sin necesidad de negociación previa. | Freelancer es una plataforma internacional que conecta clientes con freelancers a través de proyectos abiertos a licitación. Los freelancers compiten con propuestas personalizadas, y el cliente elige la mejor opción según precio, perfil y experiencia. | Workana es una plataforma freelance enfocada en el mercado latinoamericano. Permite a los clientes publicar proyectos y recibir propuestas de freelancers, facilitando el trabajo remoto. |
+| | **Ventaja competitiva ¿Qué valor ofrece a los clientes?** | Un Agente IA autónomo que elimina la fricción de búsqueda y postulación manual. El Agente escanea ofertas, adapta el CV del estudiante, postula automáticamente y coordina entrevistas, ahorrando tiempo significativo al estudiante y asegurando perfiles altamente compatibles para el empleador. | Ofrece a los clientes contratar servicios de manera rápida y directa, con precios visibles desde el inicio. Su modelo facilita la comparación entre opciones y acelera el proceso de contratación, ideal para quienes buscan soluciones listas para usar. | Ofrece a los clientes la posibilidad de elegir entre múltiples propuestas personalizadas para un mismo proyecto. Este enfoque competitivo reduce costos y aumenta la variedad de opciones, permitiendo al cliente comparar presupuestos, plazos y calificaciones antes de decidir. | Ofrece a los clientes una interfaz amigable en español y soporte local, facilitando la comunicación con freelancers de la región. Los clientes pueden trabajar con profesionales que entienden el contexto latinoamericano, con mayor afinidad cultural y disponibilidad horaria alineada. |
+| **Perfil de Marketing** | **Mercado Objetivo** | Estudiantes universitarios latinoamericanos sin tiempo para buscar ofertas, y empleadores/emprendedores que buscan contratar talento joven verificado sin perder tiempo filtrando CVs irrelevantes. | Emprendedores, Empresas pequeñas y medianas, usuarios individuales de todo el mundo que requieren servicios rápidos y económicos, especialmente en diseño, programación, redacción y marketing. | Empresas de todos los tamaños y particulares que necesitan contratar freelancers para proyectos específicos mediante un sistema de propuestas. El mercado es global y competitivo. | Startups, empresas y emprendedores de América Latina que valoran la cercanía cultural, el idioma compartido y la contratación de profesionales de la región para proyectos remotos. |
+| | **Estrategias de marketing** | • Marketing resaltando el ahorro de tiempo gracias al Agente IA ("Tu IA personal busca trabajo por ti").<br>• Alianzas universitarias para validación académica.<br>• Casos de éxito mostrando contrataciones rápidas y efectivas. | • Publicidad digital global: campañas fuertes en Google Ads y redes sociales con alcance masivo.<br>• Sistema de niveles: incentivos para que freelancers mejoren su rendimiento y reputación dentro de la plataforma.<br>• Marketing por influencers: colaboraciones con creadores de contenido o freelance en YouTube y TikTok. | • Publicidad enfocada en proyectos grandes: campañas dirigidas a empresas que buscan contratar talento para desarrollos complejos.<br>• Certificaciones internas: los freelancers pueden certificarse dentro de la plataforma, generando confianza al cliente.<br>• Programa de referidos: bonificaciones para usuarios que inviten a otros.<br>• Email marketing personalizado: seguimiento constante a clientes con proyectos activos o antiguos. | • Campañas regionales específicas: acciones adaptadas por país según eventos, necesidades laborales o tendencias.<br>• Historias de éxito local: testimonios de freelancers y clientes en la región como estrategia de credibilidad.<br>• Promoción en LinkedIn y medios especializados: orientado a captar empresas interesadas en talento remoto.<br>• Segmentación geográfica avanzada: anuncios pagados dirigidos a zonas con alta demanda de servicios freelance. |
+| **Perfil de productos** | **Productos & Servicios** | • Agente IA para matching, adaptación de CVs y agendamiento automático de entrevistas.<br>• Marketplace de servicios freelance orientado a talento universitario.<br>• Portafolio verificado e integración académica.<br>• Contratos inteligentes y gestión de pagos seguros. | • Servicios predefinidos: los freelancers publican paquetes de servicios con precios fijos por niveles (básico, estándar, premium).<br>• Fiverr Business: solución para empresas que necesitan gestionar múltiples freelancers.<br>• Cursos online con Fiverr Learn para capacitar freelancers.<br>• Niveles y reputación del vendedor para aumentar la visibilidad.<br>• Soporte multilingüe y presencia internacional. | • Marketplace para proyectos freelance de cualquier tamaño.<br>• Sistema de licitación: los clientes publican proyectos y los freelancers ofertan.<br>• Concursos freelance: para diseños y propuestas creativas donde el mejor resultado gana el pago.<br>• Certificaciones internas que validan conocimientos técnicos de los freelancers.<br>• Freelancer Enterprise: solución corporativa para grandes empresas que buscan equipos remotos. | • Publicación de proyectos: los clientes describen lo que necesitan y los freelancers envían propuestas.<br>• Sistema de reputación y calificación: basado en entregas anteriores.<br>• Envío de propuestas múltiples: los freelancers pueden personalizar su oferta para cada cliente.<br>• Filtros de búsqueda por categoría, país, experiencia, idioma, etc. |
+| | **Precios & Costos** | • Comisión del **10%** por cada transacción para los freelancers (incluye el uso del Agente IA).<br>• Uso gratuito y sin comisiones para los clientes. | • Comisión fija del **20%** por cada venta de los freelancer.<br>• Tarifa de gastos de servicio son el 5,5 % para los clientes y para compras menores a 100 dólares es 3 dólares.<br>• Fiverr Pro: plan mensual con costo de 129 dólares. | • Comisión del 10% o 5 dólares en proyectos fijos o por hora para freelancer.<br>• Tarifa de 3% o $3 USD mínimo al contratar un freelance.<br>• Ofrece uso gratuito o planes que cuestan: 4.49–49 y 99 dólares. | • Costo por comisión escalonado con costos de 20% hasta $300, 10% de 301 a 3000$ y 5% de 3001 a más.<br>• Uso gratuito para los clientes donde el costo final depende del proyecto.<br>• Ofrece planes de 3.92–13.52–19.92 dólares. |
+| | **Canales de distribución (Web y/o Móvil)** | • **Plataforma web** accesible desde múltiples dispositivos.<br>• Notificaciones por correo/mensajería gestionadas por el Agente IA. | • **Plataforma web** disponible globalmente para ser accesible desde computadoras, tablets y smartphones.<br>• **Aplicación móvil** para Android y iOS, con todas las funcionalidades. | • **Plataforma web** disponible globalmente para ser accesible desde computadoras, tablets y smartphones.<br>• **Aplicación móvil** para Android y iOS, con todas las funcionalidades. | • **Plataforma web** disponible globalmente para ser accesible desde computadoras, tablets y smartphones.<br>• **Aplicación móvil** para Android y iOS, con todas las funcionalidades. |
+| **Análisis SWOT** | **Fortalezas** | • Diferenciación tecnológica única mediante el Agente IA que postula de forma autónoma.<br>• Reducción drástica del tiempo de reclutamiento para los empleadores y del tiempo de búsqueda para estudiantes.<br>• Enfoque exclusivo en estudiantes verificados (mayor confianza). | • Posicionamiento global consolidado y alto reconocimiento de marca.<br>• Interfaz intuitiva y sistema de proyectos estructurado que facilita la contratación.<br>• Base de usuarios extensa tanto de clientes como freelancers.<br>• Sistema de puntuaciones y comentarios que refuerza la confianza.<br>• Mecanismos de pago seguros y política clara de protección al comprador. | • Diversidad de categorías de servicios disponibles, incluyendo grandes proyectos empresariales.<br>• Sistema de licitaciones que permite a los clientes recibir múltiples propuestas.<br>• Funciones avanzadas como gestión de proyectos y uso de herramientas colaborativas integradas.<br>• Gran base de datos de usuarios registrados a nivel mundial. | • Enfocado en el mercado de habla hispana y portuguesa, lo que mejora la comunicación entre clientes y freelancers de la región.<br>• Plataforma con herramientas que facilitan la relación freelancer-cliente (contratos, pagos seguros, gestión del tiempo).<br>• Comunidad sólida en Latinoamérica.<br>• Interfaz clara y fácil de usar para proyectos pequeños y medianos. |
+| | **Debilidades** | • Dependencia del rendimiento y costos de las APIs de modelos LLM (OpenAI/Gemini).<br>• Plataforma nueva sin base consolidada de usuarios.<br>• Posible desconfianza inicial de clientes ante perfiles estudiantiles. | • Alta competencia entre freelancers, especialmente para nuevos usuarios que tienen dificultades para destacarse.<br>• Comisión elevada (hasta 20%), lo que reduce las ganancias del freelancer.<br>• Algunos servicios pueden parecer poco personalizados o masificados.<br>• Puede dar lugar a proyectos genéricos de baja calidad si no se filtra adecuadamente. | • El proceso de licitación puede ser complejo y frustrante para nuevos freelancers.<br>• Comisiones tanto al cliente como al freelancer, lo que puede ser muy costoso.<br>• Interfaz menos intuitiva en comparación con otros competidores más modernos.<br>• Algunos usuarios han reportado experiencias de proyectos cancelados o clientes poco confiables. | • Base de usuarios más reducida en comparación con Fiverr o Freelancer.<br>• Los proyectos pueden ofrecer remuneraciones bajas comparadas con los competidores.<br>• Poca diferenciación entre tipos de freelancers, lo que puede generar confusión para el cliente al elegir.<br>• Sistema de reputación y visibilidad puede dificultar el ingreso a nuevos usuarios. |
+| | **Oportunidades** | • Alta adopción de herramientas de IA por parte de la generación joven.<br>• Ausencia de competidores regionales que ofrezcan postulación y adaptación de CV totalmente autónoma.<br>• Crecimiento del mercado freelance en Latinoamérica. | • Expansión hacia nuevos nichos profesionales o categorías emergentes (IA, automatización, etc.).<br>• Incorporación de herramientas educativas o de capacitación para mejorar habilidades de los freelancers.<br>• Alianzas estratégicas con grandes empresas que buscan soluciones creativas a bajo costo.<br>• Adaptación al trabajo remoto global tras la pandemia. | • Posibilidad de integrar inteligencia artificial para facilitar el emparejamiento entre proyectos y freelancers.<br>• Expansión hacia mercados específicos con funcionalidades más localizadas o especializadas.<br>• Incorporación de soluciones corporativas para empresas grandes.<br>• Aprovechar el crecimiento del teletrabajo para consolidar su presencia global. | • Expansión a nuevos países de habla hispana o portugués.<br>• Fomentar la inclusión de profesionales jóvenes mediante programas de mentoría o formación.<br>• Creación de planes especiales para empresas o instituciones que busquen contratar talento regional. |
+| | **Amenazas** | • Plataformas globales podrían integrar funciones de IA autónomas similares en el futuro.<br>• Desconfianza inicial de los empleadores hacia CVs y postulaciones generadas por IA.<br>• Competencia dominante de Fiverr, Freelancer y Workana. | • Saturación del mercado y disminución de calidad en algunos servicios.<br>• Posibles regulaciones en ciertos países sobre trabajo freelance y tributación.<br>• Incremento de plataformas emergentes con propuestas más innovadoras o comisiones más bajas.<br>• Riesgo de fraude o mal uso de la plataforma si no se refuerzan los mecanismos de verificación. | • Complejidad en el sistema de postulaciones.<br>• Desconfianza generada por experiencias negativas con proyectos.<br>• El incremento en las comisiones puede alejar tanto a clientes como a freelancers.<br>• Desafíos para mantenerse competitivo frente a plataformas más ágiles y enfocadas en nichos específicos. | • Presión competitiva de plataformas globales con mayor presupuesto para marketing y expansión.<br>• Dificultad para diferenciarse en un mercado freelance cada vez más estandarizado.<br>• Riesgo de fuga de talento hacia plataformas con mayores oportunidades o ingresos.<br>• Posible desaceleración económica en países clave que reduzca la demanda de freelancers. |
+
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-GigU adopta una estrategia de **diferenciación centrada en el talento universitario**, apoyándose en un enfoque educativo, precios accesibles y alianzas con instituciones académicas. A diferencia de los grandes actores del mercado freelance global, nuestra plataforma se posiciona como una alternativa confiable y de propósito social que conecta clientes con estudiantes verificados académicamente.
+Triple B adopta una estrategia de **diferenciación centrada en el talento universitario**, apoyándose en un enfoque educativo, precios accesibles y alianzas con instituciones académicas. A diferencia de los grandes actores del mercado freelance global, nuestra plataforma se posiciona como una alternativa confiable y de propósito social que conecta clientes con estudiantes verificados académicamente.
 
 Las tácticas principales son:
 
-* **Verificación académica:** Validar que los freelancers sean estudiantes activos para transmitir confianza al cliente.
-* **Soporte regional y en español:** Aprovechar la debilidad de plataformas globales con soporte limitado o genérico.
-* **Personalización:** Recomendaciones de proyectos basadas en carrera, habilidades y disponibilidad del estudiante.
-* **Garantías y filtros de calidad:** Mitigar la percepción de “poca experiencia” con reseñas reales, portafolios y calificaciones.
+* **Agente IA autónomo como diferenciador principal:** Ninguna plataforma competidora ofrece un agente que postule automáticamente en nombre del estudiante, ajuste el CV y coordine entrevistas. Esta funcionalidad elimina la barrera de tiempo y esfuerzo que desalienta a estudiantes a competir en plataformas globales.
+* **Verificación académica:** Validar que los freelancers sean estudiantes activos para transmitir confianza al empleador o cliente.
+* **Cobertura latinoamericana activa:** El Agente IA escanea oportunidades publicadas en cualquier parte de Latinoamérica, expandiendo el alcance del estudiante más allá de su entorno local sin esfuerzo adicional.
+* **Soporte regional y en español:** Aprovechar la debilidad de plataformas globales con soporte limitado o genérico para el contexto latinoamericano.
+* **Ajuste automático del CV:** El Agente IA adapta el CV del estudiante a cada oportunidad, mejorando la tasa de aceptación frente a candidatos que envían CVs genéricos.
+* **Garantías y filtros de calidad:** Mitigar la percepción de "poca experiencia" con reseñas reales, portafolios y calificaciones visibles para los empleadores.
 * **Pagos seguros y automatizados:** Reducir la fricción e inseguridad de métodos informales (Yape, transferencias directas).
 
-En conjunto, la estrategia busca capitalizar las debilidades de los competidores (poca personalización, fuerte competencia global, comisiones elevadas) y convertirlas en ventajas competitivas para GigU.
+En conjunto, la estrategia busca capitalizar las debilidades de los competidores (poca personalización, fuerte competencia global, comisiones elevadas, ausencia de IA proactiva) y convertirlas en ventajas competitivas para Triple B mediante el Agente IA como intermediario inteligente.
 
 ## 2.2. Entrevistas
 
@@ -454,7 +378,8 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 * ¿Qué características debería tener una plataforma ideal para ayudarte a encontrar clientes?
 * ¿Qué métodos usas actualmente para cobrar tus servicios? ¿Has tenido problemas con eso?
 * ¿Cuánto tiempo a la semana podrías dedicarle a trabajos freelance?
-* ¿Crees que sería útil tener una app que te sugiera proyectos freelance según tu perfil y habilidades?
+* ¿Crees que sería útil que un Agente de Inteligencia Artificial busque proyectos a nivel latinoamericano, ajuste tu CV y postule automáticamente en tu nombre?
+* ¿Qué tanta autonomía estarías dispuesto a darle a un Agente IA para que coordine entrevistas o reuniones por ti?
 * ¿Qué tan importante es para ti tener una forma segura y automática de cobrar por tu trabajo freelance?
 
 **Segmento objetivo 2: Personas y Emprendimientos que buscan contratar servicios freelance**
@@ -467,6 +392,8 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 * ¿Qué canales usas actualmente para encontrar freelancers (plataformas, conocidos, redes)?
 * ¿Qué te haría confiar en un estudiante universitario como freelancer?
 * ¿Qué tan importante es para ti poder ver recomendaciones o validaciones de otros clientes?
+* ¿Confiarías en un Agente de Inteligencia Artificial que filtre, ajuste los CVs y te presente solo a los estudiantes más idóneos para tu requerimiento?
+* ¿Te resultaría útil que el Agente IA coordine directamente contigo la fecha y hora de la entrevista en lugar de esperar la respuesta manual del postulante?
 * ¿Te gustaría una plataforma que se encargue de gestionar los pagos y acuerdos con el freelancer, o prefieres hacerlo tú directamente con la persona?
 * ¿Qué haría que descartes a un freelancer incluso si su precio es atractivo?
 * ¿Qué funcionalidades te gustaría ver en una plataforma para contratar freelancers?
@@ -554,13 +481,13 @@ Link de entrevista: [SharePoint UPC](https://upcedupe-my.sharepoint.com/:v:/g/pe
 
 **Segmento 1 — Estudiantes Universitarios Freelancers.** Los tres entrevistados (Bruno, Werner y Mario) coinciden en que la principal motivación es generar ingresos mientras ganan experiencia profesional, y que la mayor barrera es la **desconfianza del cliente hacia los estudiantes**. El insight central es que, más que su nivel de experiencia, el obstáculo real es la percepción del mercado; esto evidencia la necesidad de **mecanismos de validación**: reseñas, calificaciones y contratos formales dentro de la plataforma.
 
-Usan redes sociales y plataformas como Workana, pero obtienen poca visibilidad. Surge así un segundo insight: los freelancers quieren ser emparejados por **habilidades**, no únicamente por historial previo, lo que abre espacio a un sistema de recomendaciones por competencias. En cuanto a pagos, todos usan Yape y transferencias y han sufrido retrasos, lo que refuerza la necesidad de un **sistema de cobros seguro y automatizado**. Además del ingreso, valoran construir reputación profesional y recibir retroalimentación, señal de que la plataforma también debe actuar como un espacio de **desarrollo de carrera**.
+Usan redes sociales y plataformas como Workana, pero obtienen poca visibilidad y gastan mucho tiempo buscando ofertas. Surge así un segundo insight: los freelancers no solo quieren ser emparejados por habilidades, sino que desean **delegar la búsqueda y postulación a un Agente IA autónomo** que optimice su CV por ellos, dada su alta carga académica. En cuanto a pagos, todos usan Yape y transferencias y han sufrido retrasos, lo que refuerza la necesidad de un **sistema de cobros seguro y automatizado**. Además del ingreso, valoran construir reputación profesional y recibir retroalimentación, señal de que la plataforma también debe actuar como un espacio de **desarrollo de carrera**.
 
 **Segmento 2 — Personas y Emprendimientos que buscan freelancers.** Yulia y Fabrizio priorizan **calidad y responsabilidad** por encima del precio. El insight clave es que el **portafolio visual pesa más que el costo**: si un trabajo impacta positivamente, están dispuestos a pagar más. Ambos muestran desconfianza hacia perfiles sin referencias, por lo que las **recomendaciones, testimonios y perfiles detallados** son elementos indispensables.
 
 En la gestión de acuerdos y pagos ambos prefieren no tratar directamente con el freelancer, lo que revela una necesidad de **automatizar negociación, acuerdos y pagos dentro de la plataforma**. Finalmente, el impacto emocional del resultado influye en la disposición a pagar más, lo que asigna un rol estratégico a la **presentación del trabajo** (antes y después de la entrega).
 
-**Conclusión transversal.** Ambos segmentos convergen en la necesidad de una plataforma que ofrezca: (i) perfiles verificados y portafolios, (ii) emparejamiento inteligente por habilidades, (iii) acuerdos y pagos seguros gestionados por la plataforma, (iv) reseñas y reputación, y (v) comunicación fluida dentro del entorno. Estos hallazgos alimentan directamente los *User Personas*, la *User Task Matrix* y los *Empathy Maps* del siguiente apartado.
+**Conclusión transversal.** Ambos segmentos convergen en la necesidad de una plataforma que ofrezca: (i) perfiles verificados y portafolios, (ii) **un Agente IA intermediario que automatice la postulación y filtrado**, (iii) acuerdos y pagos seguros gestionados por la plataforma, (iv) reseñas y reputación, y (v) coordinación automatizada de entrevistas. Estos hallazgos alimentan directamente los *User Personas*, la *User Task Matrix* y los *Empathy Maps* del siguiente apartado.
 
 ## 2.3. Needfinding
 
@@ -574,15 +501,16 @@ En esta sección se presentan los artefactos derivados del análisis de la infor
   * Explorar distintas áreas del mercado y ampliar su perspectiva profesional.
 * **Problemas identificados:**
   * Dificultad para conseguir clientes por el prejuicio hacia su condición de estudiante.
+  * Falta de tiempo para buscar oportunidades, adaptar CVs y postular manualmente debido a su carga académica.
   * Poca visibilidad en plataformas tradicionales y baja confianza hacia perfiles jóvenes.
   * Problemas con los pagos: demoras, renegociaciones y falta de sistemas seguros.
 * **Requisitos para una plataforma ideal:**
   * Permitir mostrar habilidades y portafolio aun con experiencia limitada.
-  * Sugerencias de proyectos basadas en habilidades y perfil.
+  * **Agente IA autónomo** que escanee, ajuste el CV y postule automáticamente a proyectos latinoamericanos.
   * Herramientas de cotización automática y segura.
-  * Historial de trabajos realizados.
+  * Historial de trabajos realizados y estado de postulaciones.
   * Cobros seguros y automatizados.
-  * Comunicación fluida dentro de la plataforma.
+  * Coordinación automática de entrevistas gestionada por el Agente IA.
 
 **Segmento objetivo #2: Personas y Emprendimientos que buscan contratar servicios freelance**
 
@@ -591,12 +519,15 @@ En esta sección se presentan los artefactos derivados del análisis de la infor
   * Falta de tiempo o conocimiento técnico para tareas clave del negocio.
   * Necesidad de soluciones rápidas y flexibles sin contratar personal fijo.
 * **Problemas identificados:**
-  * Desconfianza al contratar freelancers sin referencias.
+  * Desconfianza al contratar freelancers sin referencias y dificultad para verificar si son estudiantes activos.
+  * Exceso de tiempo perdido filtrando currículums irrelevantes.
   * Miedo a mala calidad, incumplimiento o falta de responsabilidad.
   * Inseguridad para negociar precios o gestionar pagos.
 * **Requisitos para una plataforma ideal:**
   * Perfiles detallados con muestras de trabajo previas.
+  * **Agente IA** que filtre postulantes y presente solo CVs altamente compatibles y adaptados al proyecto.
   * Sistema de calificaciones y opiniones verificadas.
+  * Agendamiento automático de entrevistas coordinado directamente por el Agente IA.
   * Gestión clara de pagos y acuerdos dentro de la plataforma.
   * Chat interno, reuniones virtuales y acuerdos escritos.
   * Negociación dentro de rangos sugeridos.
@@ -639,7 +570,7 @@ Empathy Map de Persona o Empresa:
 
 ### 2.3.4. As-Is Scenario Mapping
 
-El *As-Is Scenario Mapping* refleja el estado actual de la experiencia de cada segmento **antes** de utilizar GigU. Recorre las fases típicas —desde la búsqueda de oportunidades o de talento, pasando por la contratación, ejecución y cobro— e identifica emociones, acciones y puntos de dolor en cada paso. Este artefacto es la línea base sobre la que, en el Capítulo III, se diseñará el *To-Be Scenario*.
+El *As-Is Scenario Mapping* refleja el estado actual de la experiencia de cada segmento **antes** de utilizar Triple B. Recorre las fases típicas —desde la búsqueda de oportunidades o de talento, pasando por la contratación, ejecución y cobro— e identifica emociones, acciones y puntos de dolor en cada paso. Este artefacto es la línea base sobre la que, en el Capítulo III, se diseñará el *To-Be Scenario*.
 
 As-Is del Estudiante Freelancer (búsqueda de clientes, negociación informal y cobro mediante Yape/transferencias):
 <img src="imgs/AS-IS1.png" alt="AS-IS1" title="AS-IS1"/>
@@ -657,6 +588,8 @@ Se realizaron los siguientes cuadros en la herramienta Miro, el link original pu
 
 [LINK TO-BE](https://miro.com/app/board/uXjVIFvzuZo=/?share_link_id=785027992176)
 
+*Nota: El flujo «To-Be» integra ahora al Agente IA como actor secundario que automatiza la búsqueda, postulación, adaptación del CV y agendamiento de entrevistas, reduciendo drásticamente la carga manual de ambos segmentos objetivos.*
+
 * To-Be Scenario Mapping para Estudiantes Universitarios Freelancers
 <img src="imgs/TO-BE1.png" alt="To-Be" title="To-BeScenarioMapping"/>
 
@@ -667,15 +600,15 @@ Se realizaron los siguientes cuadros en la herramienta Miro, el link original pu
 ## 3.2. User Stories
 
 * EPICS
-Las epics definidas para el proyecto GigU están orientadas a cubrir las necesidades principales tanto de los estudiantes de la UPC como de los usuarios que buscan contratar servicios freelance. Estas epics abordan funcionalidades esenciales para el funcionamiento de la plataforma, asegurando una experiencia fluida y efectiva desde la publicación de habilidades por parte de los estudiantes hasta la contratación por parte de clientes o emprendimientos. Desde la interfaz de la landing page, donde los usuarios conocen la propuesta de valor de GigU, hasta la gestión técnica del backend, frontend y servicios web, las epics actúan como una guía estructurada que facilita el desarrollo progresivo y coherente del sistema, alineándose con los objetivos académicos y de empleabilidad del proyecto.
+Las epics definidas para el proyecto Triple B están orientadas a cubrir las necesidades principales tanto de los estudiantes de la UPC como de los usuarios que buscan contratar servicios freelance. Estas epics abordan funcionalidades esenciales para el funcionamiento de la plataforma, asegurando una experiencia fluida y efectiva desde la publicación de habilidades por parte de los estudiantes hasta la contratación por parte de clientes o emprendimientos. Desde la interfaz de la landing page, donde los usuarios conocen la propuesta de valor de Triple B, hasta la gestión técnica del backend, frontend y servicios web, las epics actúan como una guía estructurada que facilita el desarrollo progresivo y coherente del sistema, alineándose con los objetivos académicos y de empleabilidad del proyecto.
 
 | Epic ID | Título | Descripción |
 | :---: | ----- | ----- |
-| EP01 | Onboarding del Visitante | Como visitante, deseo navegar la landing page, conocer los beneficios y modelo de uso de GigU, y consultar preguntas frecuentes para decidir si registrarme. |
+| EP01 | Onboarding del Visitante | Como visitante, deseo navegar la landing page, conocer los beneficios y modelo de uso de Triple B, y consultar preguntas frecuentes para decidir si registrarme. |
 | EP02 | Autenticación y Gestión de Cuenta | Como usuario, deseo registrarme, iniciar sesión y recuperar mi acceso de forma segura para proteger mi información y operar bajo mi identidad. |
 | EP03 | Perfil Profesional del Freelancer | Como freelancer, deseo crear y mantener un perfil público con habilidades, experiencia y descripción personal para presentar mi propuesta profesional a clientes potenciales. |
 | EP04 | Portafolio y Evidencias del Freelancer | Como freelancer, deseo publicar evidencias de trabajos previos en mi portafolio para respaldar mi experiencia y generar confianza ante clientes potenciales. |
-| EP05 | Publicación y Mantenimiento de Servicios | Como freelancer, deseo publicar, editar, pausar y retirar servicios con descripción, tarifa y plazo para ofrecerlos en el catálogo de GigU. |
+| EP05 | Publicación y Mantenimiento de Servicios | Como freelancer, deseo publicar, editar, pausar y retirar servicios con descripción, tarifa y plazo para ofrecerlos en el catálogo de Triple B. |
 | EP06 | Descubrimiento del Catálogo | Como cliente, deseo explorar el catálogo de servicios mediante búsqueda, filtros y ordenamiento para encontrar la oferta que mejor se ajuste a mi necesidad. |
 | EP07 | Reputación y Reseñas Públicas | Como cliente y freelancer, deseo registrar y consultar calificaciones y comentarios sobre servicios entregados para sustentar la confianza pública entre las partes. |
 | EP08 | Solicitud y Acuerdo de Contratación | Como cliente y freelancer, deseo enviar, recibir, aceptar o rechazar solicitudes de contratación para formalizar el inicio de un proyecto en condiciones acordadas. |
@@ -683,15 +616,16 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 | EP10 | Sugerencia de Precio Asistida | Como freelancer, deseo recibir una sugerencia de precio basada en complejidad, tiempo y categoría del servicio para cotizar de forma consistente y justa. |
 | EP11 | Mensajería Coordinada Cliente-Freelancer | Como cliente y freelancer, deseo intercambiar mensajes y notificaciones dentro de la plataforma para coordinar detalles del servicio antes y durante el proyecto. |
 | EP12 | Reportes, Moderación y Soporte | Como usuario y administrador, deseo reportar comportamientos indebidos, bloquear interacciones no deseadas y abrir tickets de soporte para mantener un entorno seguro y atendido. |
+| EP13 | Agente de Inteligencia Artificial (AI Agent) | Como usuario (estudiante o empleador), deseo que un Agente IA autónomo gestione activamente la búsqueda de oportunidades, adaptación de CVs, filtrado de perfiles y coordinación de entrevistas para ahorrar tiempo y mejorar la precisión de las contrataciones. |
 
 * User Stories
 
 
 | Story ID                | User                                                                                                                                                                                                                                                                                                                  | Priority | Epic |
 | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
-| US01                    | Visitante de GigU                                                                                                                                                                                                                                                                                                     | Alta     | EP01 |
+| US01                    | Visitante de Triple B                                                                                                                                                                                                                                                                                                     | Alta     | EP01 |
 | **Title**               | Navegar de forma intuitiva en la landing page                                                                                                                                                                                                                                                                         |          |      |
-| **Description**         | Como visitante de GigU, deseo que la landing page tenga una barra de navegación clara y accesible para encontrar fácilmente las secciones importantes.                                                                                                                                                                |          |      |
+| **Description**         | Como visitante de Triple B, deseo que la landing page tenga una barra de navegación clara y accesible para encontrar fácilmente las secciones importantes.                                                                                                                                                                |          |      |
 |                         |                                                                                                                                                                                                                                                                                                                       |          |      |
 | **Acceptance Criteria** | **Escenario 01:** Dado que un visitante está en la landing page, cuando consulta el menú de navegación, entonces el sistema muestra las secciones principales del sitio.<br><br>**Escenario 02:** Dado que un visitante navega por la página, cuando cambia de sección, entonces el sistema indica la sección activa. |          |      |
 
@@ -711,9 +645,9 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 
 | Story ID                | User                                                                                                                                                                                                                                                                                                                                               | Priority | Epic |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
-| US03                    | Visitante de GigU                                                                                                                                                                                                                                                                                                                                  | Alta     | EP01 |
+| US03                    | Visitante de Triple B                                                                                                                                                                                                                                                                                                                                  | Alta     | EP01 |
 | **Title**               | Navegar por la landing page con menú claro                                                                                                                                                                                                                                                                                                         |          |      |
-| **Description**         | Como visitante de GigU, deseo que la landing page tenga una barra de navegación clara para encontrar fácilmente las secciones importantes.                                                                                                                                                                                                         |          |      |
+| **Description**         | Como visitante de Triple B, deseo que la landing page tenga una barra de navegación clara para encontrar fácilmente las secciones importantes.                                                                                                                                                                                                         |          |      |
 |                         |                                                                                                                                                                                                                                                                                                                                                    |          |      |
 | **Acceptance Criteria** | **Escenario 01:** Dado que un visitante accede a la landing page, cuando consulta el menú, entonces el sistema presenta las secciones relevantes de forma estructurada.<br><br>**Escenario 02:** Dado que un visitante navega entre secciones, cuando usa el menú, entonces el sistema mantiene coherencia en el orden y nombres de las secciones. |          |      |
 
@@ -767,8 +701,8 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 | Story ID                | User                                                                                                                                                                                                                                                                                                                      | Priority | Epic |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------- | :--- |
 | US08                    | Visitante                                                                                                                                                                                                                                                                                                                 | Media    | EP01 |
-| **Title**               | Conocer los beneficios de GigU                                                                                                                                                                                                                                                                                            |          |      |
-| **Description**         | Como visitante, deseo conocer los beneficios de usar GigU para entender por qué debería utilizar la plataforma.                                                                                                                                                                                                           |          |      |
+| **Title**               | Conocer los beneficios de Triple B                                                                                                                                                                                                                                                                                            |          |      |
+| **Description**         | Como visitante, deseo conocer los beneficios de usar Triple B para entender por qué debería utilizar la plataforma.                                                                                                                                                                                                           |          |      |
 |                         |                                                                                                                                                                                                                                                                                                                           |          |      |
 | **Acceptance Criteria** | **Escenario 01:** Dado que un visitante accede a la sección de información, cuando consulta los beneficios, entonces el sistema presenta los principales beneficios de la plataforma.<br><br>**Escenario 02:** Dado que selecciona un beneficio, cuando solicita ampliación, entonces recibe más información explicativa. |          |      |
 
@@ -801,7 +735,7 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
 | US11                    | Visitante                                                                                                                                                                                                                                                                                           | Media    | EP01 |
 | **Title**               | Conocer tipos de servicios disponibles                                                                                                                                                                                                                                                              |          |      |
-| **Description**         | Como visitante, deseo conocer los tipos de servicios que puedo contratar o brindar en GigU.                                                                                                                                                                                                         |          |      |
+| **Description**         | Como visitante, deseo conocer los tipos de servicios que puedo contratar o brindar en Triple B.                                                                                                                                                                                                         |          |      |
 |                         |                                                                                                                                                                                                                                                                                                     |          |      |
 | **Acceptance Criteria** | **Escenario 01:** Dado que un visitante consulta la sección de tipos de servicios, cuando selecciona uno, entonces el sistema muestra su descripción.<br><br>**Escenario 02:** Dado que desea más información, cuando selecciona detalles, entonces el sistema presenta casos prácticos y ejemplos. |          |      |
 
@@ -1278,6 +1212,64 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 |                         |                                                                                                                                                                                                                                                                                                  |          |      |
 | **Acceptance Criteria** | **Escenario 01:** Dado que se diseña un esquema de BD, cuando se prueba, entonces soporta calificaciones con comentarios vinculados a proyectos finalizados.<br><br>**Escenario 02:** Dado que se documentan riesgos, cuando se presenta el informe, entonces se incluyen medidas de mitigación. |          |      |
 
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US51                    | Estudiante Universitario Freelancer                                                                                                                                                                                                                                                              | Alta     | EP13 |
+| **Title**               | Búsqueda autónoma de proyectos                                                                                                                                                                                                                                                                   |          |      |
+| **Description**         | Como estudiante, deseo que el Agente IA escanee constantemente la plataforma en busca de oportunidades alineadas a mi perfil y carrera para no tener que buscarlas manualmente.                                                                                                                  |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que hay nuevas ofertas publicadas, cuando coinciden con las habilidades del estudiante, entonces el Agente IA las añade a la lista de "prospectos" del estudiante automáticamente.<br><br>**Escenario 02:** Dado que no hay ofertas relevantes, cuando el Agente escanea, entonces el estudiante no recibe falsas alarmas. |          |      |
+
+
+
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US52                    | Estudiante Universitario Freelancer                                                                                                                                                                                                                                                              | Alta     | EP13 |
+| **Title**               | Adaptación automática del CV                                                                                                                                                                                                                                                                     |          |      |
+| **Description**         | Como estudiante, deseo que el Agente IA ajuste automáticamente mi currículum (resaltando habilidades relevantes) antes de enviarlo a una oportunidad específica para aumentar mis probabilidades de éxito.                                                                                       |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que el Agente IA postula a una oferta de "Desarrollo Web", cuando genera el CV, entonces resalta las experiencias y cursos de programación.<br><br>**Escenario 02:** Dado que el CV se modifica, cuando el estudiante lo revisa, entonces puede ver la versión que se envió. |          |      |
+
+
+
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US53                    | Estudiante Universitario Freelancer                                                                                                                                                                                                                                                              | Alta     | EP13 |
+| **Title**               | Postulación delegada                                                                                                                                                                                                                                                                             |          |      |
+| **Description**         | Como estudiante, deseo autorizar al Agente IA a enviar mi postulación de forma autónoma a los proyectos altamente compatibles para no perder tiempo en procesos manuales.                                                                                                                        |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que el estudiante tiene activada la "postulación automática", cuando el Agente encuentra un proyecto con +90% de compatibilidad, entonces envía el CV directamente.<br><br>**Escenario 02:** Dado que se envía una postulación, cuando se procesa, entonces el estudiante recibe una notificación de confirmación. |          |      |
+
+
+
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US54                    | Empleador / Emprendedor                                                                                                                                                                                                                                                                          | Alta     | EP13 |
+| **Title**               | Filtrado inteligente de candidatos                                                                                                                                                                                                                                                               |          |      |
+| **Description**         | Como empleador, deseo que el Agente IA filtre los CVs recibidos y me presente solo a los estudiantes más idóneos para mi requerimiento para ahorrar tiempo en la revisión.                                                                                                                       |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que se reciben 50 postulaciones, cuando el Agente IA las procesa, entonces presenta un top 5 de candidatos ordenados por compatibilidad.<br><br>**Escenario 02:** Dado que el empleador revisa el top 5, cuando solicita ver a los demás, entonces tiene acceso al resto de candidatos categorizados. |          |      |
+
+
+
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US55                    | Usuario (Ambos segmentos)                                                                                                                                                                                                                                                                        | Media    | EP13 |
+| **Title**               | Agendamiento automático de entrevistas                                                                                                                                                                                                                                                           |          |      |
+| **Description**         | Como usuario, deseo que el Agente IA lea la disponibilidad de ambas partes y proponga una fecha/hora de entrevista de forma automática para evitar el intercambio de mensajes manuales.                                                                                                          |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que un empleador aprueba a un candidato, cuando presiona "Agendar", entonces el Agente IA cruza calendarios y envía una invitación a ambos.<br><br>**Escenario 02:** Dado que una fecha propuesta no funciona, cuando un usuario la rechaza, entonces el Agente IA propone inmediatamente otra opción. |          |      |
+
+
+
+| Story ID                | User                                                                                                                                                                                                                                                                                             | Priority | Epic |
+| :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :--- |
+| US56                    | Usuario (Ambos segmentos)                                                                                                                                                                                                                                                                        | Media    | EP13 |
+| **Title**               | Seguimiento de estado y notificaciones del Agente IA                                                                                                                                                                                                                                             |          |      |
+| **Description**         | Como usuario, deseo tener un panel de control donde el Agente IA me informe el estado de las postulaciones, retroalimentación recibida y próximas entrevistas para mantener el control sobre sus acciones.                                                                                       |          |      |
+|                         |                                                                                                                                                                                                                                                                                                  |          |      |
+| **Acceptance Criteria** | **Escenario 01:** Dado que el Agente realizó acciones en segundo plano, cuando el usuario entra al dashboard, entonces ve un resumen de "Postulaciones enviadas" y "Entrevistas pendientes".<br><br>**Escenario 02:** Dado que el usuario desea detener al Agente, cuando presiona "Pausar IA", entonces el Agente detiene todas sus actividades autónomas. |          |      |
+
 
 
 ## 3.3. Impact Map
@@ -1285,16 +1277,16 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 Se realizaron los siguientes cuadros en la herramienta Miro, el link original puede ser observado aquí: [LINK Impact Mapping](https://miro.com/app/board/uXjVIE5Pk5Q=/?share_link_id=296495865120)
 
 **Impact Map Segmento 1:** Estudiantes Universitarios Freelancers  
-El impact map de GigU para los estudiantes universitarios freelancers busca proporcionar un sistema robusto con alta posibilidad de personalización para la expresión creativa y profesional de los freelancers con la posibilidad de subir portafolios completos, publicar diversos tipos de servicios y editar o personalizar los perfiles junto a los servicios del freelancer.  
+El impact map de Triple B para los estudiantes universitarios freelancers busca proporcionar un sistema robusto con la integración del Agente IA como habilitador principal. Esto permite la delegación de búsqueda y postulación automática, adaptación dinámica de CVs y coordinación de entrevistas, aliviando la carga operativa y mejorando la empleabilidad sin afectar su horario académico.  
 <img src="imgs/ImpactMap1.png" alt="ImpactMapping" title="ImpactMapping"/>
 
 **Impact Map Segmento 2:** Personas y Emprendimientos que buscan contratar servicios freelance  
-El impact map de GigU para las personas y emprendimientos que buscan contratar servicios freelance busca optimizar el proceso del contratado de freelancers por medio de un sistema de búsqueda completo que permite encontrar al freelancer indicado teniendo en cuenta sus servicios disponibles, la media de costos que propone y su nivel de experiencia.  
+El impact map de Triple B para las personas y emprendimientos que buscan contratar servicios freelance busca optimizar radicalmente el proceso de selección y contratación. A través del Agente IA, el sistema filtra y presenta perfiles altamente compatibles, adaptados al proyecto específico, y automatiza la coordinación de reuniones, reduciendo drásticamente el tiempo de selección.  
 <img src="imgs/ImpactMap2.png" alt="ImpactMapping" title="ImpactMapping"/>
 
 
 ## 3.4. Product Backlog
-Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **197** Story Points.
+Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **231** Story Points (incluyendo las estimaciones de las funcionalidades del Agente IA).
 
 **Tablero del Product Backlog (Notion):** https://www.notion.so/38aff0862f2c8064a987e23cf2b39555?v=38aff0862f2c8116a822000c80166dd1
 
@@ -1310,7 +1302,7 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 |  **8**  |    **US12**   | Acceso a preguntas frecuentes (FAQ)                         |       3      |
 |  **9**  |    **US13**   | Búsqueda dentro de preguntas frecuentes                     |       3      |
 |  **10** |    **US14**   | Envío de ticket de soporte                                  |       3      |
-|  **11** |    **US08**   | Conocer los beneficios de GigU                              |       1      |
+|  **11** |    **US08**   | Conocer los beneficios de Triple B                              |       1      |
 |  **12** |    **US11**   | Detalles sobre tipos de servicios                           |       5      |
 |  **13** |    **US10**   | Experiencias de otros usuarios                              |       5      |
 |  **14** |    **US09**   | Diferencias entre roles (Freelancer / Cliente)              |       8      |
@@ -1354,1933 +1346,110 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 
 <div style="page-break-before: always;"></div>
 
-# Capítulo IV: Product Architecture Design
+# Capítulo IV: Strategic-Level Software Design
 
-## 4.1. Design Concepts, ViewPoints & ER Diagrams
+## 4.1. Strategic-Level Attribute-Driven Design
 
-Esta sección presenta los conceptos de diseño, principios, estilos arquitectónicos, patrones, vistas y tácticas que guían la arquitectura de GigU. La propuesta se alinea con el objetivo del curso de construir una arquitectura empresarial basada en microservicios, Domain-Driven Design y arquitectura cloud native, aplicando decisiones de diseño justificables mediante ADD v3.
+Esta sección presenta los conceptos de diseño, atributos de calidad y tácticas arquitectónicas aplicadas a Triple B utilizando el método ADD (Attribute-Driven Design). Nuestro enfoque integra al **Agente IA autónomo** como núcleo diferencial para conectar a estudiantes universitarios freelancers con clientes.
 
-GigU es una plataforma que conecta estudiantes universitarios freelancers con clientes o emprendimientos que requieren contratar servicios. La solución permite publicar servicios, definir tarifas, gestionar solicitudes de contratación, coordinar proyectos, comunicarse dentro de la plataforma y consultar calificaciones para aumentar la confianza entre las partes (GigU, 2026).
+### 4.1.1. Business Goals & Architectural Drivers
 
-### 4.1.1. Principles Statements
+*   **BG1:** Facilitar la inserción laboral temprana de estudiantes universitarios mediante un Agente IA que automatice la búsqueda y postulación a nivel latinoamericano, reduciendo el tiempo invertido por el estudiante en un 80%.
+*   **BG2:** Reducir la fricción en la contratación para emprendedores, garantizando perfiles verificados y automatizando el filtrado y agendamiento.
+*   **BG3:** Procesar múltiples CVs y ofertas concurrentemente utilizando servicios de IA de forma eficiente, manteniendo bajos costos de infraestructura.
 
-#### Domain-Driven Design como principio rector
+**Architectural Drivers:**
+*   **AD1 (Performance/Scalability):** El sistema debe soportar picos de peticiones concurrentes al Agente IA para procesar el filtrado de ofertas sin bloquear la experiencia del usuario.
+*   **AD2 (Security):** Garantizar la protección de datos personales y académicos de los estudiantes, así como de la información de pagos.
+*   **AD3 (Modifiability):** La arquitectura debe permitir actualizar o cambiar el proveedor de IA (LLM) sin afectar el resto del sistema.
 
-La arquitectura de GigU se organizará alrededor de las capacidades centrales del dominio freelance universitario. Cada microservicio representará un límite funcional coherente del negocio, evitando dividir el sistema por capas técnicas aisladas. Esta decisión permite que el modelo de software refleje conceptos propios del dominio, tales como perfil freelance, servicio publicado, solicitud de contratación, proyecto, conversación, calificación y sugerencia de precio.
+### 4.1.2. Quality Attribute Scenarios y Tácticas
 
-| Principio                   | Aplicación en GigU                                                                                                                                                |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lenguaje ubicuo             | El equipo utilizará términos consistentes como freelancer, cliente, servicio, solicitud, acuerdo, proyecto, tarifa, reseña, conversación y portafolio.            |
-| Bounded contexts            | El sistema se dividirá en contextos delimitados: acceso/perfiles, marketplace, contratación/proyectos y chat/notificaciones.                                      |
-| Modelo de dominio explícito | Las reglas principales no estarán dispersas en controladores o consultas SQL, sino encapsuladas en entidades, value objects, servicios de dominio y casos de uso. |
-| Alta cohesión               | Cada microservicio concentrará reglas relacionadas con una capacidad de negocio específica.                                                                       |
+**QA1: Performance (Rendimiento del Agente IA)**
+*   **Escenario:** El sistema recibe 500 nuevas ofertas de trabajo en un lapso de 10 minutos. El Agente IA debe procesarlas y emparejarlas con los CVs de 10,000 estudiantes sin degradar el tiempo de respuesta de la plataforma web.
+*   **Tácticas:**
+    *   *Introduce Concurrency:* Procesamiento asíncrono basado en eventos (Event-Driven Architecture) para el emparejamiento de perfiles.
+    *   *Increase Resources:* Auto-escalado de los microservicios responsables de comunicarse con los modelos LLM (AI Matcher Service).
 
-#### Clean Architecture por microservicio
+**QA2: Modifiability (Desacoplamiento de la IA)**
+*   **Escenario:** El equipo decide migrar de OpenAI GPT-4 a Gemini 1.5 Pro debido a menores costos operativos. El cambio debe realizarse en menos de un sprint (2 semanas) sin alterar el frontend ni los servicios core.
+*   **Tácticas:**
+    *   *Abstract Common Services:* Uso del patrón *Adapter* y *Facade* para la capa de integración de IA.
+    *   *Encapsulate:* El contexto del Agente IA está encapsulado como un Bounded Context independiente.
 
-Cada microservicio de GigU aplicará Clean Architecture para separar reglas de negocio, casos de uso, adaptadores de entrada/salida e infraestructura. El objetivo es que el dominio no dependa del framework, de la base de datos, del routing público, de servicios de mensajería ni de proveedores externos. Esta separación permite mantener reglas de negocio testeables, reemplazar adaptadores de infraestructura sin afectar el núcleo del sistema y desplegar cada microservicio de forma independiente.
+**QA3: Security (Privacidad de Datos)**
+*   **Escenario:** Un cliente malicioso intenta acceder a información bancaria y datos personales sensibles (DNI, historial médico si aplica) de un postulante. El sistema debe denegar el acceso y registrar el intento de brecha.
+*   **Tácticas:**
+    *   *Authenticate / Authorize:* Uso de OAuth 2.0 y JWT con claims específicos por rol.
+    *   *Limit Access / Data Encryption:* Encriptación en reposo y tránsito (TLS).
 
-| Capa | Responsabilidad |
-| --- | --- |
-| Domain Layer | Define entidades, value objects, reglas de negocio, invariantes y eventos de dominio. |
-| Application Layer | Orquesta casos de uso, comandos, consultas y puertos hacia repositorios, clientes externos, publicadores de eventos y storage. |
-| Interface Layer | Expone controladores REST, DTOs de entrada/salida, validaciones de contrato y filtros de seguridad. |
-| Infrastructure Layer | Implementa persistencia en Supabase PostgreSQL, integración con Google Cloud Run, clientes HTTP entre microservicios, adaptadores futuros de Google Cloud Pub/Sub, adaptadores futuros de storage y servicios externos. |
+## 4.2. Strategic-Level Domain-Driven Design
 
-#### API First y contratos explícitos
+Para modelar la complejidad del dominio de Triple B y su Agente IA, se emplean técnicas estratégicas de Domain-Driven Design (DDD).
 
-Las APIs REST de GigU se diseñarán con contratos claros, versionados y documentados. Cada microservicio expondrá endpoints bajo `/api/v1`, utilizando DTOs específicos para evitar exponer directamente entidades del dominio. OpenAPI se utilizará para documentar formalmente la superficie de las APIs HTTP, facilitando comprensión, pruebas y consumo por parte del frontend (OpenAPI Initiative, s. f.).
+### 4.2.1. EventStorming
 
-| Principio             | Aplicación en GigU                                                                        |
-| --------------------- | ----------------------------------------------------------------------------------------- |
-| Contratos versionados | Los endpoints públicos se publicarán bajo `/api/v1`.                                      |
-| DTOs explícitos       | Los modelos internos no serán expuestos directamente en la API.                           |
-| Documentación viva    | Cada microservicio tendrá documentación OpenAPI/Swagger.                                  |
-| Compatibilidad        | Los cambios incompatibles deberán manejarse mediante nuevos DTOs o versiones de endpoint. |
+A continuación se modelan los eventos de dominio (naranja), comandos (azul) y actores que participan en el ciclo de vida de un proyecto freelance mediado por IA.
 
-#### Autonomía de servicios y ownership de datos
+<img src="imgs/cap4/4.2.1. EventStorming.png" alt="EventStorming" title="EventStorming"/>
 
-Cada microservicio será responsable de sus propios datos y reglas. Aunque Supabase PostgreSQL será la base de datos administrada utilizada por el proyecto, la propiedad lógica de los datos se mantendrá separada por esquemas y por límites de microservicio. El enfoque de microservicios propone servicios pequeños, ejecutados en procesos independientes, organizados alrededor de capacidades de negocio y comunicados mediante mecanismos ligeros, usualmente APIs HTTP (Lewis & Fowler, 2014).
+### 4.2.2. Candidate Context Discovery
 
-| Microservicio           | Ownership principal                                                                       |
-| ----------------------- | ----------------------------------------------------------------------------------------- |
-| AccessProfileService    | Usuarios, roles, perfiles, habilidades, portafolio y verificación académica.              |
-| GigMarketplaceService   | Servicios publicados, categorías, filtros, tarifas base y archivos asociados al servicio. |
-| PullEngagementService   | Solicitudes, acuerdos, proyectos, estados, reseñas y sugerencias de precio.               |
-| ChatNotificationService | Conversaciones, mensajes, notificaciones, reportes y tickets.                             |
+De la exploración del dominio, se identifican los siguientes Bounded Contexts principales:
+1.  **AI Orchestration Context:** Encargado de analizar ofertas, adaptar CVs y gestionar postulaciones autónomas. (Core Domain)
+2.  **Marketplace Context:** Gestión del catálogo de servicios y ofertas de trabajo publicadas. (Core Domain)
+3.  **Identity & Profile Context:** Registro, validación académica y gestión del perfil del estudiante/empleador. (Supporting Domain)
+4.  **Contract & Payment Context:** Gestión de acuerdos, contratos inteligentes y flujos de pago. (Generic Domain)
+5.  **Communication Context:** Mensajería interna y notificaciones. (Supporting Domain)
 
-#### Seguridad por diseño
+### 4.2.3. Domain Message Flows
 
-GigU gestionará información de usuarios, perfiles públicos, conversaciones, solicitudes y acuerdos. Por ello, la seguridad se incorporará desde la arquitectura y no como una extensión posterior. Spring Security se utilizará para autenticación, autorización y protección de endpoints en los microservicios Spring Boot (Spring, s. f.-a).
+El siguiente diagrama muestra el flujo asíncrono de mensajes y eventos entre los contextos principales.
 
-| Principio     | Aplicación en GigU                                                                    |
-| ------------- | ------------------------------------------------------------------------------------- |
-| Autenticación | Inicio de sesión con JWT emitido por el backend.                                      |
-| Autorización  | Control de acceso por roles: visitante, freelancer, cliente y administrador.          |
-| Ownership     | Un usuario solo podrá modificar recursos de su propiedad.                             |
-| Auditoría     | Los cambios relevantes de contratación, proyecto, reseña y bloqueo serán registrados. |
-| Validación    | Las entradas serán validadas en API y en casos de uso.                                |
+<img src="imgs/cap4/4.2.3. Domain Message Flows.png" alt="Domain Message Flows" title="Domain Message Flows"/>
 
+### 4.2.4. Bounded Context Canvases
 
+**Context Name:** AI Orchestration Context
+*   **Strategic Classification:** Core Domain. Representa la ventaja competitiva principal de Triple B.
+*   **Domain Roles:** Analizador de ofertas, Adaptador de CVs, Coordinador de agenda.
+*   **Inbound Communication:** Recibe eventos `JobOfferPublished` (Marketplace) y `UserProfileUpdated` (Identity).
+*   **Outbound Communication:** Emite `ApplicationSubmitted` y `InterviewScheduled`.
 
+**Context Name:** Marketplace Context
+*   **Strategic Classification:** Core Domain.
+*   **Domain Roles:** Catálogo de ofertas, Gestión de postulaciones visibles para el empleador.
+*   **Inbound Communication:** Recibe postulaciones del AI Orchestration Context.
+*   **Outbound Communication:** Emite `JobOfferPublished`.
 
-#### Comunicación asíncrona para eventos secundarios
+### 4.2.5. Context Mapping
 
-Las operaciones críticas se resolverán mediante REST cuando el usuario requiera respuesta inmediata. Las operaciones secundarias, como notificaciones internas, eventos de cambio de estado, actualización de vistas derivadas o avisos de nuevos mensajes, se diseñarán para integrarse mediante Google Cloud Pub/Sub como servicio administrado de mensajería asíncrona dentro de GCP. Esta decisión reemplaza la alternativa previa basada en RabbitMQ.
+<img src="imgs/cap4/4.2.5. Context Mapping.png" alt="Context Mapping" title="Context Mapping"/>
 
-La mensajería asíncrona con Google Cloud Pub/Sub quedó **implementada en el Sprint 2** sobre `ChatNotificationService`, mediante entrega push por webhook, y su configuración se externalizó a Cloud Storage en el Sprint 3. El resto de la integración entre microservicios se resuelve mediante APIs REST: `PullEngagementService` notifica a `ChatNotificationService` a través de un cliente HTTP protegido con Circuit Breaker (táctica *Graceful Degradation*). La publicación de los eventos de dominio restantes desde los otros tres microservicios permanece diseñada y no implementada.
+## 4.3. Software Architecture
 
-| Evento | Publicador previsto | Consumidor previsto | Estado |
-| --- | --- | --- | --- |
-| `UserRegistered` | AccessProfileService | ChatNotificationService | Diseñado / no implementado |
-| `FreelancerProfileUpdated` | AccessProfileService | GigMarketplaceService | Diseñado / no implementado |
-| `ServicePublished` | GigMarketplaceService | ChatNotificationService | Diseñado / no implementado |
-| `ProjectRequestCreated` | PullEngagementService | ChatNotificationService | Implementado vía REST (cliente HTTP con Circuit Breaker), no vía Pub/Sub |
-| `ProjectStatusChanged` | PullEngagementService | ChatNotificationService | Implementado vía REST (cliente HTTP con Circuit Breaker), no vía Pub/Sub |
-| `MessageSent` | ChatNotificationService | ChatNotificationService | **Implementado con Google Cloud Pub/Sub** (Sprint 2, entrega push por webhook) |
-| `ReviewCreated` | PullEngagementService | GigMarketplaceService | Diseñado / no implementado |
+Triple B utiliza un modelo C4 para documentar la arquitectura, mostrando la descomposición del sistema a través de múltiples niveles de abstracción.
 
+### 4.3.1. System Landscape Diagram
 
-#### Despliegue reproducible
+Muestra el sistema Triple B en el contexto del ecosistema empresarial y sus interacciones con actores y sistemas externos (LLMs y Pasarelas de Pago).
 
-Los servicios backend se despliegan en Google Cloud Run como microservicios independientes. Cada microservicio cuenta con un workflow manual de GitHub Actions basado en `workflow_dispatch`, lo que permite desplegar un servicio específico sin redeployar todo el backend. Esta decisión reemplaza la alternativa previa basada en Docker Compose sobre una VM de Oracle Cloud Always Free.
+<img src="imgs/cap4/4.3.1. System Landscape Diagram.png" alt="System Landscape Diagram" title="System Landscape Diagram"/>
 
-El despliegue backend actual utiliza Google Cloud Run en el proyecto `dosys-rest-api` y la región `us-central1`. Los workflows autentican contra Google Cloud, configuran `gcloud` y ejecutan `gcloud run deploy --source` para desplegar el código fuente del microservicio correspondiente. Además, el repositorio backend conserva scripts PowerShell en la carpeta `gcloud` como alternativa manual local para despliegues controlados desde una estación de desarrollo.
+### 4.3.2. Context Diagram
 
-| Mecanismo | Estado | Propósito |
-| --- | --- | --- |
-| GitHub Actions manuales por microservicio | Implementado | Desplegar cada microservicio a Google Cloud Run desde GitHub mediante `workflow_dispatch`. |
-| Scripts PowerShell en `/gcloud` | Implementado | Permitir despliegue local manual con `gcloud run deploy --source`. |
-| Docker Compose en VM | Reemplazado | Ya no representa el modelo de despliegue vigente del backend. |
-| Oracle Cloud Always Free | Reemplazado | Ya no representa el hosting vigente del backend. |
+Se detalla la plataforma Triple B como una caja negra, enfocándose en los límites del sistema. *(Similar al Landscape, pero focalizado solo en Triple B).*
 
-### 4.1.2. Approaches Statements: Architectural Styles & Patterns
+<img src="imgs/cap4/4.3.2. Context Diagram.png" alt="Context Diagram" title="Context Diagram"/>
 
-#### Approaches Statements
+### 4.3.3. Container Diagram
 
-| Enfoque | Aplicación en GigU |
-| --- | --- |
-| Domain-Driven Design | Se utilizará para definir bounded contexts alineados con capacidades de negocio: acceso/perfiles, marketplace, contratación/proyectos y chat/notificaciones. |
-| Clean Architecture | Se aplicará dentro de cada microservicio para separar dominio, casos de uso, interfaces e infraestructura. |
-| API First | Se diseñarán contratos REST claros y versionados antes de acoplar el frontend al backend. |
-| Event-Driven Integration | Se utilizan eventos asíncronos para notificaciones y mensajería. La tecnología seleccionada es Google Cloud Pub/Sub, implementada en `ChatNotificationService` (Sprint 2); los eventos de los demás contextos permanecen diseñados. |
-| Cloud Native Deployment | El frontend y la landing page se alojan en Vercel. Los microservicios backend se despliegan en Google Cloud Run mediante workflows manuales de GitHub Actions y scripts locales `gcloud`. |
+Muestra la arquitectura de alto nivel de Triple B, evidenciando los microservicios principales, aplicaciones frontend y bases de datos.
 
-#### Architectural Styles
+<img src="imgs/cap4/4.3.3. Container Diagram.png" alt="Container Diagram" title="Container Diagram"/>
 
-| Estilo arquitectónico | Aplicación en GigU | Justificación |
-| --- | --- | --- |
-| Microservices Architecture | El backend se divide en servicios independientes por capacidad de negocio. | Permite modularidad, despliegue separado, testabilidad y alineación con DDD. |
-| Client-Server | El frontend Vue consume APIs REST expuestas por el backend. | Separa experiencia de usuario de lógica de negocio. |
-| Layered / Clean Architecture | Cada microservicio se organiza en capas internas con dependencias hacia el dominio. | Reduce acoplamiento, facilita pruebas y evita que el dominio dependa de frameworks o proveedores externos. |
-| Event-Driven Architecture | Google Cloud Pub/Sub soporta los eventos secundarios de chat y notificaciones, con entrega push por webhook. | Reduce la dependencia temporal entre servicios; su alcance actual cubre `ChatNotificationService`. |
-| Cloud Native Deployment | La solución se despliega con frontend, backend y base de datos distribuidos en servicios cloud administrados. | Permite acceso público, despliegue independiente por microservicio y validación académica incremental. |
+### 4.3.4. Deployment Diagram
 
-#### Architectural Patterns
+Ilustra cómo los contenedores se mapean a la infraestructura física o virtual en la nube.
 
-| Patrón arquitectónico | Aplicación en GigU |
-| --- | --- |
-| Vercel Rewrites as Public API Routing | Vercel Rewrites actúa como capa pública de enrutamiento para que el frontend consuma rutas relativas `/api/*` y estas sean reenviadas a los microservicios desplegados en Google Cloud Run. |
-| Database per Service lógico | Supabase PostgreSQL contendrá esquemas separados por microservicio. |
-| Managed Messaging with Google Cloud Pub/Sub | Google Cloud Pub/Sub es el servicio de mensajería asíncrona administrada para eventos internos, reemplazando la alternativa previa basada en RabbitMQ. Implementado en `ChatNotificationService` (Sprint 2). |
-| Independent Cloud Run Deployment | Cada microservicio backend se despliega de forma independiente en Google Cloud Run. |
-| Backend for Frontend parcial | Vercel Rewrites expone rutas estables para el frontend sin exponer directamente la topología interna completa. |
-| RESTful API | Los microservicios exponen recursos mediante APIs HTTP documentadas con OpenAPI. |
-| Domain Events | Los cambios relevantes del negocio se modelan como eventos internos; los de chat y notificaciones se publican mediante Google Cloud Pub/Sub. |
-
-#### Servicios externos seleccionados
-
-| Servicio externo | Uso arquitectónico | Estado |
-| --- | --- | --- |
-| Vercel | Alojamiento de la landing page, frontend Vue + Vite y routing público mediante Vercel Rewrites. | Implementado |
-| Google Cloud Run | Alojamiento de los microservicios backend como servicios independientes. | Implementado |
-| GitHub Actions | Despliegue manual por microservicio hacia Google Cloud Run mediante `workflow_dispatch`. | Implementado |
-| Supabase PostgreSQL | Base de datos relacional administrada con esquemas lógicos por microservicio. | Implementado |
-| Google Cloud Pub/Sub | Servicio administrado de mensajería asíncrona para eventos secundarios de chat y notificaciones. | Implementado (Sprint 2) |
-| Supabase Storage | Almacenamiento de binarios de portafolio (bucket `portfolio`) y media de servicios (bucket `gig-media`). | Implementado (Sprint 3) |
-| Google Cloud Storage | Configuración externalizada de la integración EDA/Pub/Sub (`eda-pubsub-config.json`). | Implementado (Sprint 3) |
-
-
-### 4.1.3. Context Diagram
-El diagrama de contexto representa a GigU como sistema de software y muestra cómo se relaciona con sus actores principales. Los usuarios identificados son el visitante, el estudiante universitario freelancer, el cliente o emprendimiento y el administrador de plataforma. Esta vista permite delimitar el alcance del sistema desde una perspectiva externa, mostrando qué responsabilidades de negocio son soportadas por GigU sin exponer todavía su estructura interna.
-
-Desde esta perspectiva, GigU actúa como una plataforma web que permite conocer la propuesta de valor, publicar servicios, buscar freelancers, enviar solicitudes de contratación, gestionar proyectos, intercambiar mensajes, recibir notificaciones y consultar calificaciones. Esta vista responde a la pregunta arquitectónica: **¿qué sistema se está construyendo y quiénes interactúan con él?**
-
-![4.1.3. Context Diagram](imgs/add/4.1.3.ContextDiagram.png)
-
-### 4.1.4. Approach-driven ViewPoints Diagrams
-
-Para comunicar la arquitectura de GigU se utilizan vistas C4 y UML. Las vistas C4 permiten representar el sistema en diferentes niveles de abstracción: contexto, contenedores, componentes, comportamiento en tiempo de ejecución y despliegue físico. Las vistas UML complementan la documentación al mostrar el flujo funcional, el ciclo de vida de entidades y la estructura de clases del dominio.
-
-De acuerdo con el enfoque de vistas arquitectónicas, no se documenta toda la arquitectura en un solo diagrama. Cada vista responde una pregunta distinta: cómo se estructura el sistema en unidades ejecutables, cómo se organizan los componentes internos de los microservicios, cómo se comporta el sistema en tiempo de ejecución, cómo se despliega físicamente en la nube y cómo se estructura la información persistente.
-
-#### ViewPoint 01: Container View
-
-La vista de contenedores muestra las unidades ejecutables principales de GigU. El sistema está compuesto por un frontend web desarrollado con Vue, TypeScript y Vite, desplegado en Vercel; y cuatro microservicios backend desarrollados con Spring Boot y desplegados en Google Cloud Run: `AccessProfileService`, `GigMarketplaceService`, `PullEngagementService` y `ChatNotificationService`.
-
-El frontend consume las APIs backend mediante HTTPS/REST a través de Vercel Rewrites. Los microservicios persisten información en Supabase PostgreSQL, separando los datos por esquemas asociados a cada bounded context. Los archivos de portafolio y media de servicios se almacenan en Supabase Storage. La comunicación asíncrona y los eventos secundarios se soportan mediante Google Cloud Pub/Sub. Además, Google Cloud Storage se utiliza para externalizar configuración relacionada con eventos y Pub/Sub.
-
-Esta vista responde a la pregunta: **¿cuáles son las principales unidades ejecutables del sistema y cómo se comunican?**
-
-![4.1.4. Container View](imgs/add/4.1.4.1.ContainerView.png)
-
-#### ViewPoint 02: Component View - PullEngagementService
-
-El `PullEngagementService` concentra las reglas transaccionales más relevantes del flujo de contratación de GigU. Este microservicio gestiona solicitudes de contratación, aceptación o rechazo de solicitudes, acuerdos, proyectos, cambios de estado, reseñas y sugerencias de precio. Por ello, representa el núcleo del flujo cliente-freelancer después de que un cliente decide solicitar un servicio.
-
-Internamente, el microservicio se organiza siguiendo Clean Architecture. La capa de interfaz expone controladores REST; la capa de aplicación contiene los casos de uso; la capa de dominio contiene agregados, entidades, reglas e invariantes; y la capa de infraestructura implementa persistencia JPA, publicación de eventos hacia Google Cloud Pub/Sub, cliente HTTP interno hacia `ChatNotificationService` y tolerancia a fallos mediante Resilience4j.
-
-Esta vista responde a la pregunta: **¿cómo está estructurado internamente el microservicio que gestiona solicitudes, acuerdos y proyectos?**
-
-![4.1.4. Component View - PullEngagementService](imgs/add/4.1.4.2.ComponentViewPullEngagementService.png)
-
-#### ViewPoint 03: Component View - ChatNotificationService
-
-El `ChatNotificationService` concentra las capacidades de comunicación y coordinación entre usuarios. Este microservicio gestiona conversaciones, mensajes, notificaciones, reportes, tickets, webhook interno, recepción de eventos desde Google Cloud Pub/Sub y entrega de notificaciones en tiempo real mediante WebSocket/STOMP.
-
-La vista muestra la separación entre controladores REST, controladores WebSocket, controladores internos para webhook, casos de uso de aplicación, entidades de dominio y adaptadores de infraestructura. Esta separación permite que la lógica de notificación no dependa directamente del mecanismo de transporte utilizado, ya sea REST, Pub/Sub o WebSocket.
-
-Esta vista responde a la pregunta: **¿cómo está estructurado internamente el microservicio que gestiona chat, notificaciones y comunicación en tiempo real?**
-
-![4.1.4. Component View - ChatNotificationService](imgs/add/4.1.4.3.ComponentViewChatNotificationService.png)
-
-#### ViewPoint 04: Runtime / Behavior View - Request and Real-Time Notification
-
-La vista dinámica describe el comportamiento en tiempo de ejecución para un flujo crítico de GigU: la creación de una solicitud de contratación y la notificación en tiempo real al freelancer. El cliente inicia la solicitud desde el frontend web. Luego, el frontend envía la petición al `PullEngagementService` mediante HTTPS/REST a través de Vercel Rewrites. El microservicio registra la solicitud en Supabase PostgreSQL y solicita al `ChatNotificationService` la creación de una notificación interna mediante un webhook protegido con Resilience4j.
-
-Después, `ChatNotificationService` persiste la notificación en el esquema correspondiente de Supabase PostgreSQL y la entrega al freelancer mediante WebSocket/STOMP. Además, el flujo se complementa con Google Cloud Pub/Sub para eventos asíncronos secundarios, permitiendo desacoplar operaciones de notificación y procesamiento de eventos.
-
-Esta vista responde a la pregunta: **¿cómo interactúan los contenedores del sistema durante un flujo real de contratación y notificación?**
-
-![4.1.4. Runtime Request Notification View](imgs/add/4.1.4.4.RuntimeRequestNotificationView.png)
-
-#### ViewPoint 05: Activity Diagram - contratación de servicio
-
-El diagrama de actividad describe el flujo funcional de contratación de un servicio freelance dentro de GigU. El proceso inicia cuando el cliente busca freelancers o servicios, revisa perfiles, portafolios, tarifas y calificaciones, y luego envía una solicitud de contratación. Posteriormente, el freelancer revisa la solicitud y puede aceptarla o rechazarla.
-
-Si la solicitud es aceptada, el sistema genera un acuerdo preliminar, permite revisar condiciones y crea un proyecto activo cuando ambas partes confirman. Luego, el freelancer desarrolla el servicio, marca la entrega como finalizada, el cliente revisa el resultado y puede aprobarlo o solicitar ajustes. Finalmente, el sistema marca el proyecto como completado y permite registrar la calificación.
-
-Esta vista responde a la pregunta: **¿cuál es el flujo funcional completo de contratación desde el punto de vista del negocio?**
-
-![4.1.4. Activity Hiring Flow](imgs/add/4.1.4.ActivityHiringFlow.png)
-
-#### ViewPoint 06: State Diagram - ciclo de vida de proyecto
-
-El diagrama de estado muestra el ciclo de vida de un proyecto dentro de GigU. El flujo inicia en el estado `Requested`, cuando el cliente envía una solicitud de contratación. A partir de allí, el freelancer puede aceptar o rechazar la solicitud. Si la acepta, el proyecto puede pasar por revisión de condiciones, confirmación de acuerdo, ejecución, entrega, solicitud de revisión, completado, reseñado y cerrado.
-
-Esta vista permite verificar que los estados principales del proyecto estén controlados y que las transiciones dependan de acciones explícitas del cliente o del freelancer. También ayuda a evitar estados inválidos, como completar un proyecto que no fue entregado o registrar una reseña antes de finalizar el trabajo.
-
-Esta vista responde a la pregunta: **¿qué estados atraviesa un proyecto y qué eventos provocan sus transiciones?**
-
-![4.1.4. State Project Lifecycle Overview](imgs/add/4.1.4.StateProjectLifecycleOverview.png)
-
-#### ViewPoint 07: Domain Class Diagram
-
-El diagrama de clases de dominio muestra las entidades principales del modelo de GigU y sus relaciones. Entre las entidades más relevantes se encuentran `User`, `FreelancerProfile`, `Skill`, `PortfolioItem`, `ServiceOffering`, `ProjectRequest`, `Agreement`, `Project`, `Review`, `Conversation`, `Message`, `PriceSuggestion` y `Money`.
-
-Esta vista permite observar cómo se estructuran los conceptos principales del dominio freelance universitario. El modelo separa perfiles, servicios publicados, solicitudes, acuerdos, proyectos, reseñas y conversaciones. Además, permite ubicar qué entidades pertenecen a cada bounded context y qué relaciones conceptuales existen entre ellas.
-
-Esta vista responde a la pregunta: **¿cuáles son las entidades principales del dominio y cómo se relacionan?**
-
-![4.1.4. Domain Class Diagram](imgs/add/4.1.4.DomainClassDiagram.png)
-
-#### ViewPoint 08: Physical / Deployment View - Cloud Deployment Architecture
-
-La vista física o de despliegue muestra cómo los contenedores de software se ubican sobre infraestructura cloud real. El frontend web se aloja en Vercel y utiliza Vercel Rewrites para enrutar las llamadas `/api/*` hacia los microservicios backend desplegados en Google Cloud Run. Cada microservicio se ejecuta de forma independiente como servicio administrado.
-
-La persistencia relacional se resuelve mediante Supabase PostgreSQL, organizado por esquemas asociados a bounded contexts. El almacenamiento de archivos se gestiona mediante Supabase Storage para portafolios y media de servicios. La comunicación asíncrona se implementa mediante Google Cloud Pub/Sub y la configuración externa de eventos se aloja en Google Cloud Storage. Finalmente, GitHub Actions automatiza los procesos de construcción y despliegue hacia Vercel y Google Cloud Run.
-
-Esta vista responde a la pregunta: **¿dónde se ejecuta físicamente cada parte del sistema y mediante qué infraestructura cloud se comunican?**
-
-![4.1.4. Physical Deployment View](imgs/add/4.1.4.8.PhysicalDeploymentView.png)
-
-### 4.1.5. Relational/Non-Relational Database Diagram
-
-GigU utilizará una base de datos relacional administrada con PostgreSQL en Supabase. La separación lógica se realizará mediante esquemas por microservicio para preservar ownership de datos y evitar acoplamiento directo entre contextos. Las relaciones internas de cada esquema se podrán implementar con claves foráneas, mientras que las referencias hacia datos de otros microservicios se representarán mediante identificadores externos controlados por contrato.
-
-| Esquema                    | Microservicio propietario | Tablas principales                                                                                           |
-| -------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `access_profile_schema`    | AccessProfileService      | `users`, `roles`, `user_roles`, `freelancer_profiles`, `skills`, `freelancer_skills`, `portfolio_items`      |
-| `marketplace_schema`       | GigMarketplaceService     | `service_categories`, `service_offerings`, `service_media`                                                   |
-| `engagement_schema`        | PullEngagementService     | `project_requests`, `agreements`, `projects`, `project_status_history`, `reviews`, `price_suggestions`       |
-| `chat_notification_schema` | ChatNotificationService   | `conversations`, `conversation_participants`, `messages`, `notifications`, `user_reports`, `support_tickets` |
-
-![4.1.5.RelationalNonRelationalDatabaseDiagram](imgs/add/4.1.5.RelationalNonRelationalDatabaseDiagram.png)
-
-### 4.1.6. Design Patterns
-
-| Design Pattern        | Aplicación en GigU                                                                                                                                  | Beneficio arquitectónico                                                     |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Repository Pattern    | Cada microservicio tendrá repositorios para abstraer acceso a PostgreSQL.                                                                           | Reduce acoplamiento con persistencia y facilita pruebas.                     |
-| DTO Pattern           | Los controllers recibirán y devolverán DTOs, no entidades de dominio.                                                                               | Protege el modelo interno y estabiliza contratos.                            |
-| Mapper Pattern        | Se convertirán DTOs, comandos, entidades y respuestas mediante mappers.                                                                             | Evita lógica de transformación dispersa.                                     |
-| Factory Method        | Se crearán objetos complejos como `ProjectRequest`, `Agreement`, `Project` y `ServiceOffering` mediante fábricas o métodos de creación controlados. | Centraliza invariantes de construcción.                                      |
-| Strategy Pattern      | La sugerencia de precios podrá usar estrategias por tipo de servicio, complejidad, urgencia o experiencia.                                          | Permite extender reglas de pricing sin modificar el caso de uso principal.   |
-| Specification Pattern | Los filtros de búsqueda podrán componerse por habilidad, categoría, precio, disponibilidad y reputación.                                            | Evita consultas rígidas y mejora mantenibilidad.                             |
-| Domain Events         | Eventos como `ProjectRequestCreated`, `ProjectStatusChanged`, `ReviewCreated` y `MessageSent` representarán cambios relevantes del dominio.         | Desacopla microservicios y facilita reacciones asíncronas.                   |
-| Outbox Pattern | Los eventos críticos podrán registrarse junto con la transacción local antes de publicarse en Google Cloud Pub/Sub cuando la mensajería asíncrona sea implementada. | Reduce riesgo de pérdida de eventos y permite reintentos controlados sin bloquear operaciones principales. |
-| Adapter Pattern | Integraciones con Supabase PostgreSQL, Google Cloud Pub/Sub, storage pendiente y clientes HTTP entre microservicios se encapsularán como adaptadores. | Mantiene el dominio independiente de proveedores externos y facilita sustitución de infraestructura. |
-| Dependency Injection  | Los casos de uso dependerán de interfaces y no de implementaciones concretas.                                                                       | Facilita pruebas unitarias y sustitución de infraestructura.                 |
-| Public API Routing    | Vercel Rewrites centraliza el ingreso HTTP `/api/*` y lo enruta hacia los microservicios en Cloud Run.                                              | Oculta la topología interna y simplifica el consumo del frontend.            |
-| CQRS Lite             | Se separarán comandos y queries en casos de uso relevantes, como búsqueda, contratación y mensajería.                                               | Mejora claridad de responsabilidades sin introducir complejidad innecesaria. |
-
-### 4.1.7. Tactics
-
-Las tácticas seleccionadas responden a los atributos de calidad más relevantes para GigU: seguridad, modificabilidad, interoperabilidad, disponibilidad, performance y capacidad de prueba. El material del curso clasifica tácticas para disponibilidad, interoperabilidad, modificabilidad, performance, seguridad, capacidad de prueba y usabilidad; por ello, la selección se mantiene enfocada en los atributos que más influyen en la arquitectura del sistema.
-
-| Atributo de calidad | Táctica                         | Aplicación en GigU                                                                                                                                                                                                             |
-| ------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Seguridad           | Authenticate Actors             | Los usuarios se autentican mediante Spring Security y JWT.                                                                                                                                                                     |
-| Seguridad           | Authorize Actors                | Los endpoints validan roles y ownership antes de permitir operaciones sobre perfiles, servicios, solicitudes, proyectos, reseñas o conversaciones.                                                                             |
-| Seguridad           | Maintain Audit Trail            | Se registran acciones relevantes: creación de solicitud, aceptación/rechazo, cambio de estado de proyecto, calificación, bloqueo y reporte.                                                                                    |
-| Seguridad           | Validate Inputs                 | Los DTOs y casos de uso validan entradas antes de ejecutar reglas de negocio.                                                                                                                                                  |
-| Modificabilidad     | Increase Semantic Coherence     | Cada microservicio agrupa responsabilidades de un bounded context específico.                                                                                                                                                  |
-| Modificabilidad     | Encapsulate                     | Reglas de perfil, marketplace, contratación y chat se encapsulan en sus respectivos servicios.                                                                                                                                 |
-| Modificabilidad     | Restrict Dependencies           | Los microservicios no consultan directamente tablas de otros contextos; usan IDs externos, APIs o eventos.                                                                                                                     |
-| Modificabilidad     | Use an Intermediary             | Google Cloud Pub/Sub desacopla los eventos secundarios de chat y notificaciones entre microservicios.                                                                                                                          |
-| Interoperabilidad   | Tailor Interface                | Cada microservicio expone contratos REST específicos para su contexto.                                                                                                                                                         |
-| Interoperabilidad   | Orchestrate                     | PullEngagementService coordina el flujo de solicitud, acuerdo, proyecto, entrega y reseña.                                                                                                                                     |
-| Interoperabilidad   | Maintain Contract Documentation | OpenAPI documenta endpoints, requests, responses y errores esperados.                                                                                                                                                          |
-| Disponibilidad      | Ping/Echo                       | Cada microservicio expondrá endpoint de health check para validar disponibilidad.                                                                                                                                              |
-| Disponibilidad      | Exception Handling              | Fallas de notificación, correo o evento no deben interrumpir la operación principal de contratación.                                                                                                                           |
-| Disponibilidad      | Retry                           | Publicación de eventos y envío de notificaciones podrán reintentarse de forma controlada.                                                                                                                                      |
-| Disponibilidad      | Graceful Degradation            | Si falla la notificación externa, el proyecto y la contratación seguirán funcionando y se mantendrá notificación interna.                                                                                                      |
-| Performance         | Manage Resources                | Las búsquedas usarán paginación, filtros e índices en campos como habilidad, categoría, estado, precio y fecha.                                                                                                                |
-| Performance         | Reduce Overhead                 | El frontend consumirá DTOs ligeros en listados de servicios, perfiles y conversaciones.                                                                                                                                        |
-| Performance         | Asynchronous Processing         | Notificaciones y eventos secundarios se procesarán fuera del flujo principal.                                                                                                                                                  |
-| Capacidad de prueba | Specialized Interfaces          | Los casos de uso dependerán de interfaces, permitiendo mocks en pruebas unitarias.                                                                                                                                             |
-| Capacidad de prueba | Record/Playback                 | Los eventos y respuestas externas podrán simularse en pruebas automatizadas.                                                                                                                                                   |
-| Capacidad de prueba | Test with Real Dependencies     | Testcontainers permitirá ejecutar pruebas de integración con servicios reales en contenedores. Spring Boot documenta Testcontainers como mecanismo para levantar servicios reales durante pruebas de integración (Spring, s. f.-b). |
-| Usabilidad          | Feedback                        | El sistema mostrará confirmaciones para registro, publicación, contratación, envío de mensaje, cambio de estado y calificación.                                                                                                |
-| Usabilidad          | Maintain Task Model             | Los flujos del sistema seguirán las tareas reales identificadas: publicar servicios, cotizar precios, negociar, establecer acuerdos y comunicarse dentro de la plataforma (GigU, 2026).                                       |
-
-## 4.2. Architectural Drivers
-
-La arquitectura de GigU se diseña siguiendo el método Attribute-Driven Design, debido a que el Product Architecture Design del proyecto exige aplicar ADD v3 para relacionar el propósito de diseño, la funcionalidad principal, los atributos de calidad, las restricciones y las preocupaciones arquitectónicas con decisiones concretas de arquitectura. El project statement establece que la solución debe evidenciar una arquitectura empresarial basada en microservicios, Domain-Driven Design y cloud native architecture, además de un RESTful API accesible desde internet.
-
-ADD considera como entradas principales del diseño el design purpose, primary functionality, quality attributes, architectural concerns y constraints. A partir de estas entradas, el diseño se ejecuta mediante iteraciones donde se seleccionan drivers, se refinan elementos del sistema, se eligen conceptos de diseño, se asignan responsabilidades, se definen interfaces y se registran decisiones arquitectónicas.
-
-| Driver            | Prioridad  | Justificación                                                                                                                                               |
-| ----------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Modificabilidad   | Alta       | GigU debe poder evolucionar por nuevas categorías de servicios, reglas de contratación, flujos de proyectos, reputación, pricing y funcionalidades de chat. |
-| Seguridad         | Alta       | La plataforma gestiona cuentas, perfiles, portafolios, conversaciones, solicitudes, acuerdos, reseñas y reportes.                                           |
-| Testabilidad      | Alta       | El curso exige evidencias de testing, implementación de microservicios y validación técnica por sprint.                                                     |
-| Interoperabilidad | Media-Alta | El sistema integra frontend, gateway, microservicios, base de datos administrada, storage y mensajería asíncrona.                                           |
-| Disponibilidad    | Media      | La plataforma debe estar accesible durante la validación académica, considerando las limitaciones de servicios gratuitos.                                   |
-| Performance       | Media      | La búsqueda de servicios, perfiles, mensajes y proyectos debe responder de forma fluida para el volumen esperado de validación académica.                   |
-
-### 4.2.1. Design Purpose
-
-El propósito del diseño arquitectónico de GigU es definir una estructura técnica coherente, modular y verificable para implementar una plataforma web que conecte estudiantes universitarios freelancers con clientes y emprendimientos. La arquitectura debe permitir que los estudiantes publiquen servicios, construyan reputación profesional, gestionen proyectos y se comuniquen con clientes dentro de un entorno formal, seguro y alineado a sus habilidades.
-
-GigU será diseñado como una aplicación empresarial basada en microservicios, aplicando Domain-Driven Design para separar capacidades de negocio y Clean Architecture dentro de cada microservicio. El frontend y la landing page se despliegan en Vercel, el routing público de la API se resuelve mediante Vercel Rewrites, los microservicios backend se ejecutan en Google Cloud Run y la base de datos principal se gestiona mediante Supabase PostgreSQL.
-
-La arquitectura anterior basada en Caddy, RabbitMQ, Docker Compose y Oracle Cloud Always Free fue reemplazada por una estrategia cloud native alineada con el estado actual del desarrollo. El deployment backend cuenta con workflows manuales de GitHub Actions por microservicio y con scripts PowerShell locales en la carpeta `gcloud`. Google Cloud Pub/Sub quedó implementado como servicio de mensajería asíncrona administrada en `ChatNotificationService` (Sprint 2), y la capacidad de storage se implementó sobre Supabase Storage mediante un puerto/adaptador hexagonal (Sprint 3).
-
-| Categoría | Detalle |
-| --- | --- |
-| Tipo de sistema | Plataforma web de servicios freelance universitarios. |
-| Propósito de negocio | Facilitar que estudiantes universitarios consigan experiencia profesional e ingresos mediante servicios freelance formales y verificables. |
-| Propósito arquitectónico | Definir una arquitectura modular, desplegable, testeable y preparada para evolución incremental mediante microservicios. |
-| Enfoque de arquitectura | Microservices Architecture, Domain-Driven Design y Clean Architecture. |
-| Modelo de despliegue | Landing page y frontend en Vercel; routing público mediante Vercel Rewrites; backend en Google Cloud Run; base de datos en Supabase PostgreSQL. |
-| Deployment backend | Workflows manuales de GitHub Actions por microservicio y scripts PowerShell locales en `/gcloud`. |
-| Mensajería asíncrona | Google Cloud Pub/Sub, implementado en `ChatNotificationService` con entrega push por webhook (Sprint 2). |
-| Storage | Supabase Storage mediante `StoragePort` + `SupabaseStorageAdapter`; buckets `portfolio` y `gig-media` (Sprint 3). |
-| Resiliencia | Circuit Breaker (Resilience4j) en las integraciones hacia Supabase Storage y hacia `ChatNotificationService`. |
-| Alcance funcional principal | Perfiles, portafolios, publicación de servicios, búsqueda, solicitudes, acuerdos, proyectos, chat, notificaciones y reseñas. |
-| Alcance técnico principal | RESTful API documentada, microservicios independientes, persistencia relacional por ownership lógico, despliegue independiente en Cloud Run, CI/CD manual con GitHub Actions y mensajería asíncrona sobre Pub/Sub. |
-| Limitación inicial | El sistema modelará acuerdos y estados de pago para validación académica; la integración con una pasarela de pagos real queda fuera del primer alcance implementable. |
-
-La decisión de utilizar Google Cloud Run responde a la necesidad de desplegar microservicios backend de forma independiente, pública y verificable sin administrar una máquina virtual propia. Vercel Rewrites reemplaza a Caddy como mecanismo de routing público para el frontend, permitiendo que las rutas relativas `/api/*` sean reenviadas hacia los servicios backend correspondientes. GitHub Actions permite ejecutar despliegues manuales por microservicio mediante `workflow_dispatch`, manteniendo control sobre cuándo se despliega cada servicio.
-
-### 4.2.2. Primary Functionality: Primary User Stories
-
-Las funcionalidades primarias seleccionadas son aquellas que afectan directamente la estructura de la aplicación, la asignación de responsabilidades entre microservicios y los principales escenarios de calidad. No se listan todas las historias del Product Backlog, sino aquellas que influyen de forma significativa en las decisiones arquitectónicas del sistema.
-
-Para mantener trazabilidad entre los drivers arquitectónicos y el Product Backlog, cada Primary User Story se relaciona con las User Stories originales del Capítulo III. Asimismo, la funcionalidad de portafolio se integra dentro de la gestión del perfil freelancer, debido a que no constituye un flujo arquitectónico independiente, sino una extensión natural del perfil público del estudiante.
-
-| ID | Primary User Story | Descripción | User Stories relacionadas | Impacto arquitectónico | Microservicio principal |
-| ------ | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| PUS-01 | Gestión de cuenta y acceso | Como usuario, deseo registrarme, iniciar sesión y recuperar mi acceso para utilizar de forma segura las funcionalidades de GigU. | US03, US04, US05, US06, US07 | Requiere autenticación, autorización, roles, JWT, recuperación de credenciales y control de ownership. | AccessProfileService |
-| PUS-02 | Gestión de perfil y portafolio freelancer | Como estudiante freelancer, deseo crear y actualizar mi perfil profesional, registrar habilidades y mostrar evidencias de trabajos previos para generar confianza ante clientes potenciales. | US15, US16, US18, US19 | Define el bounded context de perfiles, habilidades, descripción profesional, actualización de información pública e integración con storage para evidencias de portafolio. | AccessProfileService |
-| PUS-03 | Publicación de servicios | Como estudiante freelancer, deseo publicar servicios con descripción, categoría, tarifa, archivos y tiempo estimado para ofrecerlos en la plataforma. | US17, US20, US21, US22, US23, US24 | Define el núcleo del marketplace, la persistencia de servicios publicados, la gestión de tarifas, plazos, archivos asociados y estados de publicación. | GigMarketplaceService |
-| PUS-04 | Búsqueda y filtrado de servicios | Como cliente, deseo buscar servicios por palabra clave, habilidad, precio, experiencia, relevancia o calificación para encontrar freelancers adecuados. | US25, US26, US27, US28, US29 | Requiere consultas optimizadas, filtros combinables, paginación, ordenamiento e índices sobre campos frecuentes de búsqueda. | GigMarketplaceService |
-| PUS-05 | Solicitud de contratación | Como cliente, deseo enviar una solicitud de contratación a un freelancer y consultar el historial de contrataciones realizadas para iniciar y revisar posibles proyectos. | US30, US31, US33 | Inicia el flujo transaccional de engagement, registra solicitudes, confirma contrataciones y genera eventos de notificación. | PullEngagementService |
-| PUS-06 | Negociación y acuerdo | Como cliente y freelancer, deseamos aceptar, rechazar o gestionar solicitudes de contrato para formalizar condiciones de trabajo. | US32, US35 | Requiere modelar solicitud, aceptación, rechazo, acuerdo, precio, plazo, estados y reglas de transición entre las partes. | PullEngagementService |
-| PUS-07 | Gestión de proyecto | Como freelancer o cliente, deseo visualizar proyectos activos, actualizar su estado y marcar proyectos como finalizados. | US34, US36, US37 | Requiere ciclo de vida de proyecto, historial de estados, reglas de transición, control de finalización y visibilidad del avance. | PullEngagementService |
-| PUS-08 | Chat de coordinación | Como cliente o freelancer, deseo comunicarme dentro de la plataforma, consultar conversaciones, recibir notificaciones y reportar problemas desde el chat. | US42, US43, US44, US45 | Requiere conversaciones, mensajes, historial, notificaciones, reportes y comunicación en tiempo real mediante WebSocket o Server-Sent Events. | ChatNotificationService |
-| PUS-09 | Calificaciones y reseñas | Como cliente o freelancer, deseo calificar a la contraparte, editar calificaciones permitidas y consultar reputación visible en perfiles. | US38, US39, US40, US41 | Requiere reseñas vinculadas a proyectos finalizados, reglas de edición, cálculo de reputación y actualización de métricas visibles. | PullEngagementService |
-| PUS-10 | Reportes y soporte | Como usuario, deseo consultar ayuda, buscar preguntas frecuentes, enviar tickets de soporte y reportar conductas inadecuadas. | US12, US13, US14, US45 | Requiere FAQ, búsqueda de ayuda, tickets, reportes, moderación y soporte administrativo. | ChatNotificationService |
-| PUS-11 | Sugerencia de precio | Como freelancer, deseo recibir una sugerencia de precio, ajustarla manualmente, revisar su cálculo y compararla con servicios similares. | US46, US47, US48, US49, US50 | Requiere reglas de pricing desacopladas, historial de precios, explicación del cálculo y capacidad de evolución del algoritmo. | PullEngagementService |
-
-### 4.2.3. Quality Attribute Scenarios
-
-Los escenarios de atributos de calidad se redactan como requisitos medibles. El project statement indica que un escenario de atributo de calidad debe considerar fuente de estímulo, estímulo, medioambiente, artefacto, respuesta y medida de respuesta.
-
-| ID    | Atributo de calidad | Fuente del estímulo                           | Estímulo                                                                                   | Ambiente                                            | Artefacto                                                            | Respuesta                                                                                                                                       | Medida de respuesta                                                                                                                                                         |
-| ----- | ------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| QA-01 | Seguridad           | Usuario no autenticado o usuario sin permisos | Intenta crear, modificar o consultar un recurso protegido                                  | Operación normal del sistema                        | Vercel Rewrites, microservicio correspondiente, endpoints REST       | El sistema valida JWT, rol y ownership antes de ejecutar el caso de uso; si la solicitud no cumple, la rechaza y registra el intento relevante. | El 100% de endpoints protegidos rechaza solicitudes sin token válido o sin permisos; las operaciones críticas quedan registradas en auditoría.                              |
-| QA-02 | Modificabilidad     | Equipo de desarrollo                          | Solicita agregar una nueva categoría de servicio o una nueva regla de sugerencia de precio | Sprint de evolución funcional                       | GigMarketplaceService y PullEngagementService                        | El cambio se implementa dentro del microservicio dueño del contexto sin modificar otros microservicios ni romper contratos existentes.          | El cambio afecta como máximo un microservicio principal y sus pruebas asociadas; las APIs existentes mantienen compatibilidad.                                              |
-| QA-03 | Testabilidad        | Desarrollador backend                         | Agrega o modifica una regla de negocio de solicitud, acuerdo, proyecto o reseña            | Desarrollo local o pipeline de integración continua | Domain Layer y Application Layer del microservicio afectado          | El sistema permite probar la regla mediante pruebas unitarias y pruebas de integración del endpoint correspondiente.                            | Las reglas críticas del dominio tienen pruebas unitarias; los endpoints principales tienen pruebas de integración automatizadas.                                            |
-| QA-04 | Interoperabilidad | Frontend web o consumidor API | Consume funcionalidades de perfil, marketplace, engagement o chat | Operación normal desde navegador | RESTful API, Vercel Rewrites y microservicios backend en Google Cloud Run | El sistema expone contratos HTTP consistentes, versionados y documentados con OpenAPI; Vercel Rewrites enruta las solicitudes `/api/*` hacia los servicios Cloud Run correspondientes. | El 100% de endpoints públicos principales se documenta con OpenAPI y responde usando DTOs JSON estandarizados. |
-| QA-05 | Disponibilidad | Usuario final o sistema de monitoreo | Un microservicio o componente secundario falla temporalmente | Validación académica en servicios cloud administrados | Frontend en Vercel, microservicios en Google Cloud Run y Supabase PostgreSQL | El sistema mantiene disponibles las funcionalidades no dependientes del componente fallido y permite redeploy independiente del microservicio afectado mediante GitHub Actions o scripts `gcloud`. | Las operaciones críticas de perfil, marketplace y engagement no dependen de mensajería asíncrona pendiente; cada microservicio puede ser redesplegado de forma independiente. |
-| QA-06 | Performance         | Cliente o freelancer                          | Realiza búsqueda de servicios, perfiles o conversaciones                                   | Dataset de validación académica y operación normal  | GigMarketplaceService, ChatNotificationService y Supabase PostgreSQL | El sistema responde con paginación, filtros e índices en campos de búsqueda frecuentes.                                                         | Las consultas principales devuelven resultados paginados y evitan cargar datasets completos en una sola respuesta.                                                          |
-| QA-07 | Usabilidad          | Cliente o freelancer                          | Completa un flujo de publicación, solicitud, acuerdo, chat o calificación                  | Uso normal desde navegador web                      | Frontend Web App y API backend                                       | El sistema entrega confirmaciones claras y mantiene el estado visible de servicios, solicitudes, proyectos y mensajes.                          | Cada operación principal retorna estado explícito de éxito, error o pendiente; el usuario puede reconocer el estado actual de sus proyectos y conversaciones.               |
-
-### 4.2.4. Constraints
-
-Las restricciones representan decisiones con bajo o nulo grado de libertad para la arquitectura. Estas limitan las opciones de implementación y deben ser consideradas como drivers arquitectónicos.
-
-| ID | Restricción | Tipo | Impacto arquitectónico |
-| --- | --- | --- | --- |
-| CON-01 | El frontend se desarrollará con Vue + Vite y se desplegará en Vercel. | Tecnológica / despliegue | Se separa el frontend del backend y se consume la API mediante rutas públicas estables. |
-| CON-02 | El backend se desarrollará con Java y Spring Boot. | Tecnológica | Los microservicios, controladores REST, seguridad y pruebas backend se implementan en el ecosistema Spring. |
-| CON-03 | Cada microservicio aplicará Clean Architecture. | Arquitectónica | Las reglas de dominio no dependerán de frameworks, persistencia, routing público o servicios externos. |
-| CON-04 | El backend se organizará en cuatro microservicios principales: AccessProfileService, GigMarketplaceService, PullEngagementService y ChatNotificationService. | Arquitectónica | Se evita sobredimensionar la arquitectura y se mantiene una separación coherente por bounded context. |
-| CON-05 | Vercel Rewrites funcionará como routing público de API para el frontend. | Infraestructura | Las rutas `/api/*` se centralizan desde el frontend sin mantener un gateway propio con Caddy. |
-| CON-06 | Los microservicios backend se desplegarán en Google Cloud Run. | Despliegue | Cada microservicio puede desplegarse y validarse de forma independiente. |
-| CON-07 | La persistencia principal se realizará con Supabase PostgreSQL. | Datos | Se adopta una base relacional administrada con esquemas lógicos por microservicio. |
-| CON-08 | El storage de portafolio, imágenes y adjuntos se implementa sobre Supabase Storage mediante un puerto/adaptador hexagonal. | Datos / almacenamiento | Los binarios se almacenan fuera de la base relacional; el dominio permanece agnóstico al proveedor. |
-| CON-09 | La autenticación y autorización se implementarán con Spring Security y JWT. | Seguridad | Cada microservicio validará acceso a operaciones protegidas y ownership de recursos. |
-| CON-10 | La mensajería asíncrona se implementa sobre Google Cloud Pub/Sub con entrega push por webhook. | Integración | Los eventos de chat y notificaciones se procesan fuera del flujo principal; la notificación entre `pulls` y `chat` se resuelve por REST con Circuit Breaker. |
-| CON-11 | Las APIs REST serán documentadas con OpenAPI/Swagger. | Documentación / interoperabilidad | Se asegura trazabilidad de contratos, endpoints y DTOs. |
-| CON-12 | El proyecto deberá mantenerse en servicios gratuitos o free tier durante la validación académica. | Económica / despliegue | Se priorizan Vercel, Google Cloud Run, Supabase y herramientas cloud administradas compatibles con validación académica. |
-| CON-13 | No se integrará una pasarela de pagos real en la primera versión implementable. | Alcance | El sistema modelará acuerdos y estados relacionados al pago, pero la integración financiera real queda como extensión futura. |
-| CON-14 | El equipo deberá producir evidencias de implementación, testing, documentación de microservicios y despliegue. | Académica | La arquitectura debe ser demostrable mediante repositorio, pruebas, Swagger, GitHub Actions, Cloud Run y ejecución cloud. |
-
-Supabase se mantiene como plataforma administrada de PostgreSQL para reducir carga operativa en el equipo. El despliegue backend se realiza en Google Cloud Run y se automatiza mediante workflows manuales de GitHub Actions por microservicio. La mensajería con Google Cloud Pub/Sub y la capacidad de storage quedan documentadas como decisiones o capacidades pendientes, no como evidencia implementada.
-
-### 4.2.5. Architectural Concerns
-
-| ID     | Architectural Concern                     | Descripción                                                                                                                                          | Decisión relacionada                                                                                           |
-| ------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| CRN-01 | Delimitación correcta de bounded contexts | Existe riesgo de mezclar responsabilidades de perfil, marketplace, contratación y chat en un mismo módulo.                                           | Separar el backend en cuatro microservicios alineados al dominio.                                              |
-| CRN-02 | Evitar sobrearquitectura                  | Una cantidad excesiva de microservicios aumentaría la complejidad operativa y reduciría la probabilidad de completar el proyecto.                    | Mantener cuatro microservicios principales y evitar servicios adicionales no esenciales.                       |
-| CRN-03 | Consistencia entre servicios              | Las solicitudes, proyectos, reseñas y notificaciones cruzan límites de microservicios.                                                               | Usar identificadores externos, contratos REST verificados con Spring Cloud Contract y eventos Pub/Sub.        |
-| CRN-04 | Seguridad y ownership                     | Los usuarios deben acceder solo a recursos propios o permitidos por rol.                                                                             | Implementar Spring Security, JWT, roles y validación de ownership en casos de uso.                             |
-| CRN-05 | Gestión del chat                          | El chat debe funcionar sin depender de servicios externos pagos ni introducir complejidad excesiva.                                                  | Implementar ChatNotificationService con REST para historial y WebSocket/SSE para actualización en tiempo real. |
-| CRN-06 | Persistencia relacional por microservicio | Usar una sola base administrada podría generar acoplamiento si los servicios comparten tablas indiscriminadamente.                                   | Separar esquemas y ownership lógico por microservicio en Supabase PostgreSQL.                                  |
-| CRN-07 | Despliegue gratuito sostenible            | El backend debe estar disponible para validación sin depender de plataformas que duermen servicios o expiran bases de datos rápidamente.             | Alojar el backend en Google Cloud Run (free tier) y delegar la base de datos a Supabase.                       |
-| CRN-08 | Testabilidad de reglas de negocio         | Las reglas de contratación, estados, reseñas y pricing deben ser comprobables sin levantar todo el sistema.                                          | Aplicar Clean Architecture, interfaces, mocks, pruebas unitarias y pruebas de integración.                     |
-| CRN-09 | Trazabilidad para evaluación académica    | El curso exige evidencias de arquitectura, testing, microservicios, despliegue y documentación.                                                      | Usar GitHub, GitHub Actions, Swagger, commits por microservicio y documentación técnica por sprint.            |
-| CRN-10 | Evolución hacia pagos reales              | La solución contempla acuerdos y pagos seguros como parte del dominio, pero la integración con pasarelas reales puede aumentar riesgo y complejidad. | Modelar estados de acuerdo/pago en la primera versión y dejar pasarela real como extensión posterior.          |
-| CRN-11 | Dependencia de proveedores externos       | Vercel, Google Cloud y Supabase facilitan el despliegue, pero no deben contaminar el dominio.                                                        | Encapsular integraciones en Infrastructure Layer mediante adapters.                                            |
-| CRN-12 | Performance en búsquedas                  | La búsqueda de servicios y freelancers puede degradarse al crecer el catálogo.                                                                       | Usar paginación, filtros, índices y DTOs ligeros en GigMarketplaceService.                                     |
-
-#### Resumen de drivers por decisión arquitectónica
-
-| Decisión arquitectónica                       | Drivers que satisface                                                         |
-| --------------------------------------------- | ----------------------------------------------------------------------------- |
-| Microservicios por bounded context            | Modificabilidad, testabilidad, escalabilidad organizacional y mantenibilidad. |
-| Clean Architecture por microservicio          | Testabilidad, modificabilidad e independencia tecnológica.                    |
-| Vercel Rewrites como routing público de API   | Interoperabilidad, simplicidad operativa y disponibilidad.                    |
-| Supabase PostgreSQL con esquemas por servicio | Persistencia relacional, ownership de datos y mantenibilidad.                 |
-| Google Cloud Pub/Sub para eventos internos    | Modificabilidad, disponibilidad parcial y desacoplamiento.                    |
-| Spring Security + JWT                         | Seguridad, control de acceso y auditoría.                                     |
-| Google Cloud Run + GitHub Actions             | Despliegue reproducible e independiente por microservicio, evidencia cloud.   |
-| OpenAPI/Swagger                               | Interoperabilidad, documentación, pruebas manuales y automatizadas.           |
-| GitHub Actions                                | Testabilidad, trazabilidad y evidencia de calidad.                            |
-
-## 4.3. ADD Iterations
-
-El diseño arquitectónico de GigU se desarrolla aplicando ADD v3 sobre los dos microservicios de mayor impacto del backend: `PullEngagementService` (Iteración 1) y `GigMarketplaceService` (Iteración 2).
-
-Cada iteración aplica los siete pasos del método sobre un foco acotado del sistema y se gestiona como un Kanban de diseño en Notion, en el que cada tarjeta representa un driver, una decisión arquitectónica (ADR) o una vista a producir. El siguiente cronograma resume los Epics de producto cubiertos por ambas iteraciones, importados a las bases de datos de Notion del proyecto GigU.
-
-La funcionalidad de portafolio ya no se modela como un Epic independiente dentro de este capítulo, porque fue integrada dentro de la gestión del perfil freelancer en `AccessProfileService`. Por ello, no se refina como una iteración separada de ADD.
-
-![4.3.CronogramaEpics](imgs/add/4.3.CronogramaEpics.png)
-
-### 4.3.1. Iteration 1: PullEngagementService — Transactional Core
-
-Esta primera iteración aplica el método ADD v3 sobre el microservicio que concentra el mayor riesgo arquitectónico de GigU: `PullEngagementService`.
-
-Este servicio gestiona el flujo transaccional completo entre un cliente y un freelancer, incluyendo solicitud, acuerdo, proyecto, entrega, finalización, calificación y sugerencia de precio. Además, integra a los otros microservicios mediante referencias por identificador y eventos asíncronos. El project statement establece que la solución debe ser implementada como una arquitectura empresarial basada en microservicios con Domain-Driven Design, lo cual exige resolver primero el bounded context con mayor cohesión transaccional.
-
-La selección de `PullEngagementService` como foco inicial responde a tres razones objetivas:
-
-- Es el bounded context que aloja el mayor número de Primary User Stories (5 de 11: PUS-05, PUS-06, PUS-07, PUS-09 y PUS-11).
-- Es el microservicio cuya máquina de estados, relacionada con solicitudes, acuerdos, proyectos, finalización, reseñas y pricing, tiene mayor probabilidad de inducir refactors costosos si se diseña tarde.
-- Es el integrador natural entre `AccessProfileService`, `GigMarketplaceService` y `ChatNotificationService`, por lo que sus contratos deben quedar definidos antes de iterar sobre los demás.
-
-#### 4.3.1.1. Architectural Design Backlog 1
-
-El backlog de diseño selecciona los drivers funcionales, de calidad y restricciones que afectan directamente a la estructura interna de `PullEngagementService` y a sus interfaces con el resto de la plataforma.
-
-| ID | Tipo | Descripción | Prioridad |
-| ------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| PUS-05 | Funcional | Como cliente, deseo enviar una solicitud de contratación a un freelancer y consultar el historial de contrataciones realizadas para iniciar y revisar posibles proyectos. | Alta |
-| PUS-06 | Funcional | Como cliente y freelancer, deseamos aceptar, rechazar o gestionar solicitudes de contrato para formalizar condiciones de trabajo. | Alta |
-| PUS-07 | Funcional | Como freelancer o cliente, deseo visualizar proyectos activos, actualizar su estado y marcar proyectos como finalizados. | Alta |
-| PUS-09 | Funcional | Como cliente o freelancer, deseo calificar a la contraparte, editar calificaciones permitidas y consultar reputación visible en perfiles. | Alta |
-| PUS-11 | Funcional | Como freelancer, deseo recibir una sugerencia de precio, ajustarla manualmente, revisar su cálculo y compararla con servicios similares. | Media |
-| QA-01 | Atributo de calidad | Seguridad: solo el cliente o freelancer dueño del proyecto puede modificar su estado o registrar reseñas. | Alta |
-| QA-02 | Atributo de calidad | Modificabilidad: nuevas estrategias de pricing o reglas de transición de estado se agregan sin modificar otros microservicios. | Alta |
-| QA-03 | Atributo de calidad | Testabilidad: las reglas del ciclo de vida del proyecto se prueban unitariamente sin levantar persistencia, gateway ni broker. | Alta |
-| QA-05 | Atributo de calidad | Disponibilidad: una falla del envío de notificación no debe bloquear la creación de la solicitud o la actualización del proyecto. | Media |
-| CON-02 | Restricción | El microservicio se implementa con Java + Spring Boot. | Fija |
-| CON-03 | Restricción | Aplica Clean Architecture (Domain → Application → Interface → Infrastructure). | Fija |
-| CON-09 | Restricción | Autenticación con Spring Security + JWT y validación de ownership en cada caso de uso. | Fija |
-| CON-10 | Restricción | Eventos relevantes (`ProjectRequestCreated`, `AgreementSigned`, `ProjectStatusChanged`, `ReviewCreated`) se diseñan para publicación mediante Google Cloud Pub/Sub. | Fija (la notificación hacia Chat se implementó por REST con Circuit Breaker; Pub/Sub cubre los eventos de chat) |
-| CRN-03 | Concern | Consistencia entre microservicios: las referencias a usuario y servicio publicado son IDs externos, no joins. | Alta |
-| CRN-08 | Concern | Testabilidad de reglas de negocio sin levantar todo el sistema. | Alta |
-
-#### 4.3.1.2. Establish Iteration Goal by Selecting Drivers
-
-**Meta de la iteración:** definir la estructura interna de `PullEngagementService` y sus contratos de entrada/salida de modo que el flujo solicitud → acuerdo → proyecto → reseña, junto con la sugerencia de precio, pueda implementarse, probarse y desplegarse de forma independiente del resto de microservicios.
-
-**Drivers seleccionados como guía principal de las decisiones:**
-
-| Driver | Por qué guía esta iteración |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| QA-02 Modificabilidad | El pricing y las reglas de transición de estado son los puntos del dominio con mayor probabilidad de cambio durante los sprints siguientes. |
-| QA-03 Testabilidad | El ciclo de vida del proyecto contiene invariantes que deben ser verificables sin infraestructura levantada. |
-| QA-01 Seguridad | Cada operación expone recursos transaccionales sensibles, como solicitudes, acuerdos, proyectos, calificaciones y sugerencias de precio. |
-| PUS-05, PUS-06, PUS-07, PUS-09, PUS-11 | Estas cinco historias definen el flujo end-to-end de contratación, gestión del proyecto, reputación y pricing que la iteración debe soportar. |
-| CON-03, CON-09, CON-10 | Restricciones tecnológicas que enmarcan toda decisión de implementación: Clean Architecture, seguridad con Spring Security/JWT y diseño de eventos preparados para una futura integración con Google Cloud Pub/Sub. |
-
-Quedan fuera del foco de esta iteración: el dominio interno de Marketplace, que se aborda en la Iteración 2; la mensajería en tiempo real del chat; la operación administrativa; y la gestión de perfil y portafolio, que pertenece a `AccessProfileService`.
-
-#### 4.3.1.3. Choose One or More Elements of the System to Refine
-
-Partiendo del Container Diagram presentado en 4.1.4, el elemento a refinar en esta iteración es el contenedor `PullEngagementService`.
-
-La iteración descompone este contenedor en sus componentes internos siguiendo Clean Architecture y formaliza las interfaces que lo conectan con el resto del sistema.
-
-| Elemento a refinar | Tipo | Razón |
-| ------------------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `PullEngagementService` | Contenedor | Centro transaccional del dominio y mayor concentración de drivers seleccionados. |
-| Esquema `engagement_schema` | Componente de datos | Soporta el modelo agregado de solicitud, acuerdo, proyecto, historial, reseña y sugerencia de precio. |
-| Contrato REST `/api/v1/engagement/*` | Interfaz pública | Punto de acoplamiento para el frontend Vue mediante Vercel Rewrites y para los consumidores HTTP del backend. |
-| Eventos diseñados para Google Cloud Pub/Sub | Interfaz asíncrona | Punto de acoplamiento hacia `ChatNotificationService` y `GigMarketplaceService`. Implementado en el contexto de chat; la notificación desde `PullEngagementService` se resuelve por REST con Circuit Breaker. |
-
-No se refinan en esta iteración los componentes internos de los otros microservicios: solo se acuerda la forma de los contratos que `PullEngagementService` consume o produce.
-
-#### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
-
-Las decisiones de diseño se seleccionan a partir del catálogo definido en 4.1 (Approaches, Patterns y Tactics) y se justifican contra los drivers de la iteración.
-
-| Driver atendido | Concepto de diseño seleccionado | Justificación contra el driver |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| QA-02 Modificabilidad | Clean Architecture con separación Domain, Application, Interface e Infrastructure. | Aísla reglas de negocio de frameworks, persistencia, gateway y broker, reduciendo impacto ante cambios funcionales. |
-| QA-02 Modificabilidad | Strategy Pattern para `PriceSuggestionPolicy` y `ProjectStatusPolicy`. | Permite agregar nuevas reglas de pricing o transición de estados sin modificar los casos de uso principales. |
-| QA-03 | Testabilidad | Puertos explícitos para repositorios, clientes externos y publicador de eventos. | Habilita pruebas unitarias sin Spring, sin Postgres y sin Google Cloud Pub/Sub. |
-| QA-03 Testabilidad | Specialized Interfaces sobre `ProjectRepository`, `EventPublisher`, `ProfileLookupClient` y `ServiceLookupClient`. | Permite mockear cada dependencia externa por separado y enfocar pruebas por regla de negocio. |
-| QA-01 Seguridad | Authenticate Actors + Authorize Actors mediante Spring Security y filtro JWT por endpoint. | Cada controller exige token válido y cada caso de uso valida que el `userId` autenticado sea propietario o participante del recurso solicitado. |
-| QA-01 Seguridad | Maintain Audit Trail mediante tabla `project_status_history`. | Toda transición queda registrada con autor y timestamp, atendiendo trazabilidad académica y de negocio. |
-| QA-05 | Disponibilidad | Outbox Pattern para `ProjectRequestCreated`, `AgreementSigned`, `ProjectStatusChanged` y `ReviewCreated`. | El evento se persiste en la misma transacción que la operación de dominio; el envío futuro a Google Cloud Pub/Sub podrá reintentarse de forma controlada. |
-| QA-05 | Disponibilidad | Exception Handling + Graceful Degradation en el publisher de eventos. | Una falla en la infraestructura futura de mensajería no debe romper la operación principal; el outbox permitiría recuperación posterior. |
-| PUS-05, PUS-06, PUS-07, PUS-09 | Domain Events (`ProjectRequestCreated`, `AgreementSigned`, `ProjectStatusChanged`, `ReviewCreated`). | Modela el flujo end-to-end como cambios significativos del dominio que otros servicios pueden consumir asíncronamente. |
-| PUS-11 | Strategy Pattern para `PriceSuggestionPolicy`. | Desacopla las reglas de sugerencia de precio y permite evolucionar el algoritmo sin afectar contratación, proyectos o reseñas. |
-
-#### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-
-##### Componentes internos de `PullEngagementService`
-
-| Componente | Capa Clean Architecture | Responsabilidad |
-| -------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------ |
-| `EngagementController` | Interface | Expone REST `/api/v1/engagement/*`, valida DTOs de entrada y mapea a comandos. |
-| `JwtAuthenticationFilter` | Interface | Valida el token emitido por `AccessProfileService` e inyecta el `userId` autenticado. |
-| `RequestProjectUseCase` | Application | Orquesta la creación de `ProjectRequest` y la publicación del evento `ProjectRequestCreated`. |
-| `RespondProjectRequestUseCase` | Application | Aplica la transición aceptado/rechazado y emite `AgreementSigned` cuando corresponde. |
-| `UpdateProjectStatusUseCase` | Application | Aplica la regla de transición sobre `Project` y emite `ProjectStatusChanged`. |
-| `SubmitReviewUseCase` | Application | Crea la reseña sobre un proyecto finalizado y emite `ReviewCreated`. |
-| `SuggestPriceUseCase` | Application | Coordina `PriceSuggestionPolicy` para devolver el precio sugerido. |
-| `ProjectRequest`, `Agreement`, `Project`, `Review`, `PriceSuggestion` | Domain | Entidades agregadas con invariantes y eventos de dominio. |
-| `ProjectStatusPolicy`, `PriceSuggestionPolicy` | Domain | Estrategias de transición de estado y cálculo de sugerencia de precio. |
-| `ProjectRepository`, `RequestRepository`, `ReviewRepository` | Application (puerto) | Abstracciones para persistencia. |
-| `EventPublisher` | Application (puerto) | Abstracción para publicar eventos de dominio. |
-| `ProfileLookupClient`, `ServiceLookupClient` | Application (puerto) | Abstracciones para validar existencia de freelancer y servicio antes de iniciar engagement. |
-| `JpaProjectRepository`, `JpaRequestRepository`, `JpaReviewRepository` | Infrastructure | Implementan los puertos sobre Supabase PostgreSQL. |
-| `PubSubEventPublisher` + `OutboxScheduler` | Infrastructure | Adaptador futuro para publicar eventos desde el patrón Outbox hacia Google Cloud Pub/Sub cuando la mensajería asíncrona sea implementada. |
-| `RestProfileLookupClient`, `RestServiceLookupClient` | Infrastructure | Adaptadores HTTP hacia los otros microservicios. |
-
-##### Interfaces (contratos REST principales)
-
-| Endpoint | Método | Driver atendido | Descripción |
-| ----------------------------------------------------------------- | ------ | ------------------------ | -------------------------------------------------------------------- |
-| `POST /api/v1/engagement/requests` | POST | PUS-05, QA-01 | Cliente crea una solicitud sobre un servicio publicado. |
-| `PATCH /api/v1/engagement/requests/{id}` | PATCH | PUS-06, QA-01 | Freelancer acepta o rechaza la solicitud. |
-| `GET /api/v1/engagement/projects/{id}` | GET | PUS-07, QA-01 | Consultar proyecto y su historial de estados. |
-| `PATCH /api/v1/engagement/projects/{id}/status` | PATCH | PUS-07, QA-01, QA-02 | Avanzar el estado del proyecto según la máquina de estados. |
-| `POST /api/v1/engagement/projects/{id}/reviews` | POST | PUS-09, QA-01 | Cliente o freelancer registra reseña al finalizar el proyecto. |
-| `POST /api/v1/engagement/price-suggestions` | POST | PUS-11, QA-02 | Devuelve sugerencia de precio según parámetros del servicio. |
-
-##### Eventos de dominio publicados
-
-| Evento | Disparador | Consumidor previsto |
-| ------------------------- | -------------------------------------------------- | ------------------------------------------------ |
-| `ProjectRequestCreated` | Cliente envía nueva solicitud | `ChatNotificationService` |
-| `AgreementSigned` | Freelancer acepta la solicitud | `ChatNotificationService` |
-| `ProjectStatusChanged` | Cambio de estado en `Project` | `ChatNotificationService` |
-| `ReviewCreated` | Cliente o freelancer registra reseña | `GigMarketplaceService`, `ChatNotificationService` |
-
-#### 4.3.1.6. Sketch Views: C4 & UML, and Record Design Decisions
-
-Para esta iteración se generaron cuatro vistas que sustentan las decisiones tomadas: una vista de componentes C4 del microservicio, una vista de secuencia UML para el flujo de aceptación de solicitud, una vista de máquina de estados UML del agregado `Project` y una vista de clases UML del modelo de dominio. Las fuentes en formato PlantUML están versionadas en `imgs/add/src/` y se exportan a PNG en `imgs/add/`.
-
-##### Viewpoint 01: Component View — PullEngagementService (C4 nivel 3)
-
-![4.3.1.6.ComponentView](imgs/add/4.3.1.6.ComponentView.png)
-
-##### Viewpoint 02: Sequence Diagram — Aceptar solicitud y crear proyecto
-
-![4.3.1.6.SequenceAcceptRequest](imgs/add/4.3.1.6.SequenceAcceptRequest.png)
-
-##### Viewpoint 03: State Diagram — Ciclo de vida del agregado `Project`
-
-![4.3.1.6.StateProjectLifecycle](imgs/add/4.3.1.6.StateProjectLifecycle.png)
-
-##### Viewpoint 04: Domain Class Diagram — Engagement bounded context
-
-![4.3.1.6.DomainClasses](imgs/add/4.3.1.6.DomainClasses.png)
-
-##### Architecture Decision Records de la iteración
-
-| ADR | Decisión | Estado | Driver principal | Consecuencia |
-| ------- | ----------------------------------------------------------------------------------------------------- | --------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
-| ADR-001 | Aplicar Clean Architecture en cuatro capas dentro de `PullEngagementService`. | Aceptada | QA-03 | Reglas de dominio testeables sin Spring; mayor número de archivos y mappers explícitos. |
-| ADR-002 | Usar Strategy Pattern para `PriceSuggestionPolicy` y `ProjectStatusPolicy`. | Aceptada | QA-02 | Permite agregar reglas sin modificar casos de uso; introduce una interfaz adicional por política. |
-| ADR-003 | Validar ownership en cada caso de uso, no en el controller. | Aceptada | QA-01 | El controller queda fino; las pruebas unitarias del caso de uso cubren el caso "usuario no dueño". |
-| ADR-004 | Publicar eventos de dominio mediante Outbox Pattern (`engagement_outbox`) + worker hacia Google Cloud Pub/Sub. | Aceptada | QA-05 | Garantía at-least-once incluso ante caída del broker; requiere tabla adicional y un scheduler. |
-| ADR-005 | Acceder a perfil y a servicio publicado mediante REST, no mediante lectura directa de tablas externas. | Aceptada | CRN-03 | Mantiene ownership de datos; introduce dependencia de red y obliga a manejar timeouts y reintentos. |
-| ADR-006 | No introducir CQRS completo; se usa CQRS Lite separando comandos y queries solo en casos relevantes. | Aceptada | Simplicidad | Reduce complejidad para el alcance académico; queries y comandos comparten modelo de persistencia. |
-
-#### 4.3.1.7. Analysis of Current Design and Review Iteration Goal: Kanban Board
-
-El tablero Kanban de la Iteración 1 se gestiona en Notion (base de datos `sprint-1-backlog`). Cada tarjeta representa un driver, una decisión arquitectónica (ADR) o una vista a producir, agrupada bajo el Epic de producto al que afecta. La siguiente captura muestra las tarjetas filtradas por la etiqueta de iteración correspondiente.
-
-**Tablero (Notion):** https://www.notion.so/38aff0862f2c80a19670ecc018555760?v=38aff0862f2c8176bd1d000cba93e333
-
-![4.3.1.7.KanbanBoardIteration1](imgs/add/4.3.1.7.KanbanBoardIteration1.png)
-
-**Análisis de cumplimiento de drivers — Iteración 1**
-
-| Driver de la iteración | Cobertura alcanzada |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| QA-02 Modificabilidad | Resuelto vía Strategy Pattern para reglas de pricing y transición de estados, junto con separación de bounded context. |
-| QA-03 Testabilidad | Resuelto vía Clean Architecture en cuatro capas y puertos especializados para repositorios, clientes externos y publisher de eventos. |
-| QA-01 Seguridad | Resuelto vía Spring Security + JWT y validación de ownership en cada caso de uso; auditoría en `project_status_history`. |
-| QA-05 Disponibilidad | Resuelto vía Outbox Pattern; el envío de eventos no bloquea las operaciones principales de contratación. |
-| PUS-05, PUS-06, PUS-07, PUS-09, PUS-11 | Cubiertos por contratos REST `/api/v1/engagement/*` y por las cuatro vistas C4/UML producidas en 4.3.1.6. |
-
-Los pendientes identificados durante la iteración, como políticas de pricing adicionales más allá de Strategy básica, integración con pasarela de pagos real y métricas avanzadas de reputación, se consideran fuera del alcance académico actual y quedan documentados como extensiones futuras.
-
-### 4.3.2. Iteration 2: GigMarketplaceService — Catalog & Discovery
-
-Esta segunda iteración aplica ADD v3 sobre el segundo microservicio de mayor impacto arquitectónico: `GigMarketplaceService`. Este servicio es el catálogo de la plataforma: aloja la oferta de servicios publicados por los freelancers, los expone al cliente mediante búsqueda y filtros, y mantiene métricas visibles como reputación promedio.
-
-Una vez cerrada la Iteración 1, donde quedaron definidos los contratos transaccionales que `PullEngagementService` consume desde Marketplace, esta iteración formaliza la estructura interna del catálogo y los contratos REST que el frontend utilizará para descubrir servicios. `GigMarketplaceService` se selecciona como segundo foco por tres razones objetivas:
-
-- Es el bounded context que materializa la propuesta de valor visible para el cliente: sin un catálogo navegable no hay marketplace.
-- Concentra los drivers de calidad de **performance** mediante búsquedas paginadas, filtros e índices, y de **modificabilidad** mediante nuevas categorías y nuevos atributos de servicio.
-- Recibe eventos producidos por `PullEngagementService`, como `ReviewCreated`, que afectan vistas derivadas como reputación promedio, lo que convierte a este microservicio en el primer caso real de proyección eventual de la plataforma.
-
-#### 4.3.2.1. Architectural Design Backlog 2
-
-| ID | Tipo | Descripción | Prioridad |
-| ------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| PUS-03 | Funcional | Como estudiante freelancer, deseo publicar servicios con descripción, categoría, tarifa, tiempo estimado y media asociada para ofrecerlos en la plataforma. | Alta |
-| PUS-04 | Funcional | Como cliente, deseo buscar servicios por palabra clave, habilidad, precio, experiencia, relevancia o calificación para encontrar freelancers adecuados. | Alta |
-| QA-02 | Atributo de calidad | Modificabilidad: agregar una nueva categoría de servicio o un nuevo atributo no debe forzar cambios en otros microservicios. | Alta |
-| QA-04 | Atributo de calidad | Interoperabilidad: el catálogo se consume por el frontend mediante REST documentado con OpenAPI y DTOs estables. | Alta |
-| QA-06 | Atributo de calidad | Performance: la búsqueda paginada de servicios responde de forma fluida sobre el dataset de validación académica. | Alta |
-| QA-01 | Atributo de calidad | Seguridad: solo el freelancer dueño del servicio puede editarlo o despublicarlo; visitantes no autenticados pueden consultarlo. | Alta |
-| CON-02 | Restricción | El microservicio se implementa con Java + Spring Boot. | Fija |
-| CON-03 | Restricción | Aplica Clean Architecture en cuatro capas. | Fija |
-| CON-07 | Restricción | Persistencia con Supabase PostgreSQL bajo el esquema `marketplace_schema`. | Fija |
-| CON-08 | Restricción | El storage de binarios de portafolio y media de servicios se resuelve mediante un puerto de almacenamiento que evita el acoplamiento con un proveedor específico. | Fija (implementada sobre Supabase Storage en el Sprint 3) |
-| CRN-11 | Concern | Encapsular dependencias futuras de storage en adaptadores, no en el dominio. | Media |
-| CRN-12 | Concern | Performance en búsquedas: la búsqueda puede degradarse al crecer el catálogo. | Alta |
-| CRN-03 | Concern | Consistencia entre microservicios: la reputación promedio se actualiza por eventos, no por joins. | Alta |
-| CRN-11 | Concern | Encapsular dependencias de Supabase Storage en adaptadores, no en el dominio. | Media |
-
-#### 4.3.2.2. Establish Iteration Goal by Selecting Drivers
-
-**Meta de la iteración:** definir la estructura interna de `GigMarketplaceService` y sus contratos REST de manera que el catálogo soporte publicación de servicios, búsqueda paginada con filtros, metadatos de media y proyección de reputación a partir de eventos diseñados para una futura integración con Google Cloud Pub/Sub. La capacidad de storage de binarios queda pendiente de implementación, por lo que el diseño conserva un puerto de almacenamiento sin tratarlo como evidencia completada.
-
-| Driver | Por qué guía esta iteración |
-| --- | --- |
-| QA-06 Performance | El catálogo es el endpoint con mayor volumen de lecturas: requiere paginación, filtros indexados y DTOs ligeros. |
-| QA-02 Modificabilidad | La taxonomía de categorías y los criterios de búsqueda evolucionarán durante los sprints siguientes. |
-| QA-04 Interoperabilidad | El frontend consume directamente este microservicio mediante Vercel Rewrites y contratos REST: los contratos deben quedar estables y documentados antes de iniciar la UI. |
-| QA-01 Seguridad | Endpoints públicos para visitantes coexisten con endpoints protegidos para el dueño del servicio: requiere segregación clara. |
-| PUS-03, PUS-04 | Estas dos historias definen el ciclo publicar servicio con media → buscar y consultar catálogo. |
-| CON-07, CON-08 | Restricciones que definen dónde vive cada tipo de dato: base relacional para metadatos y storage de binarios como capacidad pendiente. |
-
-Quedan fuera del foco: la lógica transaccional de contratación, resuelta en la Iteración 1; el chat en tiempo real; la operación administrativa; la implementación real de Google Cloud Pub/Sub; la implementación real de storage; y la gestión de perfil y portafolio, que pertenece a `AccessProfileService`.
-
-#### 4.3.2.3. Choose One or More Elements of the System to Refine
-
-| Elemento a refinar | Tipo | Razón |
-| ------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `GigMarketplaceService` | Contenedor | Foco principal de la iteración y mayor concentración de drivers de catálogo, búsqueda y publicación de servicios. |
-| Esquema `marketplace_schema` | Componente de datos | Aloja `service_offerings`, `service_categories`, `service_media` y la vista derivada `freelancer_reputation`. |
-| Contrato REST `/api/v1/marketplace/*` | Interfaz pública | Punto de acoplamiento del frontend Vue para listado, detalle, publicación, edición y despublicación de servicios. |
-| Consumidor de eventos `ReviewCreated` | Interfaz asíncrona futura | Punto de entrada diseñado para mantener actualizada la proyección de reputación promedio cuando Google Cloud Pub/Sub sea implementado. |
-| Puerto de storage de media | Adaptador externo | Permite almacenar los archivos asociados a servicios sin guardar binarios dentro de la base de datos relacional; implementado como `SupabaseStorageAdapter` en el Sprint 3. |
-
-#### 4.3.2.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
-
-| Driver atendido | Concepto de diseño seleccionado | Justificación contra el driver |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| QA-06 Performance | Specification Pattern para componer filtros por categoría, precio, reputación, habilidades y palabra clave. | Permite construir consultas dinámicas sin métodos `findByXandYandZ`; deja al motor SQL aprovechar índices. |
-| QA-06 Performance | Manage Resources: paginación obligatoria e índices en `category_id`, `price`, `avg_rating` y campos de búsqueda frecuente. | Evita cargar el catálogo completo y mantiene tiempos de respuesta acotados al crecer el volumen. |
-| QA-06 Performance | Reduce Overhead: `ServiceCardDTO` ligero para listados y `ServiceDetailDTO` enriquecido solo para detalle. | Reduce ancho de banda y evita serializar campos innecesarios en consultas masivas. |
-| QA-02 Modificabilidad | Repository + Specification: nuevas dimensiones de filtro se agregan implementando `Specification`. | Aísla cambios al dominio sin tocar controllers ni queries JPA rígidas. |
-| QA-02 Modificabilidad | Encapsulate: la taxonomía de categorías es un agregado independiente de `ServiceOffering`. | Permite agregar o renombrar categorías sin modificar la entidad principal. |
-| QA-04 Interoperabilidad | API First + DTOs explícitos + OpenAPI/Swagger. | El frontend consume contratos versionados y validables; la entidad de dominio nunca se expone directamente. |
-| QA-01 Seguridad | Authorize Actors: endpoints `GET` públicos, endpoints `POST/PATCH/DELETE` protegidos por JWT + ownership. | Visitantes pueden navegar el catálogo; solo el dueño del servicio puede modificarlo. |
-| PUS-03 | Adapter Pattern para `MediaStoragePort`. | Mantiene el dominio agnóstico al proveedor de storage; permite sustituir Supabase Storage, Google Cloud Storage u otro proveedor sin tocar reglas de negocio. Implementado sobre Supabase Storage en el Sprint 3. |
-| PUS-04 | Specification Pattern + DTOs de lectura. | Permite que la búsqueda y visualización del catálogo evolucionen sin afectar publicación, contratación ni perfil. |
-| ReviewCreated consumer | Event Handler + Materialized Read Model `freelancer_reputation`. | Calcular el promedio de reseñas en cada lectura sería costoso; mantener una proyección actualizada por evento sirve a QA-06. La integración asíncrona queda diseñada para Google Cloud Pub/Sub y no se implementó dentro del alcance del proyecto. |
-| CRN-11 | Hexagonal ports/adapters dentro del microservicio. | Separa storage futuro, Supabase PostgreSQL y Google Cloud Pub/Sub del dominio. |
-
-#### 4.3.2.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-
-##### Componentes internos de `GigMarketplaceService`
-
-| Componente | Capa Clean Architecture | Responsabilidad |
-| ----------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------ |
-| `MarketplaceController` | Interface | Expone REST `/api/v1/marketplace/*` para listado, detalle, creación, edición y despublicación de servicios. |
-| `JwtAuthenticationFilter` | Interface | Valida JWT en endpoints protegidos; permite paso libre a endpoints públicos de lectura. |
-| `PublishServiceUseCase` | Application | Crea `ServiceOffering` validando categoría y dueño; sube media a través de `MediaStoragePort`. |
-| `UpdateServiceUseCase` | Application | Aplica cambios respetando ownership. |
-| `UnpublishServiceUseCase` | Application | Marca el servicio como retirado sin borrarlo físicamente. |
-| `SearchServicesUseCase` | Application | Compone `ServiceSpecification` a partir de filtros y devuelve página de `ServiceCardDTO`. |
-| `GetServiceDetailUseCase` | Application | Devuelve `ServiceDetailDTO` enriquecido con media, reputación y datos básicos del freelancer. |
-| `OnReviewCreatedHandler` | Application | Consume `ReviewCreated` y actualiza `freelancer_reputation`. |
-| `ServiceOffering`, `ServiceCategory`, `ServiceMedia`, `FreelancerReputation` | Domain | Entidades agregadas con invariantes del catálogo. |
-| `ServiceSpecification` | Domain | Compone predicados de búsqueda. |
-| `ServiceRepository`, `CategoryRepository`, `ReputationRepository` | Application (puerto) | Abstracciones de persistencia. |
-| `MediaStoragePort` | Application (puerto) | Abstracción de almacenamiento de binarios para una capacidad de storage futura. |
-| `EventConsumer` | Application (puerto) | Abstracción de consumo de eventos desde Google Cloud Pub/Sub cuando la mensajería asíncrona sea implementada. |
-| `JpaServiceRepository` | Infrastructure | Implementa el puerto de persistencia sobre Supabase PostgreSQL. |
-| `StorageAdapter` | Infrastructure | Adaptador futuro para implementar `MediaStoragePort` con el proveedor de storage seleccionado. |
-| `PubSubReviewConsumer` | Infrastructure | Consumidor futuro de eventos `ReviewCreated` desde Google Cloud Pub/Sub para delegar en `OnReviewCreatedHandler`. |
-
-##### Interfaces (contratos REST principales)
-
-| Endpoint | Método | Driver atendido | Auth | Descripción |
-| --------------------------------------------------------- | ------- | --------------------- | -------- | ---------------------------------------------------------------- |
-| `GET /api/v1/marketplace/services` | GET | PUS-04, QA-06 | Pública | Listado paginado + filtros (`category`, `priceMin`, `priceMax`, `minRating`, `q`). |
-| `GET /api/v1/marketplace/services/{id}` | GET | PUS-04, QA-04 | Pública | Detalle con media y reputación del freelancer. |
-| `POST /api/v1/marketplace/services` | POST | PUS-03, QA-01 | JWT | Freelancer publica un nuevo servicio. |
-| `PATCH /api/v1/marketplace/services/{id}` | PATCH | PUS-03, QA-01 | JWT | Edita un servicio propio. |
-| `DELETE /api/v1/marketplace/services/{id}` | DELETE | PUS-03, QA-01 | JWT | Despublica un servicio mediante soft delete. |
-| `POST /api/v1/marketplace/services/{id}/media` | POST | PUS-03, QA-01 | JWT | Sube archivo asociado al servicio publicado. |
-| `GET /api/v1/marketplace/categories` | GET | QA-02, QA-04 | Pública | Lista la taxonomía de categorías para alimentar filtros del frontend. |
-
-##### Eventos consumidos
-
-| Evento | Origen | Acción |
-| ----------------- | ----------------------- | --------------------------------------------------------------------------------- |
-| `ReviewCreated` | `PullEngagementService` | `OnReviewCreatedHandler` actualiza `freelancer_reputation` (`avg_rating`, `count`). |
-
-#### 4.3.2.6. Sketch Views: C4 & UML, and Record Design Decisions
-
-Para esta iteración se generaron cuatro vistas que sustentan las decisiones tomadas: una vista de componentes C4 del microservicio, una vista de secuencia UML para la búsqueda paginada con filtros, una vista de secuencia UML para la proyección de reputación por evento `ReviewCreated` y una vista de clases UML del modelo de dominio.
-
-##### Viewpoint 01: Component View — GigMarketplaceService (C4 nivel 3)
-
-![4.3.2.6.ComponentView](imgs/add/4.3.2.6.ComponentView.png)
-
-##### Viewpoint 02: Sequence Diagram — Búsqueda paginada con filtros
-
-![4.3.2.6.SequenceSearchServices](imgs/add/4.3.2.6.SequenceSearchServices.png)
-
-##### Viewpoint 03: Sequence Diagram — Proyección de reputación por evento `ReviewCreated`
-
-![4.3.2.6.SequenceReputationProjection](imgs/add/4.3.2.6.SequenceReputationProjection.png)
-
-##### Viewpoint 04: Domain Class Diagram — Marketplace bounded context
-
-![4.3.2.6.DomainClasses](imgs/add/4.3.2.6.DomainClasses.png)
-
-##### Architecture Decision Records de la iteración
-
-| ADR | Decisión | Estado | Driver principal | Consecuencia |
-| ------- | ----------------------------------------------------------------------------------------------------- | --------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
-| ADR-007 | Aplicar Specification Pattern para componer filtros de búsqueda. | Aceptada | QA-02, QA-06 | Filtros componibles y mantenibles; introduce una abstracción adicional sobre los repositorios. |
-| ADR-008 | Separar `ServiceCardDTO` para listado y `ServiceDetailDTO` para detalle. | Aceptada | QA-06 | Listados ligeros y rápidos; el equipo debe mantener dos DTOs sincronizados con el modelo de dominio. |
-| ADR-009 | Mantener un read model materializado `freelancer_reputation` actualizado por `ReviewCreated`. | Aceptada | QA-06 | Lecturas O(1) sin agregaciones; introduce consistencia eventual y un consumer adicional. |
-| ADR-010 | Aplicar soft delete mediante `unpublished_at` en lugar de borrado físico de servicios. | Aceptada | CRN-03 | Permite preservar referencias históricas desde proyectos cerrados; requiere filtrar en cada query. |
-| ADR-011 | Exponer endpoints `GET` públicos sin JWT y proteger `POST/PATCH/DELETE` con JWT + ownership. | Aceptada | QA-01, QA-04 | Visitantes pueden explorar el catálogo; requiere configuración granular en Spring Security. |
-| ADR-012 | Mantener `MediaStoragePort` como puerto de almacenamiento sin fijar implementación concreta en esta fase. | Aceptada | CRN-11 | El dominio queda agnóstico al proveedor; permite implementar Supabase Storage, Google Cloud Storage u otro proveedor posteriormente sin tocar reglas de negocio. |
-
-#### 4.3.2.7. Analysis of Current Design and Review Iteration Goal: Kanban Board
-
-El tablero Kanban de la Iteración 2 se gestiona en Notion (base de datos `sprint-1-backlog`), filtrado para mostrar las tarjetas correspondientes a `GigMarketplaceService`. Cada tarjeta se agrupa bajo el Epic de producto al que afecta dentro del catálogo y descubrimiento de servicios.
-
-**Tablero (Notion):** https://www.notion.so/38aff0862f2c80a19670ecc018555760?v=38aff0862f2c8176bd1d000cba93e333
-
-![4.3.2.7.KanbanBoardIteration2](imgs/add/4.3.2.7.KanbanBoardIteration2.png)
-
-**Análisis de cumplimiento de drivers — Iteración 2**
-
-| Driver de la iteración | Cobertura alcanzada |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| QA-06 Performance | Resuelto vía Specification Pattern, paginación obligatoria e índices sobre campos frecuentes de búsqueda. |
-| QA-02 Modificabilidad | Resuelto vía Specifications componibles para nuevos filtros y desacoplamiento de `ServiceCategory` como agregado independiente. |
-| QA-04 Interoperabilidad | Resuelto vía contratos REST `/api/v1/marketplace/*` documentados con OpenAPI y DTOs estables (`ServiceCardDTO`, `ServiceDetailDTO`). |
-| QA-01 Seguridad | Resuelto vía endpoints públicos `GET` y endpoints protegidos `POST/PATCH/DELETE` con JWT + ownership. |
-| Consistencia eventual | Resuelto vía read model materializado `freelancer_reputation` actualizado por `ReviewCreated`, con idempotencia mediante `applied_reviews`. |
-| PUS-03, PUS-04 | Cubiertos por contratos REST, endpoint de media bajo PUS-03, esquema `marketplace_schema` con índices y las cuatro vistas C4/UML producidas en 4.3.2.6. |
-
-Los pendientes identificados durante la iteración, como recomendación de servicios por similitud, métricas de tendencia del catálogo y búsqueda full-text avanzada, se consideran fuera del alcance académico actual y quedan documentados como extensiones para futuras iteraciones de ADD.
-
-# Capítulo V: Product Implementation, Validation & Deployment
-
-## 5.1. Testing Suites & General Patterns
-
-Esta sección describe la estrategia de pruebas adoptada para el backend de GigU y los patrones generales que estructuran cada microservicio. La solución backend está compuesta por cuatro microservicios Spring Boot (`access-profile-service`, `gig-marketplace-service`, `pulls-service` y `chat-notification-service`) que comparten una misma estructura interna basada en Clean Architecture y un mismo conjunto de herramientas de prueba.
-
-### 5.1.1. Backend Application Core Testing Suite
-
-El núcleo de pruebas del backend se apoya en el stack de testing de Spring Boot. Cada microservicio declara en su `pom.xml` las dependencias necesarias para pruebas unitarias y de integración, y aplica un umbral mínimo de cobertura mediante JaCoCo.
-
-| Tipo de prueba | Herramienta | Propósito |
-| --- | --- | --- |
-| Unit Testing | JUnit 5 + Mockito | Verificar reglas de negocio y servicios de aplicación de forma aislada. |
-| Application / Security Testing | spring-boot-starter-test + spring-security-test | Validar el comportamiento de la capa de aplicación y la seguridad basada en JWT. |
-| Integration Testing | Testcontainers (PostgreSQL) | Levantar una base de datos PostgreSQL real en contenedor para validar la persistencia y los flujos de extremo a extremo. |
-| Contract Testing | Spring Cloud Contract + Stub Runner | Verificar los contratos productor/consumidor del webhook interno de notificaciones entre microservicios. |
-| Code Coverage | JaCoCo | Aplicar un umbral mínimo de 85% de cobertura de instrucciones, excluyendo modelos de dominio y DTOs. |
-
-**Estado actual de la suite (cierre del Sprint 4):** el backend cuenta con **17 clases de prueba** distribuidas en los cuatro microservicios y organizadas en cuatro niveles. (a) *Unitarias de dominio*, sin contexto de Spring: `ProjectStatusPolicyTest` y `DeterministicPriceSuggestionPolicyTest`. (b) *Unitarias de aplicación*, con puertos mockeados (JUnit 5 + Mockito): `AccessProfileApplicationServiceTest`, `MarketplaceApplicationServiceTest`, `EngagementApplicationServiceTest`, `ChatNotificationApplicationServiceTest`, además de pruebas de adaptadores (`SupabaseStorageAdapterTest`, `NotificationClientAdapterTest`, `ExternalEdaConfigLoaderTest`). (c) *Integración* con PostgreSQL real en contenedor vía Testcontainers: `AccessIntegrationTest`, `MarketplaceIntegrationTest`, `EngagementIntegrationTest` y `ChatNotificationIntegrationTest`. (d) *Contratos* entre microservicios con Spring Cloud Contract: tres contratos del productor en `chat-notification-service` (`shouldCreateInternalNotification`, `shouldRejectInvalidBody`, `shouldRejectMissingServiceToken`) verificados mediante `ContractVerifierBase`, y la verificación del consumidor en `pulls-service` (`NotificationClientContractTest`).
-
-Las pruebas basadas en contratos, implementadas en el Sprint 4 (`GIGU-84`), cierran el riesgo `CRN-03`: la consistencia entre microservicios deja de depender de acuerdos informales y pasa a estar respaldada por un contrato versionado que rompe el build de ambos lados si se incumple. Los archivos `.feature` de BDD (Gherkin) para Acceptance Tests permanecen como deuda de testing registrada en la sección 5.3.1.3.
-
-### 5.1.2. Pattern Based Backend Application(s)
-
-Los cuatro microservicios siguen un mismo patrón arquitectónico de aplicación basado en Clean Architecture / Hexagonal Architecture (Ports & Adapters). La estructura interna de paquetes es consistente entre servicios, como se evidencia en `access-profile-service`:
-
-| Capa | Paquete | Responsabilidad | Patrones aplicados |
-| --- | --- | --- | --- |
-| Domain | `domain.model`, `domain.valueobject` | Entidades y value objects con reglas de negocio puras, sin dependencias de framework. | Domain Model, Value Object |
-| Application | `application.service`, `application.port.out`, `application.dto`, `application.exception` | Casos de uso, puertos de salida y comandos. Orquesta el dominio sin conocer detalles de infraestructura. | Use Case, Ports & Adapters, Command, jerarquía de excepciones de negocio |
-| Infrastructure | `infrastructure.persistence`, `infrastructure.security`, `infrastructure.storage`, `infrastructure.config` | Adaptadores concretos: repositorios JPA, proveedor JWT, almacenamiento Supabase, configuración de seguridad y OpenAPI. | Adapter, Repository, Data Mapper |
-| Interfaces | `interfaces.rest` | Controladores REST, DTOs de request y manejo centralizado de errores. | REST Controller, DTO, Exception Handler |
-
-Este patrón se replica en `gig-marketplace-service`, `pulls-service` y `chat-notification-service`, lo que garantiza que el dominio nunca dependa de frameworks o proveedores externos y que cada adaptador (PostgreSQL, JWT, Supabase Storage) pueda sustituirse sin afectar la lógica de negocio.
-
-### 5.1.3. Pattern Based Custom Software Library
-
-Actualmente la solución no cuenta con una librería de software compartida extraída como artefacto independiente; cada microservicio es autónomo y empaqueta su propia copia de los componentes transversales. Sin embargo, se identifican patrones repetidos entre los cuatro servicios que son candidatos naturales a ser extraídos como librería común:
-
-| Componente transversal | Descripción | Servicios donde se repite |
-| --- | --- | --- |
-| Jerarquía de excepciones de negocio | `BusinessRuleViolationException`, `ResourceNotFoundException`, `DuplicatedResourceException`, `UnauthorizedActionException`, entre otras. | Los 4 microservicios |
-| `RestExceptionHandler` | Manejo centralizado y uniforme de errores HTTP. | Los 4 microservicios |
-| `OpenApiConfig` | Configuración estándar de documentación OpenAPI/Swagger. | Los 4 microservicios |
-| Seguridad JWT | `JwtAuthenticationFilter`, `JwtTokenProviderAdapter`, `SecurityConfig`. | Los 4 microservicios |
-
-La extracción de estos componentes a una librería `gigu-platform-commons` se registra como recomendación de refactoring para próximos Sprints (ver sección 5.1.4).
-
-### 5.1.4. Framework Pattern Driven Refactoring Report
-
-Durante la implementación se realizaron varios refactorings orientados a consolidar patrones y estabilizar la solución. Los principales se resumen a continuación:
-
-| Refactoring | Motivación | Evidencia (commit) |
-| --- | --- | --- |
-| Eliminación de servicio de engagement duplicado | Existía un microservicio legacy duplicado; se consolidó en `pulls-service`. | `4af6f86` refactor(pulls): remove legacy engagement service duplicate |
-| Canonicalización de endpoints de autenticación | Se conservaron únicamente los endpoints canónicos de acceso, eliminando rutas redundantes. | `213a2ed` fix(access): keep only canonical auth endpoints |
-| Normalización de CORS | Se unificó la configuración CORS para servicios cloud autenticados. | `afa5097` fix(security): normalize CORS for authenticated cloud services |
-| Migración de plataforma de despliegue | Se migró el despliegue de los microservicios de Render a Google Cloud Run. | `d92410c` chore(cloud): migrate microservices deployment to Google Cloud Run |
-| Soporte de esquema HTTPS reenviado en Swagger | Se ajustó la configuración para respetar el esquema HTTPS detrás del proxy de Cloud Run. | `c6ba4eb` fix(cloud): honor forwarded https scheme in swagger |
-
-Refactoring pendiente recomendado: extracción de los componentes transversales descritos en 5.1.3 a una librería compartida `gigu-platform-commons`. Las suites de prueba de los cuatro microservicios quedaron implementadas al cierre del Sprint 4 (ver 5.1.1).
-
-## 5.2. Software Configuration Management
-
-### 5.2.1. Software Development Environment Configuration
-
-En esta sección se especifican los productos de software que utilizan los miembros del equipo durante el ciclo de vida del producto digital, organizados por tipo de actividad. Para herramientas SaaS se indica la ruta de referencia; para productos que se ejecutan localmente se indica la ruta de descarga.
-
-| Actividad | Herramienta | Tipo | Ruta de referencia / descarga |
-| --- | --- | --- | --- |
-| Project Management | Trello | SaaS | https://trello.com |
-| Requirements Management | Trello + GitHub | SaaS | https://trello.com — https://github.com |
-| Product Design (UX/UI) | Figma | SaaS | https://www.figma.com |
-| Modelado UML / C4 | diagrams.net (draw.io) | SaaS | https://app.diagrams.net |
-| Software Development (Backend) | IntelliJ IDEA Community | Descarga local | https://www.jetbrains.com/idea/download |
-| Software Development (Frontend) | Visual Studio Code | Descarga local | https://code.visualstudio.com/download |
-| Plataforma Backend | JDK 21 + Apache Maven | Descarga local | https://adoptium.net — https://maven.apache.org/download.cgi |
-| Plataforma Frontend | Node.js + npm | Descarga local | https://nodejs.org/en/download |
-| Control de versiones | Git | Descarga local | https://git-scm.com/downloads |
-| Software Testing | JUnit 5, Mockito, Testcontainers | Dependencias Maven | Gestionadas vía `pom.xml` |
-| Software Testing (API manual) | Postman | Descarga local | https://www.postman.com/downloads |
-| Software Deployment (Backend) | Google Cloud SDK (`gcloud` CLI) | Descarga local | https://cloud.google.com/sdk/docs/install |
-| Software Deployment (CI) | GitHub Actions | SaaS | https://github.com/features/actions |
-| Software Deployment (Frontend) | Vercel | SaaS | https://vercel.com |
-| Software Documentation (API) | springdoc-openapi / Swagger UI | Dependencia Maven | https://springdoc.org |
-| Software Documentation (Informe) | GitHub (Markdown) | SaaS | https://github.com |
-
-### 5.2.2. Source Code Management
-
-El equipo utiliza **GitHub** como plataforma y sistema de control de versiones. La solución se organiza en repositorios independientes por producto digital:
-
-| Producto digital | Repositorio |
-| --- | --- |
-| Web Services (backend de microservicios) | https://github.com/1ASI0657-2610-7940-Final-Project/backend-microservices |
-| Frontend Web App | https://github.com/1ASI0657-2610-7940-Final-Project/frontend |
-| Landing Page | https://github.com/1ASI0657-2610-7940-Final-Project/landing-page |
-| Documentación del proyecto | https://github.com/1ASI0657-2610-7940-Final-Project/docs |
-
-En el caso de Web Services, el repositorio `backend-microservices` incluye tanto el proyecto de los cuatro microservicios como sus archivos de pruebas. Las pruebas unitarias e integración se ubican en `services/<microservicio>/src/test/java`; los archivos `.feature` de BDD se incorporarán en `services/<microservicio>/src/test/resources` (pendiente, ver 5.3.1.3).
-
-**Workflow de control de versiones — GitFlow.** El equipo adopta el modelo *GitFlow* descrito por Vincent Driessen. Las ramas que se mantienen son:
-
-| Rama | Propósito | Convención de nombre |
-| --- | --- | --- |
-| `main` | Rama principal; contiene el código estable y desplegable. | `main` |
-| `develop` | Rama de integración donde convergen las features completadas. | `develop` |
-| Feature branches | Una rama por funcionalidad o por microservicio en desarrollo. | `feature/<descripcion-en-kebab-case>` (ej. `feature/access-profile-service`, `feature/gig-marketplace-service`, `feature/main-app-logic`) |
-| Release branches | Preparación de una versión para publicación. | `release/<version-semver>` (ej. `release/1.0.0`) |
-| Hotfix branches | Corrección urgente sobre producción. | `hotfix/<version-semver>` (ej. `hotfix/1.0.1`) |
-
-Durante el Sprint 1, el repositorio backend trabajó con feature branches por microservicio (`feature/access-profile-service`, `feature/chat-notification-service`, `feature/gig-marketplace-service`, `feature/pull-engagement-service`) que se integraron en `feature/main-app-logic`, rama desde la cual se ejecutan los despliegues a Google Cloud Run.
-
-**Semantic Versioning.** Los releases se nombran siguiendo *Semantic Versioning 2.0.0* con el formato `MAJOR.MINOR.PATCH` (ej. `1.0.0`): se incrementa `MAJOR` ante cambios incompatibles de API, `MINOR` ante funcionalidad nueva retrocompatible y `PATCH` ante correcciones retrocompatibles.
-
-**Conventional Commits.** Los mensajes de commit siguen la especificación *Conventional Commits*, con el formato `<tipo>(<alcance>): <descripción>`. Los tipos utilizados por el equipo son `feat`, `fix`, `chore`, `docs`, `ci`, `refactor` y `merge`. Ejemplos reales del repositorio backend:
-
-- `feat(access): add access profile service`
-- `feat(marketplace): add gig marketplace service`
-- `fix(security): normalize CORS for authenticated cloud services`
-- `ci(cloud): add manual deploy workflows per microservice`
-- `refactor(pulls): remove legacy engagement service duplicate`
-
-### 5.2.3. Source Code Style Guide & Conventions
-
-El equipo adopta las siguientes referencias de estilo y convenciones de codificación. Para todos los lenguajes se aplica nomenclatura en inglés.
-
-| Lenguaje / artefacto | Referencia de estilo | Convenciones principales |
-| --- | --- | --- |
-| Java (microservicios backend) | Google Java Style Guide | Clases en `PascalCase`, métodos y variables en `camelCase`, constantes en `UPPER_SNAKE_CASE`, paquetes en minúsculas. Organización por capas de Clean Architecture (`domain`, `application`, `infrastructure`, `interfaces`). |
-| TypeScript / Vue (frontend y landing) | Google TypeScript Style Guide | Variables y funciones en `camelCase`, clases y componentes en `PascalCase`, archivos de componentes Vue en `PascalCase.vue`, indentación de 2 espacios, comillas simples. |
-| Gherkin (archivos `.feature`) | Gherkin Conventions for Readable Specifications | Un `Feature` por archivo, escenarios declarativos en tercera persona, pasos `Given/When/Then` concisos y reutilizables, uso de `Scenario Outline` con `Examples` para casos parametrizados. |
-| Endpoints REST | API First / OpenAPI 3.0 | Rutas en minúsculas y plural (`/api/v1/marketplace/services`), versionado por path (`/api/v1`), verbos HTTP semánticos (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`). |
-| Commits y ramas | Conventional Commits + GitFlow | Ver convenciones de la sección 5.2.2. |
-
-### 5.2.4. Software Deployment Configuration
-
-La configuración de despliegue del proyecto se organiza separando frontend, backend, base de datos y capacidades pendientes de infraestructura. El frontend y la landing page se despliegan en Vercel. El backend se despliega en Google Cloud Run mediante workflows manuales de GitHub Actions por microservicio. La base de datos principal se mantiene en Supabase PostgreSQL.
-
-| Componente | Tecnología / servicio | Estado | Descripción |
-| --- | --- | --- | --- |
-| Landing Page | Vercel | Implementado | Sitio público de presentación del producto. |
-| Frontend Web App | Vercel | Implementado | Aplicación Vue + Vite consumida por usuarios finales. |
-| Public API Routing | Vercel Rewrites | Implementado | Reenvía rutas relativas `/api/*` hacia los microservicios backend en Cloud Run. |
-| Backend Runtime | Google Cloud Run | Implementado | Ejecuta los microservicios Spring Boot como servicios cloud independientes. |
-| Backend Deployment | GitHub Actions manuales por microservicio | Implementado | Cada workflow se ejecuta mediante `workflow_dispatch` y despliega un servicio específico. |
-| Local Deployment Support | Scripts PowerShell en `/gcloud` | Implementado | Permiten desplegar manualmente desde una estación local usando `gcloud run deploy --source`. |
-| Database | Supabase PostgreSQL | Implementado | Base de datos relacional administrada con esquemas lógicos por microservicio. |
-| Asynchronous Messaging | Google Cloud Pub/Sub | Implementado (Sprint 2) | Eventos asíncronos de chat y notificaciones con entrega push por webhook. |
-| Storage | Por definir | Pendiente | Capacidad futura para binarios de portafolio, imágenes y adjuntos. |
-
-Los workflows de despliegue backend se encuentran en el repositorio `backend-microservices` bajo `.github/workflows`:
-
-| Workflow | Microservicio | Servicio Cloud Run |
-| --- | --- | --- |
-| `deploy-access-profile-service.yml` | AccessProfileService | `gigu-access-profile-service` |
-| `deploy-gig-marketplace-service.yml` | GigMarketplaceService | `gigu-gig-marketplace-service` |
-| `deploy-pulls-service.yml` | PullEngagementService | `gigu-pulls-service` |
-| `deploy-chat-notification-service.yml` | ChatNotificationService | `gigu-chat-notification-service` |
-
-Cada workflow valida que el despliegue se ejecute desde la rama `feature/main-app-logic`, autentica contra Google Cloud mediante `google-github-actions/auth`, configura el CLI con `google-github-actions/setup-gcloud` y ejecuta `gcloud run deploy --source` para desplegar el microservicio correspondiente en la región `us-central1` del proyecto `dosys-rest-api`.
-
-Los scripts locales de soporte se encuentran en la carpeta `gcloud` del repositorio backend:
-
-| Script | Propósito |
-| --- | --- |
-| `gcloud/deploy-access-profile-service.ps1` | Despliegue local manual de AccessProfileService. |
-| `gcloud/deploy-gig-marketplace-service.ps1` | Despliegue local manual de GigMarketplaceService. |
-| `gcloud/deploy-pulls-service.ps1` | Despliegue local manual de PullEngagementService. |
-| `gcloud/deploy-chat-notification-service.ps1` | Despliegue local manual de ChatNotificationService. |
-| `gcloud/deploy-all.ps1` | Orquestación local para desplegar todos los microservicios. |
-
-Los secrets requeridos para despliegue desde GitHub Actions son:
-
-| Secret / variable | Uso |
-| --- | --- |
-| `GCP_SA_KEY` | Credenciales de la cuenta de servicio de Google Cloud. |
-| `SPRING_DATASOURCE_URL` | URL JDBC de Supabase PostgreSQL. |
-| `SPRING_DATASOURCE_USERNAME` | Usuario de base de datos. |
-| `SPRING_DATASOURCE_PASSWORD` | Contraseña de base de datos. |
-| `SUPABASE_URL` | URL del proyecto Supabase. |
-| `SUPABASE_SERVICE_ROLE_KEY` | Llave de servicio de Supabase. |
-| `JWT_SECRET` | Secreto para emisión/validación de JWT. |
-| `INTERNAL_SERVICE_TOKEN` | Token interno para comunicación entre microservicios. |
-| `CORS_ALLOWED_ORIGINS` | Variable recomendada para configurar orígenes permitidos de frontend. |
-
-## 5.3. Microservices Implementation
-
-### 5.3.1. Sprint 1
-
-#### 5.3.1.1. Sprint Backlog 1
-
-El objetivo principal del Sprint 1 fue **implementar y desplegar el backbone funcional de la solución GigU**: los cuatro microservicios REST del backend (AccessProfileService, GigMarketplaceService, PullEngagementService y ChatNotificationService), la aplicación frontend y la landing page, junto con su configuración de despliegue en la nube (Google Cloud Run y Vercel).
-
-Siguiendo el enfoque Attribute-Driven Design, el **tablero Kanban del ADD** se desarrolla durante este Sprint: la base de datos de Notion `sprint-1-backlog` contiene los work-items resultantes de las iteraciones ADD del Capítulo IV —Primary User Stories (PUS), drivers de calidad (QA), restricciones (CON), concerns (CRN), Architecture Decision Records (ADR), Sketch Views y definición de contratos y esquemas—, agrupados bajo el Epic de producto al que afectan. Las 54 tarjetas (GIGU-8 a GIGU-61) constituyen el Sprint Backlog 1 y se ejecutan, prueban y despliegan en este Sprint.
-
-**Board del Sprint 1 (Notion):** https://www.notion.so/38aff0862f2c80a19670ecc018555760?v=38aff0862f2c8176bd1d000cba93e333
-
-El backlog del Sprint 1 en Notion, filtrado por estado al cierre del Sprint:
-
-_Tareas por hacer (To-do) — 4 actividades:_
-
-<img src="imgs/sprint1/sprint1-backlog-todo.png" alt="Sprint Backlog 1 - Tareas por hacer" title="Sprint Backlog 1 - To-do"/>
-
-_Tareas en curso (In-Process) — 5 actividades:_
-
-<img src="imgs/sprint1/sprint1-backlog-inprogress.png" alt="Sprint Backlog 1 - En curso" title="Sprint Backlog 1 - In-Process"/>
-
-_Tareas finalizadas (Done) — 45 actividades:_
-
-<img src="imgs/sprint1/sprint1-backlog-done-1.png" alt="Sprint Backlog 1 - Finalizadas (parte 1)" title="Sprint Backlog 1 - Done"/>
-
-<img src="imgs/sprint1/sprint1-backlog-done-2.png" alt="Sprint Backlog 1 - Finalizadas (parte 2)" title="Sprint Backlog 1 - Done"/>
-
-<img src="imgs/sprint1/sprint1-backlog-done-3.png" alt="Sprint Backlog 1 - Finalizadas (parte 3)" title="Sprint Backlog 1 - Done"/>
-
-| Sprint # | Sprint 1 | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **User Story / Epic** | | **Work-Item / Task** | | | | | |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (h)** | **Assigned To** | **Status** |
-| EP07 | Reputación y Reseñas Públicas | GIGU-8 | PUS-10: Cliente registra calificación al finalizar el proyecto | Endpoints de reseñas del proyecto (`GET`/`POST /projects/{id}/reviews`). | 5 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-9 | PUS-06: Cliente envía solicitud de contratación | `POST /api/v1/engagement/requests`. | 6 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-10 | PUS-07: Negociación y acuerdo cliente-freelancer | `PATCH /requests/{id}/decision` y creación del proyecto. | 5 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-11 | QA-01: Seguridad y ownership en operaciones de contratación | Validación JWT + ownership en los endpoints de escritura. | 3 | Mio Mejia, Andy | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-12 | CON-02/03: Spring Boot + Clean Architecture (PullEngagementService) | Estructura del microservicio en cuatro capas. | 6 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-13 | CON-09: Spring Security + JWT con validación de ownership | Filtro JWT y configuración de seguridad. | 4 | Ybañez Esquerre, Miguel | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-14 | CRN-03: Consistencia entre microservicios sin joins (IDs externos) | Referencias por ID externo, sin joins cross-schema. | 2 | Mio Mejia, Andy | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-15 | ADR-001: Adoptar Clean Architecture en cuatro capas | Decisión arquitectónica documentada y aplicada. | 2 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-16 | ADR-003: Validación de ownership en el caso de uso | Ownership validado en el application service, no en el controller. | 2 | Ybañez Esquerre, Miguel | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-17 | ADR-005: Acceso a perfil y servicio vía REST (no DB compartida) | Comunicación REST entre microservicios. | 2 | Mio Mejia, Andy | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-18 | Sketch View: Component View C4 de PullEngagementService | Diagrama C4 nivel 3 (sección 4.3.1.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-19 | Sketch View: Sequence Diagram aceptación de solicitud (PUS-07) | Diagrama de secuencia (sección 4.3.1.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-20 | Definir contratos REST `/api/v1/engagement/*` (OpenAPI) | Contratos OpenAPI del microservicio. | 3 | Mio Mejia, Andy | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-21 | PUS-08: Gestión del estado del proyecto (ciclo de vida) | `PATCH /projects/{id}/status` y `GET /projects`. | 5 | Oblitas Davila, Mariano | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-22 | QA-03: Testabilidad del ciclo de vida del proyecto | Pruebas unitarias del ciclo de vida; aún pendiente en pulls-service. | 3 | Ybañez Esquerre, Miguel | In-Process |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-23 | QA-05: Disponibilidad ante fallas de notificación | El fallo de notificación no bloquea la operación principal; depende de la mensajería asíncrona. | 3 | Mio Mejia, Andy | In-Process |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-24 | CON-10: Eventos publicados en RabbitMQ | Publicación de eventos de dominio; reemplazado por Google Cloud Pub/Sub, no implementado. | 5 | Oblitas Davila, Mariano | To-do |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-25 | CRN-08: Testabilidad de reglas de negocio sin levantar todo el sistema | Tests aislados de reglas de negocio; parcialmente cubierto. | 3 | Ybañez Esquerre, Miguel | In-Process |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-26 | ADR-004: Outbox Pattern para eventos de dominio (`ProjectStatusChanged`) | Patrón Outbox; pendiente de implementación. | 4 | Oblitas Davila, Mariano | To-do |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-27 | ADR-006: CQRS Lite (separar comandos y queries en casos relevantes) | Decisión documentada y aplicada en los DTOs de comando/consulta. | 2 | Mio Mejia, Andy | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-28 | Sketch View: State Diagram del agregado Project | Diagrama de estados (sección 4.3.1.6). | 3 | Mio Mejia, Andy | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-29 | Sketch View: Domain Class Diagram del bounded context Engagement | Diagrama de clases de dominio (sección 4.3.1.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-30 | Definir esquema `engagement_schema` (project_requests, agreements, projects, ...) | Modelo de datos del bounded context. | 3 | Oblitas Davila, Mariano | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-31 | Análisis de cumplimiento de drivers — cierre Iteración 1 | Revisión de drivers de la iteración (sección 4.3.1.7). | 2 | Oblitas Davila, Mariano | Done |
-| EP10 | Sugerencia de Precio Asistida | GIGU-32 | PUS-12: Sugerencia de precio basada en complejidad/tiempo/categoría | `POST /engagement/price-suggestions`. | 6 | Oblitas Davila, Mariano | Done |
-| EP10 | Sugerencia de Precio Asistida | GIGU-33 | QA-02: Modificabilidad — agregar reglas de pricing sin tocar otros servicios | Aislamiento de las reglas de pricing. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP10 | Sugerencia de Precio Asistida | GIGU-34 | ADR-002: Strategy Pattern para `PriceSuggestionPolicy` y `ProjectStatusPolicy` | Patrón Strategy aplicado. | 3 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-35 | PUS-04: Publicación de servicios con descripción, categoría, tarifa y plazo | `POST /marketplace/services`. | 6 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-36 | QA-01: Seguridad y ownership en endpoints de escritura del catálogo | JWT + ownership en `POST`/`PATCH`/`DELETE`. | 3 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-37 | CON-02/03: Spring Boot + Clean Architecture (GigMarketplaceService) | Estructura del microservicio en cuatro capas. | 6 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-38 | CON-07: Persistencia en `marketplace_schema` (Supabase PostgreSQL) | Persistencia JPA del catálogo. | 3 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-39 | CON-08: Media en Supabase Storage (referencia en DB) | `POST /services/{id}/media`. | 4 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-40 | CON-11: API documentada con OpenAPI/Swagger | Swagger UI desplegado. | 2 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-41 | CRN-11: Encapsular Supabase Storage como adaptador | Adaptador de storage sin contaminar el dominio. | 3 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-42 | ADR-008: Separación `ServiceCardDTO` (listado) / `ServiceDetailDTO` (detalle) | DTOs diferenciados para listado y detalle. | 2 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-43 | ADR-010: Soft delete (`unpublished_at`) en servicios | Baja lógica de servicios. | 2 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-44 | ADR-011: `GET` públicos / `POST`-`PATCH`-`DELETE` protegidos por JWT + ownership | Política de acceso del catálogo. | 2 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-45 | ADR-012: Encapsular Supabase Storage como adaptador (`MediaStoragePort`) | Puerto de almacenamiento de media. | 2 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-46 | Sketch View: Component View C4 de GigMarketplaceService | Diagrama C4 nivel 3 (sección 4.3.2.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-47 | Sketch View: Domain Class Diagram del bounded context Marketplace | Diagrama de clases de dominio (sección 4.3.2.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-48 | Definir contratos REST `/api/v1/marketplace/*` (OpenAPI) | Contratos OpenAPI del microservicio. | 3 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-49 | Definir esquema `marketplace_schema` + índices (categoría, precio, rating) | Modelo de datos e índices del catálogo. | 3 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-50 | Configurar bucket `service-media` en Supabase Storage | Bucket de almacenamiento de media. | 2 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-51 | Análisis de cumplimiento de drivers — cierre Iteración 2 | Revisión de drivers de la iteración (sección 4.3.2.7). | 2 | Oblitas Davila, Mariano | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-52 | PUS-05: Búsqueda y filtrado de servicios (categoría, precio, rating) | `GET /marketplace/services` con filtros y `GET /categories`. | 5 | Mio Mejia, Andy | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-53 | QA-02: Modificabilidad de categorías y atributos del catálogo | Atributos del catálogo extensibles. | 2 | Oblitas Davila, Mariano | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-54 | QA-04: Interoperabilidad con frontend (REST + OpenAPI + DTOs estables) | El frontend desplegado consume la API. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-55 | QA-06: Performance de búsquedas paginadas | Paginación implementada; performance aún no medida. | 3 | Mio Mejia, Andy | In-Process |
-| EP06 | Descubrimiento del Catálogo | GIGU-56 | CRN-12: Performance al crecer el catálogo | Índices definidos; validación de performance pendiente. | 3 | Ybañez Esquerre, Miguel | In-Process |
-| EP06 | Descubrimiento del Catálogo | GIGU-57 | CRN-03: Reputación por evento (no por joins cross-schema) | Proyección de reputación por evento; depende de la mensajería asíncrona. | 4 | Oblitas Davila, Mariano | To-do |
-| EP06 | Descubrimiento del Catálogo | GIGU-58 | ADR-007: Specification Pattern para componer filtros de búsqueda | Patrón Specification aplicado en los filtros. | 3 | Mio Mejia, Andy | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-59 | ADR-009: Read model materializado `freelancer_reputation` (proyección de eventos) | Read model materializado; pendiente de implementación. | 4 | Oblitas Davila, Mariano | To-do |
-| EP06 | Descubrimiento del Catálogo | GIGU-60 | Sketch View: Sequence Diagram búsqueda paginada con filtros (PUS-05) | Diagrama de secuencia (sección 4.3.2.6). | 3 | Ybañez Esquerre, Miguel | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-61 | Sketch View: Sequence Diagram proyección de reputación por `ReviewCreated` | Diagrama de secuencia (sección 4.3.2.6). | 3 | Ybañez Esquerre, Miguel | Done |
-
-**Tareas adicionales del Sprint** (no asociadas a una tarjeta del tablero ADD; corresponden a microservicios de soporte y constraints generales que también se implementaron y desplegaron en este Sprint):
-
-| Id | Title | Description | Estimation (h) | Assigned To | Status |
-| --- | --- | --- | --- | --- | --- |
-| T-A1 | AccessProfileService — acceso y perfil freelance | Microservicio de acceso: `sign-up`, `login`, `me`, perfiles freelance y portafolio. | 10 | Oblitas Davila, Mariano | Done |
-| T-A2 | ChatNotificationService — chat y notificaciones | Microservicio de chat: conversaciones, mensajes, notificaciones, tickets y reportes. | 10 | Oblitas Davila, Mariano | Done |
-| T-A3 | Integración frontend (Vue 3 + Vite) | Shell de la app y flujos de acceso, marketplace, engagement y chat. | 12 | Ybañez Esquerre, Miguel | Done |
-| T-A4 | Landing page | Maquetación y publicación de la landing page. | 6 | Mio Mejia, Andy | Done |
-| T-A5 | Despliegue backend en Google Cloud Run | Workflows de GitHub Actions y scripts `gcloud` para los cuatro microservicios. | 5 | Ybañez Esquerre, Miguel | Done |
-| T-A6 | Despliegue frontend y landing en Vercel | Configuración de los proyectos en Vercel y routing de Vercel Rewrites hacia Cloud Run. | 3 | Mio Mejia, Andy | Done |
-
-#### 5.3.1.2. Development Evidence for Sprint Review
-
-Durante el Sprint 1 se implementó la totalidad del backbone de la solución. En el repositorio `backend-microservices` se desarrollaron los cuatro microservicios Spring Boot con arquitectura Clean Architecture, se estandarizó la configuración de errores, Swagger y CI, y se migró el despliegue a Google Cloud Run. En el repositorio `frontend` se construyó la aplicación Vue 3 + Vite con sus vistas de acceso, marketplace, engagement y chat. En el repositorio `landing-page` se publicó la landing page del producto.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/access-profile-service | dce079e | feat(access): add access profile service | Implementación inicial del microservicio de acceso y perfiles. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/gig-marketplace-service | b1c902c | feat(marketplace): add gig marketplace service | Implementación inicial del microservicio de marketplace. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/pull-engagement-service | 9ceba60 | feat(engagement): add pull engagement service | Implementación inicial del microservicio de contratación y proyectos. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 4640c70 | feat(chat): add chat notification service | Implementación inicial del microservicio de chat y notificaciones. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/access-profile-service | c630518 | feat(access): stabilize profile service authentication | Estabilización de la autenticación JWT y flujo de perfil. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/gig-marketplace-service | 25c5f4f | feat(marketplace): stabilize gig service workflow | Estabilización del flujo de publicación y búsqueda de servicios. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/pull-engagement-service | 452877a | feat(pulls): stabilize request and project workflow | Estabilización del flujo de solicitudes y proyectos. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | c9bb7bc | feat(chat): stabilize notifications and messaging | Estabilización de mensajería y notificaciones. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 8e60ed4 | chore(platform): standardize errors swagger and ci | Estandarización transversal de manejo de errores, Swagger y CI. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 213a2ed | fix(access): keep only canonical auth endpoints | Canonicalización de los endpoints de autenticación. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | d92410c | chore(cloud): migrate microservices deployment to Google Cloud Run | Migración del despliegue de Render a Google Cloud Run. | 11/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 1467a77 | ci(cloud): add manual deploy workflows per microservice | Workflows de despliegue manual por microservicio. | 13/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | b572372 | chore(frontend): add project baseline | Base del proyecto frontend Vue 3 + Vite. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | ad2f8ec | feat(ui): add application shell and shared components | Shell de la aplicación y componentes compartidos. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 6d2e663 | feat(access): add authentication views and state | Vistas de autenticación y manejo de estado. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 27e5b7c | feat(marketplace): add gig marketplace flow | Flujo de marketplace en el frontend. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 46a3f30 | feat(engagement): add pulls engagement flow | Flujo de contratación y proyectos en el frontend. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 8f95416 | feat(chat): add chat and notification flow | Flujo de chat y notificaciones en el frontend. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/landing-page | main | dfaf8e8 | chore: main landing web | Implementación de la landing page. | 12/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/landing-page | main | e17bfb9 | chore: clean project and prepare vercel deployment | Limpieza y preparación del despliegue en Vercel. | 12/05/2026 |
-
-#### 5.3.1.3. Testing Suite Evidence for Sprint Review
-
-Durante el Sprint 1 se estableció la infraestructura de pruebas en los cuatro microservicios (dependencias `spring-boot-starter-test`, `spring-security-test`, `mockito-core`, `testcontainers` y verificación de cobertura con JaCoCo al 85%). Se implementaron los primeros casos de prueba en el microservicio `access-profile-service`:
-
-| Archivo de prueba | Tipo | Descripción | User Stories relacionados |
-| --- | --- | --- | --- |
-| `AccessProfileApplicationServiceTest` | Unit Test (JUnit 5 + Mockito) | Verifica las reglas de negocio del servicio de aplicación de acceso y perfiles (registro, login, actualización de perfil). | US03, US04, US15, US16 |
-| `AccessIntegrationTest` | Integration Test (Testcontainers + PostgreSQL) | Levanta una base PostgreSQL en contenedor y valida los flujos de registro, autenticación y perfil de extremo a extremo. | US03, US04, US19 |
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/access-profile-service | c630518 | feat(access): stabilize profile service authentication | Incluye las pruebas unitaria e integración del servicio de acceso. | 10/05/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 8e60ed4 | chore(platform): standardize errors swagger and ci | Estandariza la configuración de testing y CI entre microservicios. | 10/05/2026 |
-
-#### 5.3.1.4. Execution Evidence for Sprint Review
-
-En el Sprint 1 se logró desplegar y poner en funcionamiento la solución completa de extremo a extremo: la landing page y la aplicación frontend en Vercel consumen los cuatro microservicios desplegados en Google Cloud Run a través de Vercel Rewrites. A continuación se muestra evidencia de la solución en ejecución.
-
-**Landing page en producción** (`https://landing-page-nine-beryl-19.vercel.app/`):
-
-<img src="imgs/sprint1/landing-page-home.png" alt="Landing page de GigU en producción" title="Landing page GigU"/>
-
-**Aplicación frontend en producción — registro de cuenta** (`https://gigu-ivory.vercel.app/`):
-
-<img src="imgs/sprint1/frontend-register-view.png" alt="Vista de registro de la aplicación frontend de GigU" title="Frontend GigU - Registro"/>
-
-<img src="imgs/cap1.png"/>
-<img src="imgs/cap2.png"/>
-
-
-#### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
-
-Durante el Sprint 1 se documentaron con OpenAPI 3.0 (springdoc) los endpoints de los cuatro microservicios. Cada microservicio expone su documentación interactiva mediante Swagger UI en la ruta `/swagger-ui/index.html` de su despliegue en Google Cloud Run.
-
-**AccessProfileService** — `https://gigu-access-profile-service-149855215912.us-central1.run.app/swagger-ui/index.html`
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/access/sign-up` | POST | Registrar un nuevo usuario (correo y contraseña) y emitir JWT. |
-| `/api/v1/access/login` | POST | Autenticar credenciales y devolver el token de acceso. |
-| `/api/v1/access/me` | GET | Obtener el perfil del usuario autenticado. |
-| `/api/v1/access/freelancer-profiles/me` | PATCH | Actualizar habilidades, descripción y datos del perfil freelance propio. |
-| `/api/v1/access/freelancer-profiles/{userId}` | GET | Consultar el perfil freelance público de un usuario. |
-| `/api/v1/access/freelancer-profiles/me/portfolio-items` | POST | Añadir un ítem al portafolio del freelancer. |
-| `/api/v1/access/freelancer-profiles/me/portfolio-items/{itemId}` | DELETE | Eliminar un ítem del portafolio del freelancer. |
-
-Ejemplo de uso — `POST /api/v1/access/login`:
-```json
-// Request body
-{ "email": "lucia.vargas@gigu.test", "password": "Passw0rd!" }
-// Response 200 OK
-{ "token": "eyJhbGciOiJIUzI1NiJ9...", "userId": "a1b2c3", "role": "FREELANCER" }
-```
-El response devuelve el JWT que debe enviarse en la cabecera `Authorization: Bearer <token>` para los endpoints protegidos.
-
-<img src="imgs/sprint1/access-profile-api.png" alt="Swagger UI de AccessProfileService" title="AccessProfileService API"/>
-
-**GigMarketplaceService** — `https://gigu-gig-marketplace-service-149855215912.us-central1.run.app/swagger-ui/index.html`
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/marketplace/services` | GET | Listar/buscar servicios publicados (búsqueda paginada con filtros). |
-| `/api/v1/marketplace/services` | POST | Publicar un nuevo servicio. |
-| `/api/v1/marketplace/services/{id}` | GET | Obtener el detalle de un servicio. |
-| `/api/v1/marketplace/services/{id}` | PATCH | Editar un servicio propio. |
-| `/api/v1/marketplace/services/{id}` | DELETE | Eliminar o pausar un servicio propio. |
-| `/api/v1/marketplace/services/mine` | GET | Listar los servicios del usuario autenticado. |
-| `/api/v1/marketplace/services/{id}/media` | POST | Adjuntar imágenes o archivos a un servicio. |
-| `/api/v1/marketplace/services/{id}/media/{mediaId}` | DELETE | Eliminar un archivo multimedia de un servicio. |
-| `/api/v1/marketplace/categories` | GET | Listar las categorías de servicios disponibles. |
-
-Ejemplo de uso — `GET /api/v1/marketplace/services?keyword=figma&page=0&size=10`: devuelve una página de servicios cuyo título o descripción coincide con la palabra clave, con metadatos de paginación (`totalElements`, `totalPages`).
-
-<img src="imgs/sprint1/gig-marketplace-api.png" alt="Swagger UI de GigMarketplaceService" title="GigMarketplaceService API"/>
-
-**PullEngagementService** — `https://gigu-pulls-service-149855215912.us-central1.run.app/swagger-ui/index.html`
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/engagement/requests` | POST | Crear una solicitud de contratación desde el perfil de un freelancer. |
-| `/api/v1/engagement/requests/incoming` | GET | Listar las solicitudes de contratación recibidas. |
-| `/api/v1/engagement/requests/outgoing` | GET | Listar las solicitudes de contratación enviadas. |
-| `/api/v1/engagement/requests/{id}/decision` | PATCH | Aceptar o rechazar una solicitud de contratación. |
-| `/api/v1/engagement/projects` | GET | Listar los proyectos activos del usuario. |
-| `/api/v1/engagement/projects/{id}/status` | PATCH | Actualizar el estado del proyecto (seguimiento / finalización). |
-| `/api/v1/engagement/projects/{id}/reviews` | GET | Consultar las reseñas de un proyecto. |
-| `/api/v1/engagement/projects/{id}/reviews` | POST | Calificar al freelancer o al cliente al finalizar el proyecto. |
-| `/api/v1/engagement/price-suggestions` | POST | Obtener una sugerencia de precio inteligente para un servicio. |
-
-Ejemplo de uso — `PATCH /api/v1/engagement/requests/{id}/decision` con body `{ "decision": "ACCEPTED" }`: al aceptar una solicitud se crea el proyecto asociado y se devuelve su identificador y estado inicial.
-
-<img src="imgs/sprint1/pulls-service-api.png" alt="Swagger UI de PullEngagementService" title="PullEngagementService API"/>
-
-**ChatNotificationService** — `https://gigu-chat-notification-service-149855215912.us-central1.run.app/swagger-ui/index.html`
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/chat/conversations` | GET | Listar las conversaciones del usuario autenticado. |
-| `/api/v1/chat/conversations` | POST | Crear una nueva conversación con otro usuario. |
-| `/api/v1/chat/conversations/{id}/messages` | GET | Obtener los mensajes de una conversación. |
-| `/api/v1/chat/conversations/{id}/messages` | POST | Enviar un mensaje dentro de una conversación. |
-| `/api/v1/chat/notifications/{id}/read` | PATCH | Marcar una notificación como leída. |
-| `/api/v1/chat/notifications/read-all` | PATCH | Marcar todas las notificaciones como leídas. |
-| `/api/v1/chat/support-tickets` | POST | Crear un ticket de soporte. |
-| `/api/v1/chat/reports` | POST | Reportar a un usuario desde el chat. |
-| `/api/v1/chat/internal/notifications` | POST | Endpoint interno para que otros microservicios generen notificaciones. |
-
-Ejemplo de uso — `POST /api/v1/chat/conversations/{id}/messages` con body `{ "content": "Hola, ¿sigues disponible?" }`: registra el mensaje y genera una notificación para el destinatario.
-
-<img src="imgs/sprint1/chat-notification-api.png" alt="Swagger UI de ChatNotificationService" title="ChatNotificationService API"/>
-
-Repositorio de Web Services: `https://github.com/1ASI0657-2610-7940-Final-Project/backend-microservices`. Commits relacionados con documentación: `8e60ed4` (chore(platform): standardize errors swagger and ci) y `c6ba4eb` (fix(cloud): honor forwarded https scheme in swagger).
-
-#### 5.3.1.6. Software Deployment Evidence for Sprint Review
-
-Durante el Sprint 1 el equipo configuró y ejecutó el despliegue completo de la solución. Para el backend se creó el proyecto en Google Cloud, se configuró la cuenta de servicio y los secrets, se crearon los workflows de GitHub Actions de despliegue manual por microservicio y los scripts `gcloud` de soporte local, y se desplegaron los cuatro microservicios en Cloud Run (región `us-central1`). Para el frontend y la landing page se configuraron dos proyectos en Vercel con Vercel Rewrites apuntando a los microservicios de Cloud Run.
-
-**Microservicios desplegados en Google Cloud Run:**
-
-<img src="imgs/sprint1/cloudrun-services-list.png" alt="Listado de servicios en Google Cloud Run" title="Servicios en Cloud Run"/>
-
-<img src="imgs/sprint1/access-profile-service-cloudrun.png" alt="Detalle de AccessProfileService en Cloud Run" title="AccessProfileService en Cloud Run"/>
-
-<img src="imgs/sprint1/gig-marketplace-service-cloudrun.png" alt="Detalle de GigMarketplaceService en Cloud Run" title="GigMarketplaceService en Cloud Run"/>
-
-<img src="imgs/sprint1/pulls-service-cloudrun.png" alt="Detalle de PullEngagementService en Cloud Run" title="PullEngagementService en Cloud Run"/>
-
-<img src="imgs/sprint1/chat-notification-service-cloudrun.png" alt="Detalle de ChatNotificationService en Cloud Run" title="ChatNotificationService en Cloud Run"/>
-
-**Frontend y landing page desplegados en Vercel:**
-
-<img src="imgs/sprint1/vercel-projects-overview.png" alt="Proyectos de GigU en Vercel" title="Proyectos en Vercel"/>
-
-<img src="imgs/sprint1/vercel-frontend-deployment.png" alt="Despliegue de producción del frontend en Vercel" title="Despliegue del frontend en Vercel"/>
-
-<img src="imgs/sprint1/vercel-landing-deployment.png" alt="Despliegue de producción de la landing page en Vercel" title="Despliegue de la landing page en Vercel"/>
-
-Commits relacionados con despliegue: `d92410c` (migración a Cloud Run), `1467a77` (workflows de despliegue manual), `ffbae30` (scripts `gcloud`), `b394402` (documentación del despliegue manual), `ce24716` y `aae960d` (configuración de routing de Vercel hacia Cloud Run).
-
-#### 5.3.1.7. Team Collaboration Insights during Sprint
-
-El trabajo del Sprint 1 se distribuyó entre los tres integrantes del equipo, con participación de todos en la implementación de los productos. La implementación del backend de microservicios y la lógica de contratación, chat y perfiles se concentró en los repositorios `backend-microservices`; el frontend y la integración con los servicios cloud, junto con la configuración de despliegue; y la landing page del producto.
-
-| Integrante | Usuario GitHub | Principales aportes en el Sprint 1 |
-| --- | --- | --- |
-| Oblitas Davila, Mariano Moises | `Sigilo-dev` / `vr700` | Implementación de los cuatro microservicios backend, estandarización de errores/Swagger/CI, migración a Cloud Run y workflows de despliegue. |
-| Ybañez Esquerre, Miguel Angel | `Miguel080902` | Integración del frontend con los microservicios, configuración de routing de Vercel hacia Cloud Run y configuración de despliegue. |
-| Mio Mejia, Andy Alejandro | `AndyMio17` | Implementación del shell de la aplicación frontend, vistas de dashboard y flujo de marketplace. |
-
-
-
-**Pendiente:** Incluir los screenshots de los analíticos de colaboración y commits de GitHub (pestaña *Insights → Contributors*) de cada repositorio del Sprint 1.
-
-**Analisis de colaboracion y commits de GitHub del Reporte**
-
-<img src="imgs/contribucion1.png"/>
-
-<img src="imgs/contribucion2.png"/>
-
-**Analisis de colaboracion y commits de GitHub del BackendMicroservicios**
-
-<img src="imgs/contribucion3.png"/>
-
-**Analisis de colaboracion y commits de GitHub del Lading Page**
-
-<img src="imgs/contribucion4.png"/>
-
-**Analisis de colaboracion y commits de GitHub del Frontend**
-
-<img src="imgs/contribucion5.png"/>
-<img src="imgs/contribucion6.png"/>
-
-#### 5.3.1.8. Kanban Board
-
-El tablero Kanban del Sprint 1 se gestiona en Notion (base de datos `sprint-1-backlog`), en una vista *Board* agrupada por estado, con las columnas **Por Hacer**, **En Curso** y **Hecho**. Al cierre del Sprint, el avance de las 54 tarjetas (GIGU-8 a GIGU-61) es el siguiente:
-
-| Estado | Cantidad | Tarjetas |
-| --- | --- | --- |
-| Hecho (Done) | 45 | GIGU-8 a GIGU-21, GIGU-27 a GIGU-54, GIGU-58, GIGU-60, GIGU-61 |
-| En Curso (In-Process) | 5 | GIGU-22, GIGU-23, GIGU-25, GIGU-55, GIGU-56 |
-| Por Hacer (To-do) | 4 | GIGU-24, GIGU-26, GIGU-57, GIGU-59 |
-
-Las tarjetas en **En Curso** corresponden a testabilidad parcial (solo `access-profile-service` tiene pruebas implementadas) y a métricas de performance aún no medidas. Las tarjetas en **Por Hacer** corresponden a la mensajería asíncrona de eventos de dominio y a las proyecciones de reputación que dependen de ella; su implementación queda planificada para el Sprint 2.
-
-<img src="imgs/sprint1/sprint1-kanban-board.png" alt="Kanban Board del Sprint 1 en Notion" title="Kanban Board Sprint 1"/>
-
-URL del tablero (Notion): https://www.notion.so/38aff0862f2c80a19670ecc018555760?v=38aff0862f2c8176bd1d000cba93e333
-
-### 5.3.2. Sprint 2
-
-#### 5.3.2.1. Sprint Backlog 2
-
-El objetivo principal del Sprint 2 fue **cerrar la mensajería asíncrona y la comunicación en tiempo real de la solución GigU**, completando los work-items que habían quedado en estado *En Curso* y *Por Hacer* al cierre del Sprint 1 (mensajería de eventos de dominio y proyecciones que dependían de ella). En concreto, se implementó y desplegó el flujo de **notificaciones en tiempo real** y la base del **chat por eventos** entre los microservicios desplegados en Google Cloud Run, usando **Google Cloud Pub/Sub** (entrega push mediante webhook), **WebSocket + STOMP** (Spring Boot) y un **webhook interno** entre `PullEngagementService` y `ChatNotificationService`. Adicionalmente, se corrigió un defecto en el botón de envío de solicitudes (*Send Request*) del portal del cliente.
-
-El flujo de notificación en tiempo real implementado en este Sprint es el siguiente:
-
-```text
-1. El cliente abre un servicio en el frontend.
-2. Hace click en "Send Request".
-3. El frontend envía la solicitud al microservicio de Pulls (PullEngagementService).
-4. Pulls crea la request en base de datos (Supabase PostgreSQL).
-5. Pulls llama internamente a Chat/Notifications mediante un webhook interno.
-6. Chat/Notifications guarda la notificación.
-7. Chat/Notifications emite la notificación en tiempo real usando WebSocket (STOMP).
-8. El frontend, suscrito al WebSocket, actualiza las notificaciones del usuario.
-```
-
-**Board del Sprint 2 (Notion):** https://www.notion.so/38aff0862f2c806bb608c55f679d64f6?v=38aff0862f2c81f2a7d0000cdfffa458&source=copy_link
-
-El Sprint Backlog 2 está compuesto por (a) los work-items arrastrados del Sprint 1 que dependían de la mensajería asíncrona, ahora resueltos, y (b) las 10 nuevas tarjetas de tiempo real y corrección de defectos (GIGU-63 a GIGU-65 y GIGU-67 a GIGU-73).
-
-**Work-items arrastrados del Sprint 1 (resueltos en el Sprint 2):**
-
-| Sprint # | Sprint 2 | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **User Story / Epic** | | **Work-Item / Task** | | | | | |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (h)** | **Assigned To** | **Status** |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-22 | QA-03: Testabilidad del ciclo de vida del proyecto | Pruebas unitarias del ciclo de vida en `pulls-service`. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-23 | QA-05: Disponibilidad ante fallas de notificación | El fallo de notificación ya no bloquea la operación principal; el webhook a Chat se ejecuta de forma desacoplada. | 3 | Mio Mejia, Andy | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-24 | CON-10: Eventos publicados en mensajería asíncrona | Publicación de eventos de dominio mediante Google Cloud Pub/Sub (reemplaza a RabbitMQ). | 5 | Oblitas Davila, Mariano | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-25 | CRN-08: Testabilidad de reglas de negocio sin levantar todo el sistema | Tests aislados de reglas de negocio en los servicios de aplicación. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-26 | ADR-004: Publicación de eventos de dominio (`ProjectStatusChanged`) | Publicación de eventos vía Pub/Sub al cambiar el estado del proyecto. | 4 | Oblitas Davila, Mariano | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-55 | QA-06: Performance de búsquedas paginadas | Paginación validada con índices del catálogo. | 3 | Mio Mejia, Andy | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-56 | CRN-12: Performance al crecer el catálogo | Validación de performance de búsquedas con índices. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-57 | CRN-03: Reputación/notificación por evento (no por joins cross-schema) | Eventos de chat/notificación entregados por Pub/Sub push, sin joins cross-schema. | 4 | Oblitas Davila, Mariano | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-59 | ADR-009: Consumo de eventos de dominio vía suscripción push | Suscripción push `gigu-chat-events-push-chat` consumida por el endpoint de eventos de chat. | 4 | Oblitas Davila, Mariano | Done |
-
-**Nuevas tarjetas del Sprint 2 (tiempo real y corrección de defectos):**
-
-| Sprint # | Sprint 2 | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **User Story / Epic** | | **Work-Item / Task** | | | | | |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (h)** | **Assigned To** | **Status** |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-63 | PUS-06: Notificación al freelancer al recibir una solicitud | Al crear la request, Pulls notifica al freelancer en tiempo real. | 5 | Oblitas Davila, Mariano | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-64 | Webhook interno Pulls → Chat (`POST /api/v1/chat/internal/notifications`) | Llamada interna desde Pulls a Chat para crear la notificación. | 4 | Oblitas Davila, Mariano | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-65 | CON-10: Topic Pub/Sub `gigu-chat-events` + suscripción push | Configuración del topic y la suscripción push en Google Cloud Pub/Sub. | 4 | Oblitas Davila, Mariano | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-67 | Endpoint Pub/Sub push `POST /internal/pubsub/chat-events` | Recepción de eventos de chat por push, validados con token. | 3 | Oblitas Davila, Mariano | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-68 | WebSocket + STOMP en ChatNotificationService (`/ws`) | Endpoint WebSocket y topics STOMP de conversaciones y notificaciones. | 5 | Oblitas Davila, Mariano | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-69 | Suscripción del frontend al WebSocket de notificaciones | El frontend escucha `/topic/notifications/{userId}` y actualiza en tiempo real. | 4 | Ybañez Esquerre, Miguel | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-70 | Chat en tiempo real (`/topic/conversations/{conversationId}`) | Mensajes de una conversación entregados en tiempo real por STOMP. | 4 | Ybañez Esquerre, Miguel | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-71 | Fix botón *Send Request* del cliente (ruta API y envío) | Corrección del envío de solicitudes del portal del cliente y de la ruta API. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-72 | Configuración de rewrites y variables de entorno en Vercel | Rewrites `/api/*` por microservicio y `VITE_CHAT_WS_URL` para el WebSocket. | 3 | Ybañez Esquerre, Miguel | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-73 | Despliegue de ChatNotificationService con trigger Pub/Sub | Redepliegue en Cloud Run con la suscripción push apuntando a `/internal/pubsub/chat-events`. | 3 | Mio Mejia, Andy | Done |
-
-El backlog del Sprint 2 en Notion, al cierre del Sprint (todas las tarjetas en estado *Hecho*):
-
-<img src="imgs/sprint2/sprint2-backlog-done-1.png" alt="Sprint Backlog 2 - Finalizadas (parte 1)" title="Sprint Backlog 2 - Done"/>
-
-<img src="imgs/sprint2/sprint2-backlog-done-2.png" alt="Sprint Backlog 2 - Finalizadas (parte 2)" title="Sprint Backlog 2 - Done"/>
-
-#### 5.3.2.2. Development Evidence for Sprint Review
-
-Durante el Sprint 2 el trabajo se concentró en `ChatNotificationService` (WebSocket + STOMP, endpoint Pub/Sub push y webhook interno de notificaciones), en `PullEngagementService` (publicación de la notificación vía webhook al crear una solicitud) y en el `frontend` (suscripción al WebSocket, actualización en tiempo real de las notificaciones y corrección del botón *Send Request* del cliente, junto con la corrección de las rutas de API).
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 40c9d57 | feat(chat): add Pub/Sub events and websocket broadcasting | Eventos de chat por Google Cloud Pub/Sub y difusión por WebSocket. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 58b347e | chore(gcloud): add chat Pub/Sub setup scripts | Scripts de configuración del topic y la suscripción push de Pub/Sub. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 246a7ba | feat(chat): harden pubsub webhook handling | Robustez del manejo del webhook Pub/Sub push (`/internal/pubsub/chat-events`). | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | fa7d3e3 | feat(chat): broadcast notifications over websocket | Difusión de notificaciones a los clientes por WebSocket/STOMP. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 38e7dab | fix(pulls): enrich notification webhook payload | Enriquecimiento del payload del webhook de notificación enviado desde Pulls. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | c5078fe | fix(chat): make conversation responses null-safe | Respuestas de conversación null-safe. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | e3b32fe | Merge branch 'feature/chat-notification-service' into feature/main-app-logic | Integración del Sprint 2 (chat/notificaciones en tiempo real) a la rama de despliegue. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 39282ef | feat(chat): connect chat screen to websocket events | Conexión de la pantalla de chat a los eventos WebSocket. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | e607b9c | feat(chat): align chat APIs with direct service URLs | Alineación de las APIs de chat con las URLs directas del servicio (WebSocket sin rewrite). | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | a34a13f | fix(pulls): route engagement requests through vercel rewrites | Enrutamiento de las solicitudes de contratación mediante Vercel Rewrites. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 064c401 | fix(pulls): make request submission reliable | Corrección del envío de solicitudes (botón *Send Request* del cliente). | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 732b5af | fix(pulls): show request form validation errors | Muestra de los errores de validación del formulario de solicitud. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 96aa11d | fix(notifications): add websocket updates and correct api routes | Actualizaciones por WebSocket de notificaciones y corrección de las rutas de API. | 06/06/2026 |
-
-#### 5.3.2.3. Testing Suite Evidence for Sprint Review
-
-Durante el Sprint 2 se ampliaron las pruebas hacia el flujo de contratación y notificación, cubriendo los work-items de testabilidad (`QA-03`, `CRN-08`) que habían quedado *En Curso* en el Sprint 1. Se incorporaron pruebas del flujo de creación de solicitudes y del webhook interno de notificaciones, así como del consumo de eventos de chat por Pub/Sub push.
-
-| Archivo de prueba | Tipo | Descripción | User Stories relacionados |
-| --- | --- | --- | --- |
-| `EngagementApplicationServiceTest` | Unit Test (JUnit 5 + Mockito) | Verifica la creación de solicitudes y la decisión (aceptar/rechazar), incluyendo la invocación del webhook de notificación hacia Chat. | US06, US07, US08 |
-| `ChatNotificationApplicationServiceTest` | Unit Test (JUnit 5 + Mockito) | Verifica las reglas de negocio de conversaciones, mensajes y notificaciones. | US06, US20 |
-| `ChatNotificationControllerTest` | Integration Test (MockMvc) | Valida los endpoints REST de chat, incluyendo `POST /api/v1/chat/internal/notifications` y `POST /internal/pubsub/chat-events` (rechazo de peticiones sin token válido). | US20 |
-| `ChatNotificationIntegrationTest` | Integration Test (Testcontainers + PostgreSQL) | Levanta PostgreSQL en contenedor y valida la persistencia de notificaciones y el flujo de chat de extremo a extremo. | US06, US20 |
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | 246a7ba | feat(chat): harden pubsub webhook handling | Incluye las pruebas del manejo del webhook Pub/Sub push del servicio de chat. | 06/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/chat-notification-service | a1b75fa | chore(gcloud): make chat pubsub test deterministic | Hace determinista la prueba del flujo de eventos Pub/Sub de chat. | 06/06/2026 |
-
-#### 5.3.2.4. Execution Evidence for Sprint Review
-
-En el Sprint 2 se puso en funcionamiento el flujo de notificaciones en tiempo real de extremo a extremo: el cliente envía una solicitud desde el frontend, el freelancer recibe la notificación en tiempo real y el chat entrega los mensajes de cada conversación mediante WebSocket. A continuación se muestra evidencia de la solución en ejecución.
-
-**Envío de solicitud de contratación desde el portal del cliente** (modal *Send Request* con sugerencia de precio; corrección del botón aplicada — estado *Sending...*):
-
-<img src="imgs/sprint2/frontend-send-request-modal.png" alt="Modal de envío de solicitud (Send Request) del cliente en GigU" title="Frontend GigU - Send Request"/>
-
-**Seguimiento de solicitudes del cliente** (*My Requests*, con estados `ACCEPTED`, `REJECTED` y `PENDING`):
-
-<img src="imgs/sprint2/frontend-my-requests.png" alt="Listado My Requests del cliente en GigU" title="Frontend GigU - My Requests"/>
-
-**Chat en tiempo real** (vista *Messaging*; los mensajes y notificaciones se entregan por WebSocket sin recargar la página):
-
-<img src="imgs/sprint2/frontend-chat-realtime.png" alt="Vista de chat en tiempo real de GigU" title="Frontend GigU - Chat en tiempo real"/>
-
-La conexión WebSocket del frontend se establece directamente contra el backend de chat (`wss://gigu-chat-notification-service-149855215912.us-central1.run.app/ws`) y se suscribe a los topics `/topic/notifications/{userId}` (notificaciones del usuario) y `/topic/conversations/{conversationId}` (mensajes de la conversación). Esto puede verificarse en el navegador desde *DevTools → Network → WS*.
-
-#### 5.3.2.5. Microservices Documentation Evidence for Sprint Review
-
-Durante el Sprint 2 se documentaron en `ChatNotificationService` los nuevos endpoints de integración asíncrona y en tiempo real: el endpoint de recepción de eventos Pub/Sub push, el webhook interno de notificaciones y el canal WebSocket. La documentación interactiva se mantiene en Swagger UI (`/swagger-ui/index.html`) del despliegue en Google Cloud Run.
-
-**ChatNotificationService** — `https://gigu-chat-notification-service-149855215912.us-central1.run.app/swagger-ui/index.html`
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/internal/pubsub/chat-events` | POST | Recibir eventos de chat entregados por Google Cloud Pub/Sub (push), validados con `token`. |
-| `/api/v1/chat/internal/notifications` | POST | Endpoint interno usado por `PullEngagementService` para crear notificaciones. |
-| `/api/v1/chat/conversations/{id}/messages` | POST | Enviar un mensaje; se propaga en tiempo real por `/topic/conversations/{id}`. |
-| `/api/v1/chat/notifications` | GET | Listar las notificaciones del usuario autenticado. |
-| `/ws` | WS (STOMP) | Canal WebSocket; topics `/topic/notifications/{userId}` y `/topic/conversations/{conversationId}`. |
-
-Ejemplo de uso — `POST /api/engagement/requests` (reescrito por Vercel hacia `https://gigu-pulls-service-149855215912.us-central1.run.app/api/v1/engagement/requests`):
-```json
-// Request body
-{
-  "serviceId": "id-del-servicio",
-  "freelancerId": "id-del-freelancer",
-  "message": "mensaje del cliente",
-  "proposedPrice": 111.00,
-  "currency": "PEN",
-  "proposedDeliveryDays": 1
-}
-```
-Al crear la solicitud, `PullEngagementService` invoca internamente el webhook `POST /api/v1/chat/internal/notifications`, que persiste la notificación y la emite por WebSocket al destinatario.
-
-<img src="imgs/sprint2/chat-notification-api-pubsub-webhook.png" alt="Swagger UI de ChatNotificationService con los endpoints Pub/Sub y webhook" title="ChatNotificationService API - Pub/Sub & Webhook"/>
-
-#### 5.3.2.6. Software Deployment Evidence for Sprint Review
-
-Durante el Sprint 2 se redesplegaron los microservicios afectados en Google Cloud Run, se configuró el topic y la suscripción push de Google Cloud Pub/Sub para los eventos de chat, y se actualizó el frontend en Vercel (rewrites por microservicio y variable `VITE_CHAT_WS_URL` para el WebSocket).
-
-**Microservicios desplegados en Google Cloud Run** (redepliegue reciente de `gigu-chat-notification-service`, `gigu-pulls-service`, `gigu-access-profile-service` y `gigu-gig-marketplace-service`):
-
-<img src="imgs/sprint2/cloudrun-services-list.png" alt="Listado de servicios en Google Cloud Run tras el Sprint 2" title="Servicios en Cloud Run - Sprint 2"/>
-
-**Trigger de Google Cloud Pub/Sub (suscripción push hacia el servicio de chat):** topic `gigu-chat-events`, suscripción `gigu-chat-events-push-chat`, entrega *Push* hacia `/internal/pubsub/chat-events`:
-
-<img src="imgs/sprint2/cloudrun-pubsub-trigger.png" alt="Suscripción push de Pub/Sub hacia ChatNotificationService" title="Pub/Sub Push Trigger - Chat"/>
-
-**Frontend desplegado en Vercel** (despliegue de producción con el commit `fix(notifications): add websocket updates and correct api routes`):
-
-<img src="imgs/sprint2/vercel-production-deployment.png" alt="Despliegue de producción del frontend en Vercel - Sprint 2" title="Despliegue del frontend en Vercel - Sprint 2"/>
-
-**Variables de entorno en Vercel** (URLs de los microservicios y `VITE_CHAT_WS_URL` para el WebSocket):
-
-<img src="imgs/sprint2/vercel-env-variables.png" alt="Variables de entorno del frontend en Vercel" title="Variables de entorno en Vercel"/>
-
-El frontend consume el backend mediante **Vercel Rewrites** para REST (rutas relativas `/api/access`, `/api/profile`, `/api/marketplace`, `/api/engagement`, `/api/chat`, `/api/notifications` reenviadas al microservicio correspondiente en Cloud Run) y se conecta **directamente** al WebSocket (`wss://gigu-chat-notification-service-149855215912.us-central1.run.app/ws`, sin rewrite) mediante la variable `VITE_CHAT_WS_URL`. La evidencia adicional puede revisarse en los logs de Cloud Run de `gigu-chat-notification-service` (peticiones a `/api/v1/chat/internal/notifications`, `/internal/pubsub/chat-events` y `/ws`) y en Google Cloud Pub/Sub (topic `gigu-chat-events`, suscripción push `gigu-chat-events-push-chat`).
-
-Commits relacionados con el despliegue del Sprint 2: `58b347e` (scripts de configuración de Pub/Sub para chat) y `a1b75fa` (determinismo de la prueba de Pub/Sub) en `backend-microservices`; `a34a13f` (enrutamiento de solicitudes por Vercel Rewrites) y `96aa11d` (actualizaciones por WebSocket y corrección de rutas de API) en `frontend`.
-
-#### 5.3.2.7. Team Collaboration Insights during Sprint
-
-El trabajo del Sprint 2 se distribuyó entre los tres integrantes del equipo. La implementación de la mensajería asíncrona y el tiempo real (Pub/Sub, WebSocket + STOMP y webhook interno) se concentró en el backend; la integración del frontend con el WebSocket, los rewrites y la corrección del botón de solicitud del cliente; y la configuración del despliegue del trigger de Pub/Sub.
-
-| Integrante | Usuario GitHub | Principales aportes en el Sprint 2 |
-| --- | --- | --- |
-| Oblitas Davila, Mariano Moises | `Sigilo-dev` / `vr700` | WebSocket + STOMP y endpoint Pub/Sub push en `ChatNotificationService`, webhook interno de notificaciones y publicación de la notificación desde `PullEngagementService`. |
-| Ybañez Esquerre, Miguel Angel | `Miguel080902` | Suscripción del frontend al WebSocket, actualización en tiempo real de notificaciones y chat, corrección del botón *Send Request* del cliente y configuración de rewrites/variables en Vercel. |
-| Mio Mejia, Andy Alejandro | `AndyMio17` | Configuración del topic y la suscripción push de Pub/Sub, redepliegue del servicio de chat en Cloud Run y verificación del flujo de extremo a extremo. |
-
-**Análisis de colaboración y commits de GitHub (Sprint 2).** Las estadísticas de contribución de GitHub (*Insights → Contributors*, rama principal de cada repositorio, excluyendo merge commits) son las siguientes:
-
-| Repositorio | Rama | Contribuidor (GitHub) | Commits |
-| --- | --- | --- | --- |
-| backend-microservices | `feature/main-app-logic` | `Sigilo-dev` (Oblitas Davila, Mariano) | 43 |
-| frontend | `feature/main-app` | `Sigilo-dev` (Oblitas Davila, Mariano) | 13 |
-| frontend | `feature/main-app` | `Miguel080902` (Ybañez Esquerre, Miguel) | 5 |
-| frontend | `feature/main-app` | `AndyMio17` (Mio Mejia, Andy) | 4 |
-
-Durante el Sprint 2, la implementación de la mensajería en tiempo real (Google Cloud Pub/Sub, WebSocket + STOMP y webhook interno) se integró principalmente a través de la cuenta `Sigilo-dev`, mientras que la verificación funcional de extremo a extremo, las pruebas y la documentación de la evidencia se realizaron de forma colaborativa por el equipo.
-
-**Análisis de colaboración y commits de GitHub del Backend (`backend-microservices`):**
-
-<img src="imgs/sprint2/github-insights-backend.png" alt="GitHub Insights - Contributors del repositorio backend-microservices (Sprint 2)" title="Insights backend-microservices"/>
-
-**Análisis de colaboración y commits de GitHub del Frontend (`frontend`):**
-
-<img src="imgs/sprint2/github-insights-frontend.png" alt="GitHub Insights - Contributors del repositorio frontend (Sprint 2)" title="Insights frontend"/>
-
-#### 5.3.2.8. Kanban Board
-
-El tablero Kanban del Sprint 2 se gestiona en Notion (base de datos `sprint-2-backlog`), con las columnas **Por Hacer**, **En Curso** y **Hecho**. El tablero del Sprint 2 agrupa las **19 tarjetas del alcance del Sprint** —las 9 arrastradas del Sprint 1 (GIGU-22, GIGU-23, GIGU-24, GIGU-25, GIGU-26, GIGU-55, GIGU-56, GIGU-57, GIGU-59) y las 10 nuevas (GIGU-63 a GIGU-65 y GIGU-67 a GIGU-73)—, todas en estado **Hecho** al cierre:
-
-| Estado | Cantidad | Tarjetas |
-| --- | --- | --- |
-| Hecho (Done) | 19 | 9 arrastradas (GIGU-22, 23, 24, 25, 26, 55, 56, 57, 59) + 10 nuevas (GIGU-63–65, GIGU-67–73) |
-| En Curso (In-Process) | 0 | — |
-| Por Hacer (To-do) | 0 | — |
-
-Sumando las 45 tarjetas ya finalizadas durante el Sprint 1, las **64 tarjetas** del proyecto quedan en estado **Hecho** al cierre del Sprint 2.
-
-Con el cierre del Sprint 2, todas las tarjetas derivadas de las iteraciones ADD y de la implementación de la solución quedan en estado **Hecho**: se completó la mensajería asíncrona de eventos de dominio (Google Cloud Pub/Sub), la comunicación en tiempo real (WebSocket + STOMP) y el webhook interno de notificaciones, además de la corrección del defecto del botón de solicitud del cliente.
-
-<img src="imgs/sprint2/sprint2-kanban-board.png" alt="Kanban Board del Sprint 2 en Notion" title="Kanban Board Sprint 2"/>
-
-URL del tablero (Notion): https://www.notion.so/38aff0862f2c8003a48fe4e04ad6e4e0?v=38aff0862f2c814091b6000c19f27ab5
-
-### 5.3.3. Sprint 3
-
-#### 5.3.3.1. Sprint Backlog 3
-
-El objetivo principal del Sprint 3 fue **endurecer técnicamente la solución GigU y completar el almacenamiento de imágenes**, una vez que la funcionalidad de cara al usuario había quedado cerrada en los Sprints 1 y 2. En concreto se implementó: (a) el **almacenamiento de imágenes** en **Supabase Storage** mediante un puerto/adaptador hexagonal (`StoragePort` + `SupabaseStorageAdapter`) para el portafolio del freelancer (bucket `portfolio`) y la media de los servicios del marketplace (bucket `gig-media`), con subida binaria real y persistencia de la URL pública en base de datos; (b) **resiliencia ante fallos de servicios externos** con **Resilience4j** (Circuit Breaker en `gig-marketplace-service` hacia Supabase Storage y en `pulls-service` hacia la notificación de Chat); (c) la **externalización de la configuración de Pub/Sub** a un archivo JSON alojado en Cloud Storage (`ExternalEdaConfigLoader`); (d) el **rediseño y pulido del frontend** (vista de mensajes, páginas de dashboard y perfil del freelancer, flujo de subida de media del gig) buscando fidelidad con el Figma; y (e) la **migración del tablero Kanban a Notion** (product backlog y sprints).
-
-A diferencia de los Sprints 1 y 2, el Sprint 3 **no cierra al 100%**: dos work-items quedan en estado *En Curso* al cierre del Sprint —los **tests basados en contratos** entre microservicios (SP10) y la **optimización de velocidad del frontend** (SP13, lazy-loading/code-splitting/debounce)—, y su finalización se planifica para una iteración posterior.
-
-**Board del Sprint 3 (Notion):** https://www.notion.so/38aff0862f2c806bb608c55f679d64f6?v=38aff0862f2c81f2a7d0000cdfffa458
-
-El Sprint Backlog 3 está compuesto por **11 tarjetas nuevas** (GIGU-74 a GIGU-84); no hay tarjetas arrastradas, ya que el Sprint 2 cerró todos sus work-items.
-
-| Sprint # | Sprint 3 | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **User Story / Epic** | | **Work-Item / Task** | | | | | |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (h)** | **Assigned To** | **Status** |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-74 | SP12: Storage de imágenes en Supabase (`StoragePort` + `SupabaseStorageAdapter`) | Puerto y adaptador hexagonal de almacenamiento; subida binaria a Supabase Storage y persistencia de la URL pública en BD. | 6 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-75 | US51: Soporte de media en el marketplace (subir, principal, eliminar) | Endpoints multipart `POST`/`DELETE` de media del servicio (hasta 5 imágenes, máx 5MB, imagen principal). | 5 | Oblitas Davila, Mariano | Done |
-| EP04 | Portafolio y Evidencias del Freelancer | GIGU-76 | US52: Storage de imágenes del portafolio freelance (bucket `portfolio`) | Subida de imágenes de portafolio a Supabase Storage en `access-profile-service` y persistencia de metadatos. | 4 | Oblitas Davila, Mariano | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-77 | SP09: Circuit Breaker (Resilience4j) en marketplace → Supabase Storage | `@CircuitBreaker` sobre `upload`/`delete` de storage con fallback; instancia `supabaseStorage` (50%, 15s). | 3 | Oblitas Davila, Mariano | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-78 | SP09: Circuit Breaker (Resilience4j) en pulls → chat (notification client) | `@CircuitBreaker` sobre la notificación best-effort hacia Chat con fallback; instancia `chatNotificationService` (50%, 10s). | 3 | Oblitas Davila, Mariano | Done |
-| EP11 | Mensajería Coordinada Cliente-Freelancer | GIGU-79 | SP11: Externalización de config Pub/Sub (JSON en Cloud Storage) | `ExternalEdaConfigLoader` carga `gs://gigu-external-config/prod/eda-pubsub-config.json` (project, topics, subs, webhook, estrategia de credenciales) al arranque. | 5 | Oblitas Davila, Mariano | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-80 | Frontend: rediseño de chat y páginas de dashboard/perfil (fidelidad Figma) | Rediseño de la vista de mensajes y páginas de dashboard y perfil del freelancer alineadas al Figma. | 6 | Mio Mejia, Andy | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-81 | US51: Mejora del flujo de subida de media del gig (preview, principal, eliminar) | `GigMediaManager`: previsualización con blob URL, marcado de imagen principal y eliminación. | 4 | Mio Mejia, Andy | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-82 | Migración y actualización del Kanban a Notion (product backlog + sprints) | Migración de los tableros de Jira a Notion (`product-backlog`, `sprint-1`, `sprint-2`) y actualización de enlaces en el informe. | 4 | Ybañez Esquerre, Miguel | Done |
-| EP06 | Descubrimiento del Catálogo | GIGU-83 | SP13: Optimización de velocidad del frontend (lazy-loading, code-splitting, debounce) | Lazy-loading de rutas, code-splitting (`manualChunks`), `loading="lazy"` en imágenes y debounce en búsqueda; pendiente de implementar. | 4 | Mio Mejia, Andy | In-Process |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-84 | SP10: Tests basados en contratos entre microservicios (Spring Cloud Contract) | Contratos consumidor/productor entre microservicios; aún no implementado en el repositorio. | 5 | Ybañez Esquerre, Miguel | In-Process |
-
-#### 5.3.3.2. Development Evidence for Sprint Review
-
-Durante el Sprint 3 el trabajo se concentró en `gig-marketplace-service` y `access-profile-service` (almacenamiento de imágenes en Supabase Storage y circuit breaker sobre el storage), en `pulls-service` (circuit breaker sobre la notificación a Chat), en `chat-notification-service` (carga de la configuración EDA/Pub/Sub desde Cloud Storage) y en el `frontend` (rediseño de la vista de chat, páginas de dashboard/perfil y mejora del flujo de subida de media del gig).
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | bed24da | feat(marketplace): add Supabase storage media support | Soporte de media en el marketplace con almacenamiento en Supabase Storage. | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 0003c54 | fix(marketplace): correct Supabase storage upload request | Corrección de la petición de subida a Supabase Storage. | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 6a199a1 | fix(marketplace): wire Supabase storage adapter constructor | Cableado del constructor del adaptador de Supabase Storage. | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 1cfa93d | feat(marketplace): add circuit breaker for storage uploads | Circuit Breaker (Resilience4j) sobre las subidas a storage. | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 0cde3a6 | feat(pulls): add circuit breaker for notification client | Circuit Breaker sobre el cliente de notificaciones hacia Chat. | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 64bbe47 | feat(chat): load EDA config from Cloud Storage | Carga de la configuración EDA/Pub/Sub desde Cloud Storage (JSON). | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 7dd2f87 | fix(chat): resolve real participant display names | Resolución de los nombres reales de los participantes de la conversación. | 20/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 38e5792 | merge: feature/chat-notification-service into feature/main-app-logic | Integración del Sprint 3 a la rama de despliegue. | 20/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 5e6a379 | feat(marketplace): improve gig media upload flow | Mejora del flujo de subida de media del gig (preview, principal, eliminar). | 18/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | d87b8c9 | feat(ui): implement messages chat redesign and freelancer profile dashboard pages | Rediseño de la vista de mensajes y páginas de dashboard/perfil del freelancer. | 19/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | be02deb | fix(chat): make thread viewport responsive and sticky-bottom | Viewport del hilo de chat responsive y anclado al fondo. | 19/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 5f527f9 | fix(build): sync npm lockfile for Vercel | Sincronización del lockfile de npm para el build de Vercel. | 19/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 364c838 | fix(chat): select conversation counterpart display name | Selección del nombre de la contraparte en la conversación. | 20/06/2026 |
-
-#### 5.3.3.3. Testing Suite Evidence for Sprint Review
-
-Durante el Sprint 3, el aseguramiento de calidad se apoyó en las suites de pruebas existentes de los microservicios (unitarias e integración con Testcontainers) ampliadas en los Sprints 1 y 2, complementadas con la validación manual de los nuevos flujos de subida de imágenes. La introducción de **pruebas basadas en contratos** (`SP10`, *Spring Cloud Contract*) entre microservicios quedó **planificada pero no implementada** en el repositorio al cierre del Sprint, por lo que la tarjeta `GIGU-84` permanece en estado *En Curso*.
-
-| Archivo de prueba | Tipo | Descripción | User Stories relacionados |
-| --- | --- | --- | --- |
-| `MarketplaceApplicationServiceTest` | Unit Test (JUnit 5 + Mockito) | Verifica las reglas de publicación y de gestión de media del servicio (límite de 5 imágenes, tipos permitidos, imagen principal), invocando el `StoragePort` mockeado. | US51, US24 |
-| `AccessProfileApplicationServiceTest` | Unit Test (JUnit 5 + Mockito) | Verifica la carga de imágenes de portafolio y la persistencia de metadatos sobre el `StoragePort` mockeado. | US52, US18 |
-| _Contract tests (Spring Cloud Contract)_ | _Planificado_ | Contratos consumidor/productor entre microservicios; **no implementado** al cierre del Sprint 3. | SP10 |
-
-> Nota: las pruebas basadas en contratos (`SP10`) son el trabajo pendiente más relevante del Sprint 3; su tarjeta queda explícitamente *En Curso* para no sobre-reportar el avance.
-
-#### 5.3.3.4. Execution Evidence for Sprint Review
-
-En el Sprint 3 se puso en funcionamiento el **almacenamiento de imágenes de extremo a extremo**: el freelancer sube imágenes a su servicio o a su portafolio desde el frontend, el backend las almacena en **Supabase Storage** (subida binaria) y persiste la **URL pública** en base de datos, y las imágenes se muestran en el catálogo y en el detalle del servicio. La resiliencia se valida observando que, ante un fallo del storage o de la notificación, el **Circuit Breaker** abre el circuito y aplica el `fallback` sin tumbar la operación principal.
-
-**Subida de media del servicio (`GigMediaManager`)** — previsualización, marcado de imagen principal y eliminación (hasta 5 imágenes; JPEG/PNG/WebP):
-
-<img src="imgs/sprint3/frontend-gig-media-upload.png" alt="Flujo de subida de media del gig en GigU" title="Frontend GigU - Gig Media Upload"/>
-
-**Imágenes del servicio en el catálogo y detalle** (servidas desde Supabase Storage vía URL pública):
-
-<img src="imgs/sprint3/frontend-service-gallery.png" alt="Galería de imágenes del servicio en GigU" title="Frontend GigU - Service Gallery"/>
-
-Las imágenes se almacenan bajo rutas determinísticas (`services/{serviceId}/{uuid}-{archivo}` para la media de los servicios y `freelancers/{userId}/{uuid}-{archivo}` para el portafolio del freelancer) y se sirven mediante la URL pública `{SUPABASE_URL}/storage/v1/object/public/{bucket}/{objectPath}`.
-
-#### 5.3.3.5. Microservices Documentation Evidence for Sprint Review
-
-Durante el Sprint 3 se documentaron en `gig-marketplace-service` y `access-profile-service` los nuevos endpoints de gestión de imágenes (multipart), que se mantienen en Swagger UI (`/swagger-ui/index.html`) de cada despliegue en Google Cloud Run.
-
-**GigMarketplaceService** — endpoints de media del servicio:
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/marketplace/services/{id}/media` | POST | Subir una imagen del servicio (multipart; `file`, `primary`). Máx. 5 imágenes, 5MB, tipos `jpeg`/`png`/`webp`. |
-| `/api/v1/marketplace/services/{id}/media/{mediaId}` | DELETE | Eliminar una imagen del servicio y su objeto en Supabase Storage. |
-
-**AccessProfileService** — endpoint de media del portafolio:
-
-| Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- |
-| `/api/v1/access/freelancer-profiles/me/portfolio-items` | POST | Subir un ítem de portafolio con imagen (multipart; `title`, `description`, `file`). Tipos `jpeg`/`png`. |
-
-Ejemplo de uso — `POST /api/v1/marketplace/services/{id}/media` (multipart/form-data):
-```text
-file=<binary image/png|jpeg|webp>
-primary=true
-```
-La respuesta incluye el `mediaId` y la `publicUrl` del objeto almacenado en Supabase Storage; los metadatos (`bucket`, `objectPath`, `contentType`, `sizeBytes`, `primary`, `sortOrder`) quedan persistidos en `marketplace_schema.service_media`.
-
-<img src="imgs/sprint3/marketplace-api-media-endpoints.png" alt="Swagger UI de GigMarketplaceService con los endpoints de media" title="GigMarketplaceService API - Media"/>
-
-#### 5.3.3.6. Software Deployment Evidence for Sprint Review
-
-Durante el Sprint 3 se redesplegaron en Google Cloud Run los microservicios afectados (`gigu-gig-marketplace-service`, `gigu-access-profile-service`, `gigu-pulls-service` y `gigu-chat-notification-service`), se configuraron los buckets de **Supabase Storage** (`portfolio` y `gig-media`) y se externalizó la configuración de Pub/Sub a un objeto JSON en **Google Cloud Storage** (`gs://gigu-external-config/prod/eda-pubsub-config.json`), cargado al arranque por `ExternalEdaConfigLoader`.
-
-**Configuración de almacenamiento (Supabase Storage):** buckets `portfolio` (portafolio del freelancer) y `gig-media` (media de los servicios), con credenciales `SUPABASE_URL` y `SUPABASE_SERVICE_ROLE_KEY` provistas como variables de entorno en Cloud Run.
-
-<img src="imgs/sprint3/supabase-storage-buckets.png" alt="Buckets de Supabase Storage portfolio y gig-media" title="Supabase Storage - Buckets"/>
-
-**Externalización de la configuración de Pub/Sub:** el objeto `eda-pubsub-config.json` (project, topic `gigu-chat-events`, suscripción `gigu-chat-events-push-chat`, webhook y `credentialsStrategy: cloud-run-service-account`) se aloja en el bucket `gigu-external-config` de Google Cloud Storage y se carga al arranque. El log de Cloud Run de `gigu-chat-notification-service` confirma la carga: `c.g.c.i.eda.ExternalEdaConfigLoader : Loaded external EDA config from gs://gigu-external-config/prod/eda-pubsub-config.json`:
-
-<img src="imgs/sprint3/cloudrun-eda-config-loaded.png" alt="Log de Cloud Run confirmando la carga de la config EDA/Pub/Sub desde Google Cloud Storage" title="Cloud Run - EDA Config cargada desde Cloud Storage"/>
-
-Commits relacionados con el despliegue del Sprint 3: `64bbe47` (carga de la config EDA desde Cloud Storage), `1cfa93d` y `0cde3a6` (circuit breakers) y `bed24da` (soporte de media en Supabase Storage) en `backend-microservices`; `5f527f9` (sincronización del lockfile para el build de Vercel) en `frontend`.
-
-#### 5.3.3.7. Team Collaboration Insights during Sprint
-
-El trabajo del Sprint 3 se distribuyó entre los tres integrantes del equipo. El almacenamiento de imágenes, la resiliencia (Circuit Breaker) y la externalización de la configuración de Pub/Sub se concentraron en el backend; el rediseño y pulido del frontend (fidelidad con el Figma) y la mejora del flujo de subida de media; y la migración del tablero Kanban a Notion.
-
-| Integrante | Usuario GitHub | Principales aportes en el Sprint 3 |
-| --- | --- | --- |
-| Oblitas Davila, Mariano Moises | `Sigilo-dev` / `vr700` | Almacenamiento de imágenes en Supabase Storage (`StoragePort`/`SupabaseStorageAdapter`) para portafolio y marketplace, Circuit Breaker (Resilience4j) en marketplace y pulls, y externalización de la configuración de Pub/Sub a un JSON en Cloud Storage. |
-| Mio Mejia, Andy Alejandro | `AndyMio17` / `AndyMio` | Rediseño de la vista de mensajes y de las páginas de dashboard/perfil del freelancer (fidelidad con el Figma) y mejora del flujo de subida de media del gig. |
-| Ybañez Esquerre, Miguel Angel | `Miguel080902` | Migración y actualización del tablero Kanban a Notion (product backlog y sprints). Los tests basados en contratos (`SP10`) quedan a su cargo, **en curso** al cierre del Sprint. |
-
-**Análisis de colaboración y commits de GitHub (Sprint 3).** Las estadísticas de contribución de GitHub (*Insights → Contributors*, rama principal de cada repositorio, ventana del Sprint 3 — 18 al 20 de junio de 2026, excluyendo merge commits) son las siguientes:
-
-| Repositorio | Rama | Contribuidor (GitHub) | Commits |
-| --- | --- | --- | --- |
-| backend-microservices | `feature/main-app-logic` | `vr700` / `Sigilo-dev` (Oblitas Davila, Mariano) | 11 |
-| frontend | `feature/main-app` | `vr700` / `Sigilo-dev` (Oblitas Davila, Mariano) | 8 |
-| frontend | `feature/main-app` | `AndyMio` (Mio Mejia, Andy) | 1 |
-
-Durante el Sprint 3, la implementación del backend (storage, resiliencia y configuración externalizada) se integró principalmente a través de la cuenta `vr700`/`Sigilo-dev`, mientras que el rediseño del frontend y la migración del Kanban a Notion se realizaron de forma colaborativa por el equipo. La verificación funcional de la subida de imágenes y del comportamiento del Circuit Breaker se realizó sobre los despliegues en Google Cloud Run.
-
-#### 5.3.3.8. Kanban Board
-
-El tablero Kanban del Sprint 3 se gestiona en Notion (base de datos `sprint-3-backlog`), con las columnas **Por Hacer**, **En Curso** y **Hecho**. El tablero del Sprint 3 agrupa las **11 tarjetas nuevas del alcance del Sprint** (GIGU-74 a GIGU-84); a diferencia de los Sprints 1 y 2, **no cierra al 100%**: dos tarjetas quedan en estado *En Curso* al cierre.
-
-| Estado | Cantidad | Tarjetas |
-| --- | --- | --- |
-| Hecho (Done) | 9 | GIGU-74, GIGU-75, GIGU-76, GIGU-77, GIGU-78, GIGU-79, GIGU-80, GIGU-81, GIGU-82 |
-| En Curso (In-Process) | 2 | GIGU-83 (optimización de velocidad del frontend), GIGU-84 (tests basados en contratos) |
-| Por Hacer (To-do) | 0 | — |
-
-Sumando las 64 tarjetas finalizadas en los Sprints 1 y 2, el proyecto acumula **73 tarjetas en estado *Hecho*** al cierre del Sprint 3, con 2 tarjetas en curso (`GIGU-83` y `GIGU-84`) planificadas para una iteración posterior.
-
-<img src="imgs/sprint3/sprint3-kanban-board.png" alt="Kanban Board del Sprint 3 en Notion" title="Kanban Board Sprint 3"/>
-
-URL del tablero (Notion): https://www.notion.so/38aff0862f2c806bb608c55f679d64f6?v=38aff0862f2c81f2a7d0000cdfffa458
-
-### 5.3.4. Sprint 4
-
-#### 5.3.4.1. Sprint Backlog 4
-
-El Sprint 4 es la iteración de cierre del proyecto (TF1). Su objetivo fue **completar los dos work-items que quedaron *En Curso* al cierre del Sprint 3** —`GIGU-83` (optimización de velocidad del frontend) y `GIGU-84` (tests basados en contratos entre microservicios con Spring Cloud Contract)— y **consolidar el despliegue cloud** de la solución para la entrega final. Adicionalmente se incorporaron tres tarjetas nuevas surgidas del trabajo de cierre: el refinamiento de tags y controles de precio del gig en el marketplace (`GIGU-85`), los tests de reglas de negocio de engagement en `pulls-service` (`GIGU-86`) y la consolidación del despliegue cloud con la documentación TF1 (`GIGU-87`).
-
-**Board del Sprint 4 (Notion):** https://app.notion.com/p/398ff0862f2c8073a2eaec2f6624a06a?v=398ff0862f2c8150b544000c14e1fc2a
-
-El Sprint Backlog 4 está compuesto por **5 tarjetas**: 2 arrastradas del Sprint 3 (GIGU-83 y GIGU-84) y 3 nuevas (GIGU-85 a GIGU-87). El Sprint cierra al 100%.
-
-| Sprint # | Sprint 4 | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **User Story / Epic** | | **Work-Item / Task** | | | | | |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (h)** | **Assigned To** | **Status** |
-| EP06 | Descubrimiento del Catálogo | GIGU-83 | SP13: Optimización de velocidad del frontend (lazy-loading, code-splitting, debounce) | Lazy-loading de las páginas de rutas mediante imports dinámicos en el router, dividiendo el bundle por página (code-splitting). | 4 | Mio Mejia, Andy | Done |
-| EP08 | Solicitud y Acuerdo de Contratación | GIGU-84 | SP10: Tests basados en contratos entre microservicios (Spring Cloud Contract) | Contratos productor/consumidor del webhook interno de notificaciones entre `pulls-service` y `chat-notification-service`. | 5 | Ybañez Esquerre, Miguel | Done |
-| EP05 | Publicación y Mantenimiento de Servicios | GIGU-85 | Frontend: refinamiento de tags y controles de precio del gig | Refinamiento de tags del gig y controles de precio; eliminación de defaults en la creación del gig y calculadora de precio. | 4 | Mio Mejia, Andy | Done |
-| EP09 | Gestión del Ciclo de Vida del Proyecto | GIGU-86 | Backend: tests de reglas de negocio de engagement (pulls-service) | Tests unitarios de las reglas de negocio de engagement en `pulls-service`. | 3 | Oblitas Davila, Mariano | Done |
-| — | Tareas adicionales del Sprint | GIGU-87 | Consolidación del despliegue cloud y documentación TF1 | Consolidación de la arquitectura de despliegue cloud (§5.4): evidencia de Cloud Run, Vercel y actualización del informe para TF1. | 4 | Oblitas Davila, Mariano | Done |
-
-<img src="imgs/sprint4/sprint4-backlog-done-1.png" alt="Sprint Backlog 4 - Tarjetas finalizadas" title="Sprint Backlog 4 - Done"/>
-
-#### 5.3.4.2. Development Evidence for Sprint Review
-
-Durante el Sprint 4 el trabajo se concentró en dos frentes. En el backend, la calidad: los tests de reglas de negocio de engagement en `pulls-service` (GIGU-86) y los tests basados en contratos con **Spring Cloud Contract** (GIGU-84) — contratos del lado productor en `chat-notification-service` (webhook interno de notificaciones) y verificación del lado consumidor en `pulls-service`, junto con tests de dominio de la política de sugerencia de precios. En el frontend, el cierre funcional: refinamiento de tags y controles de precio del gig con calculadora de precio (GIGU-85) y la optimización de velocidad mediante lazy-loading de rutas con code-splitting (GIGU-83), acompañada de la conexión de los dashboards a datos reales del API de engagement y de las notificaciones en tiempo real en el layout.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-| --- | --- | --- | --- | --- | --- |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 9200064 | test(pulls): add engagement business rule tests | Tests unitarios de las reglas de negocio de engagement en pulls-service. | 25/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 1a725bb | merge: feature/pull-engagement-service into feature/main-app-logic | Integración a la rama de despliegue. | 25/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/backend-microservices | feature/main-app-logic | 2fbbf0c | test: add domain unit tests and contract tests for notification webhook (GIGU-84) | Contratos Spring Cloud Contract del webhook de notificaciones (productor en chat-notification-service, consumidor en pulls-service) y tests de dominio de la política de precios. | 05/07/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 49f2107 | fix(marketplace): remove gig create defaults and add price calculator | Eliminación de defaults en la creación del gig y calculadora de precio. | 25/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | 08ba84b | feat(marketplace): refine gig tags and pricing controls | Refinamiento de tags del gig y controles de precio. | 25/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | f6a4b19 | merge: feature/frontend-marketplace into feature/main-app | Integración del marketplace a la rama de despliegue. | 25/06/2026 |
-| 1ASI0657-2610-7940-Final-Project/frontend | feature/main-app | d9565d1 | perf(router): lazy-load route pages for code-splitting (GIGU-83) | Lazy-loading de rutas (code-splitting), dashboards con datos reales del API de engagement y notificaciones en tiempo real en el layout. | 05/07/2026 |
-
-#### 5.3.4.3. Testing Suite Evidence for Sprint Review
-
-El Sprint 4 cierra el trabajo de calidad pendiente del Sprint 3: los **tests basados en contratos** (`SP10`, GIGU-84) quedaron implementados con **Spring Cloud Contract** en el commit `2fbbf0c`. Del lado **productor**, `chat-notification-service` define los contratos del webhook interno de notificaciones (creación con body válido, rechazo de body inválido y rechazo por token de servicio ausente), verificados contra el controlador real mediante la clase base del verificador. Del lado **consumidor**, `pulls-service` verifica que su cliente de notificaciones cumple el contrato publicado. Se añadieron además tests unitarios de dominio: la política determinística de sugerencia de precios y las reglas de negocio de engagement (GIGU-86).
-
-| Archivo de prueba | Tipo | Descripción | Work-item |
-| --- | --- | --- | --- |
-| `shouldCreateInternalNotification.groovy`, `shouldRejectInvalidBody.groovy`, `shouldRejectMissingServiceToken.groovy` (`chat-notification-service`) | Contract test — productor (Spring Cloud Contract) | Contratos del webhook interno de notificaciones: creación exitosa con body válido y rechazo ante body inválido o token de servicio ausente. | GIGU-84 / SP10 |
-| `ContractVerifierBase` (`chat-notification-service`) | Contract test — base del verificador | Configura el contexto del controlador real sobre el que Spring Cloud Contract genera y ejecuta los tests del productor. | GIGU-84 / SP10 |
-| `NotificationClientContractTest` (`pulls-service`) | Contract test — consumidor | Verifica que el cliente de notificaciones de `pulls-service` cumple el contrato publicado por `chat-notification-service`. | GIGU-84 / SP10 |
-| `DeterministicPriceSuggestionPolicyTest` (`pulls-service`) | Unit Test (JUnit 5) | Verifica las reglas de la política determinística de sugerencia de precios del engagement. | GIGU-86 |
-| Engagement business rule tests (`pulls-service`, commit `9200064`) | Unit Test (JUnit 5) | Verifica las reglas de negocio del ciclo de engagement. | GIGU-86 |
-
-#### 5.3.4.4. Execution Evidence for Sprint Review
-
-Tras el Sprint 4, la solución en producción presenta las siguientes mejoras visibles: (a) el frontend carga las páginas mediante **lazy-loading de rutas** (imports dinámicos en el router), de modo que el bundle inicial ya no incluye todas las vistas y cada página se descarga bajo demanda (GIGU-83); (b) los **dashboards de cliente y freelancer muestran datos reales** (proyectos activos, pendientes y completados) obtenidos del API de engagement, con notificaciones en tiempo real conectadas en el layout; y (c) el flujo de **creación del gig** ya no impone valores por defecto e incorpora una calculadora de precio con tags refinados (GIGU-85). La verificación se realizó sobre los despliegues de producción: frontend en Vercel y microservicios en Google Cloud Run (URLs en §5.4.2).
-
-> **[PENDIENTE: captura opcional]** — screenshot del dashboard con datos reales o del flujo de creación del gig con la calculadora de precio, en `imgs/sprint4/` (p. ej. `frontend-dashboard-real-data.png`).
-
-#### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
-
-El Sprint 4 **no agrega ni modifica endpoints públicos** de los microservicios: el trabajo backend consistió en pruebas (contratos y tests de dominio), que no alteran la superficie del API. Por lo tanto, la documentación OpenAPI/Swagger vigente es la reportada en los Sprints anteriores (§5.3.1.5, §5.3.2.5 y §5.3.3.5), accesible en la ruta `/swagger-ui/index.html` de cada servicio desplegado en Google Cloud Run (URLs en §5.4.2). Cabe destacar que los contratos de Spring Cloud Contract introducidos en este Sprint actúan como **documentación ejecutable** del webhook interno de notificaciones entre `pulls-service` y `chat-notification-service`.
-
-#### 5.3.4.6. Software Deployment Evidence for Sprint Review
-
-Los cambios desplegables del Sprint 4 se concentran en el **frontend**: los commits `49f2107`, `08ba84b` y `d9565d1` sobre `feature/main-app` se publicaron en producción mediante el despliegue automático de **Vercel** asociado a la rama. Los cambios del backend (GIGU-84 y GIGU-86) son exclusivamente de **pruebas** y no alteran el runtime de los servicios, por lo que **no requirieron redespliegue** en Google Cloud Run; los cuatro microservicios continúan operando con las revisiones desplegadas al cierre del Sprint 3. La consolidación de la arquitectura de despliegue cloud para TF1 (GIGU-87) se documenta en la §5.4 (Cloud Architecture Diagram y Cloud Architecture Deployment), que detalla los servicios en Cloud Run, sus URLs y el procedimiento de despliegue manual por workflow de GitHub Actions.
-
-#### 5.3.4.7. Team Collaboration Insights during Sprint
-
-El trabajo del Sprint 4 se distribuyó entre los tres integrantes del equipo: el aseguramiento de calidad del backend (tests de reglas de negocio y contratos entre microservicios), el cierre funcional del frontend (marketplace y optimización de velocidad) y la consolidación del despliegue cloud con la documentación de la entrega final (TF1).
-
-| Integrante | Usuario GitHub | Principales aportes en el Sprint 4 |
-| --- | --- | --- |
-| Oblitas Davila, Mariano Moises | `Sigilo-dev` / `vr700` | Tests de reglas de negocio de engagement en `pulls-service` (GIGU-86) y consolidación del despliegue cloud con la documentación TF1 (GIGU-87). |
-| Ybañez Esquerre, Miguel Angel | `Miguel080902` | Tests basados en contratos entre microservicios con Spring Cloud Contract — productor en chat, consumidor en pulls — y tests de dominio de la política de precios (GIGU-84). |
-| Mio Mejia, Andy Alejandro | `AndyMio17` / `AndyMio` | Refinamiento de tags y controles de precio del gig con calculadora de precio (GIGU-85) y optimización de velocidad del frontend con lazy-loading de rutas (GIGU-83). |
-
-**Análisis de colaboración y commits de GitHub (Sprint 4).** Las estadísticas de contribución (*Insights → Contributors*, rama principal de cada repositorio, ventana del Sprint 4 — 21 de junio al 8 de julio de 2026, excluyendo merge commits) son las siguientes:
-
-| Repositorio | Rama | Contribuidor (GitHub) | Commits |
-| --- | --- | --- | --- |
-| backend-microservices | `feature/main-app-logic` | `vr700` / `Sigilo-dev` (Oblitas Davila, Mariano) | 1 |
-| backend-microservices | `feature/main-app-logic` | `Miguel080902` (Ybañez Esquerre, Miguel) | 1 |
-| frontend | `feature/main-app` | `vr700` / `Sigilo-dev` (Oblitas Davila, Mariano) | 2 |
-| frontend | `feature/main-app` | `Miguel080902` (Ybañez Esquerre, Miguel) | 1 |
-
-Como en Sprints anteriores, parte del trabajo se integró a través de cuentas compartidas del equipo: los commits del marketplace (GIGU-85) ingresaron por `vr700` y el cierre de la optimización de velocidad (GIGU-83) por `Miguel080902`, aunque el desarrollo de ambas tarjetas correspondió a los responsables indicados en el board. La verificación funcional del Sprint se realizó sobre los despliegues de producción en Vercel y Google Cloud Run.
-
-#### 5.3.4.8. Kanban Board
-
-El tablero Kanban del Sprint 4 se gestiona en Notion (base de datos `sprint-4-backlog`), con las columnas **Por Hacer**, **En Curso** y **Hecho**. El tablero agrupa las 5 tarjetas del Sprint (2 arrastradas del Sprint 3 y 3 nuevas) y, al ser la iteración de cierre del proyecto, **cierra al 100%**: las dos tarjetas que quedaron *En Curso* al cierre del Sprint 3 (`GIGU-83` y `GIGU-84`) pasan a estado *Hecho*.
-
-| Estado | Cantidad | Tarjetas |
-| --- | --- | --- |
-| Hecho (Done) | 5 | GIGU-83, GIGU-84, GIGU-85, GIGU-86, GIGU-87 |
-| En Curso (In-Process) | 0 | — |
-| Por Hacer (To-do) | 0 | — |
-
-Sumando las 73 tarjetas finalizadas en los Sprints 1 a 3, el proyecto cierra con **78 tarjetas en estado *Hecho*** y ningún work-item pendiente. El backlog del Sprint se exportó como `sprint-4-backlog.csv` a `migration/notion/` para mantener la trazabilidad de la migración Jira → Notion.
-
-<img src="imgs/sprint4/sprint4-kanban-board.png" alt="Kanban Board del Sprint 4 en Notion" title="Kanban Board Sprint 4"/>
-
-URL del tablero (Notion): https://app.notion.com/p/398ff0862f2c8073a2eaec2f6624a06a?v=398ff0862f2c8150b544000c14e1fc2a
-
-## 5.4. Microservices Deployment
-
-### 5.4.1. Cloud Architecture Diagram
-
-La arquitectura cloud actual de GigU distribuye la aplicación en servicios administrados para reducir carga operativa y permitir despliegues independientes. Vercel aloja la landing page y la aplicación frontend. Vercel Rewrites funciona como capa pública de routing para reenviar solicitudes `/api/*` hacia los microservicios backend desplegados en Google Cloud Run. Supabase PostgreSQL se utiliza como base de datos relacional administrada, Supabase Storage para binarios de portafolio y media de servicios, Google Cloud Pub/Sub para la mensajería asíncrona de eventos de dominio y Google Cloud Storage para externalizar la configuración de eventos (EDA/Pub/Sub).
-
-```text
-Usuario
-  |
-  | HTTPS
-  v
-Vercel
-  |-- Landing Page
-  |-- Frontend Web App
-  |
-  | /api/* mediante Vercel Rewrites
-  v
-Google Cloud Run
-  |-- gigu-access-profile-service
-  |-- gigu-gig-marketplace-service
-  |-- gigu-pulls-service
-  |-- gigu-chat-notification-service
-  |
-  |-- Persistencia         --> Supabase PostgreSQL (esquemas por bounded context)
-  |-- Almacenamiento       --> Supabase Storage (portfolio, gig-media)
-  |-- Mensajería asíncrona --> Google Cloud Pub/Sub (entrega push por webhook)
-  |-- Config externalizada --> Google Cloud Storage (gs://gigu-external-config/prod/eda-pubsub-config.json)
-```
-
-| Elemento               | Tecnología           | Estado                                  |
-| ---------------------- | -------------------- | --------------------------------------- |
-| Landing page           | Vercel               | Implementado                            |
-| Frontend web app       | Vercel               | Implementado                            |
-| API routing            | Vercel Rewrites      | Implementado                            |
-| Backend microservices  | Google Cloud Run     | Implementado                            |
-| Database               | Supabase PostgreSQL  | Implementado                            |
-| Storage                | Supabase Storage     | Implementado (Sprint 3)                 |
-| Asynchronous messaging | Google Cloud Pub/Sub | Implementado (Sprint 2)                 |
-| Config externa (EDA)   | Google Cloud Storage | Implementado (Sprint 3)                 |
-
-### 5.4.2. Cloud Architecture Deployment
-
-El despliegue backend se realiza sobre Google Cloud Run mediante workflows manuales de GitHub Actions, uno por microservicio. Esta configuración permite desplegar un servicio sin afectar a los demás, lo cual reduce riesgo operacional y mejora la mantenibilidad del sistema durante la validación académica.
-
-| Microservicio | Ruta de código fuente | Workflow de despliegue | Servicio Cloud Run | URL |
-| --- | --- | --- | --- | --- |
-| AccessProfileService | `services/access-profile-service` | `deploy-access-profile-service.yml` | `gigu-access-profile-service` | `https://gigu-access-profile-service-149855215912.us-central1.run.app` |
-| GigMarketplaceService | `services/gig-marketplace-service` | `deploy-gig-marketplace-service.yml` | `gigu-gig-marketplace-service` | `https://gigu-gig-marketplace-service-149855215912.us-central1.run.app` |
-| PullEngagementService | `services/pulls-service` | `deploy-pulls-service.yml` | `gigu-pulls-service` | `https://gigu-pulls-service-149855215912.us-central1.run.app` |
-| ChatNotificationService | `services/chat-notification-service` | `deploy-chat-notification-service.yml` | `gigu-chat-notification-service` | `https://gigu-chat-notification-service-149855215912.us-central1.run.app` |
-
-El procedimiento de despliegue desde GitHub Actions es manual:
-
-1. Ingresar al repositorio `backend-microservices`.
-2. Abrir la pestaña **Actions**.
-3. Seleccionar el workflow del microservicio a desplegar.
-4. Ejecutar **Run workflow**.
-5. Seleccionar la rama `feature/main-app-logic`.
-6. Confirmar la ejecución.
-7. Verificar al final del job la URL real impresa por `gcloud run services describe`.
-
-Los workflows actuales no realizan despliegue automático ante cada `push`. El despliegue es intencionalmente manual mediante `workflow_dispatch`, lo que permite controlar cuándo se publica cada microservicio.
-
-Como alternativa local, el equipo mantiene scripts PowerShell en la carpeta `gcloud`. El orden recomendado de despliegue local es:
-
-1. `./gcloud/deploy-access-profile-service.ps1`
-2. `./gcloud/deploy-gig-marketplace-service.ps1`
-3. `./gcloud/deploy-chat-notification-service.ps1`
-4. Actualizar `_local-gcloud-config/pulls-service.env.yaml` con las URLs reales de Cloud Run.
-5. `./gcloud/deploy-pulls-service.ps1`
-
-También puede utilizarse:
-./gcloud/deploy-all.ps1
-
-<div style="page-break-before: always;"></div>
-
-# Conclusiones y recomendaciones
-
-**Resultados frente a los Problem Statements.** El problema central identificado fue la ausencia de plataformas efectivas y especializadas que conecten a estudiantes universitarios peruanos con oportunidades laborales formales, flexibles y alineadas a sus carreras. Al cierre de este avance, GigU cuenta con el backbone funcional que ataca directamente ese problema: cuatro microservicios REST desplegados en producción que soportan los procesos core del negocio —acceso y perfiles freelance verificables, publicación y búsqueda de servicios, contratación y gestión de proyectos, y mensajería con notificaciones—, además de procesos de soporte como tickets de ayuda, reportes de usuarios y sugerencia inteligente de precios. La solución ya es accesible públicamente a través de la landing page y la aplicación frontend, lo que constituye una base concreta sobre la cual validar la propuesta de valor con usuarios reales. Con el Sprint 2, además, la solución incorpora **notificaciones y chat en tiempo real** mediante Google Cloud Pub/Sub (entrega push por webhook), WebSocket + STOMP y un webhook interno entre microservicios, completando la mensajería asíncrona que en el avance anterior solo estaba modelada y reforzando la experiencia de comunicación entre cliente y freelancer.
-
-**Assumptions frente al comportamiento real de los segmentos.** Los assumptions del proceso Lean UX —que el usuario es el estudiante universitario que busca ingresos y experiencia compatibles con sus horarios, y que valora perfiles con historial académico y de proyectos, oportunidades verificadas y un sistema de reputación— guiaron el modelado del dominio y la priorización del Product Backlog. Estos assumptions se reflejan hoy en capacidades implementadas (perfil freelance con portafolio, calificaciones y reseñas por proyecto, chat seguro). Sin embargo, al tratarse de un avance académico sin tráfico real, el contraste de estos assumptos contra el comportamiento efectivo de los segmentos aún no puede realizarse y queda como trabajo de validación posterior al despliegue abierto.
-
-**Hypothesis Statements y criterios de éxito.** Las tres hipótesis Lean UX establecieron criterios de éxito medibles: más del 50% de usuarios activos completando una tarea remunerada en su primer mes, un tiempo de uso semanal superior a 45 minutos, y al menos un 70% de usuarios calificando como alta la relevancia de las recomendaciones. Estos criterios aún no son medibles porque dependen de la operación con usuarios reales; lo alcanzado en este avance es la **condición habilitante** para medirlos: los flujos de contratación, gamificación incipiente (reputación y reseñas) y recomendación de precios ya están desplegados. La instrumentación de métricas (analítica de uso, embudos de conversión, encuestas de relevancia) queda como paso siguiente para poder confirmar o refutar las hipótesis.
-
-**Recomendaciones y siguientes pasos del Roadmap.**
-
-- **Completar la cobertura de pruebas:** implementar los archivos `.feature` de BDD en Gherkin y las suites de prueba de `gig-marketplace-service`, `pulls-service` y `chat-notification-service`, alcanzando el umbral de cobertura del 85% en los cuatro microservicios.
-- **Extender la mensajería asíncrona:** sobre la base de Google Cloud Pub/Sub ya desplegada en el Sprint 2 para notificaciones y eventos de chat (entrega push por webhook, WebSocket + STOMP), ampliar la publicación de eventos de dominio hacia las proyecciones de reputación y otros consumidores.
-- **Resolver el almacenamiento de binarios:** consolidar el adaptador de Supabase Storage para portafolios, imágenes de servicios y adjuntos en todos los microservicios que lo requieran.
-- **Extraer la librería compartida `gigu-platform-commons:`** centralizar los componentes transversales (jerarquía de excepciones, `RestExceptionHandler`, `OpenApiConfig`, seguridad JWT) para reducir duplicación.
-- **Instrumentar métricas de producto:** incorporar analítica de uso y embudos de conversión para poder evaluar los criterios de éxito de las hipótesis Lean UX.
-- **Evolucionar las capacidades diferenciales:** avanzar hacia el emparejamiento inteligente tarea-habilidad, los badges de gamificación y la integración con LinkedIn/portafolios, que constituyen el siguiente bloque de valor del Product Backlog.
-- **Automatizar el despliegue:** evolucionar los workflows manuales de GitHub Actions hacia un pipeline CI/CD con despliegue automático y validación previa por pruebas.
-
-<div style="page-break-before: always;"></div>
-
-# Video About-The-Team
-
-En esta sección se presenta el video **About-The-Team** del proyecto **GigU**, en el cual cada integrante expone brevemente su rol dentro del equipo, sus principales aportes durante el desarrollo del Trabajo Final y los aprendizajes obtenidos durante el proceso de implementación, documentación, testing, despliegue y validación del producto.
-
-**Enlace del video:** [Video About-The-Team - GigU](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310222_upc_edu_pe/IQBiZa8IFvOdQr8H70ySMlL_AUqKnNzHHfFWmdEXbWu7dtM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=h2wYOt)
-
-
-<div style="page-break-before: always;"></div>
-
-# Referencias bibliográficas
-
-Banco Mundial. (2023). [*Working without borders: The promise and peril of online gig work*](https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c). World Bank.
-
-Banco Mundial. (2024). [*Four ways local online gig platforms connect young people to jobs*](https://blogs.worldbank.org/en/jobs/four-ways-local-online-gig-platforms-connect-young-people-jobs). World Bank Blogs.
-
-GigU. (2026). [*Documentación del proyecto GigU*](https://github.com/1ASI0657-2610-7940-Final-Project/docs). GitHub.
-
-GitHub. (s. f.). [*GitHub Actions documentation*](https://docs.github.com/en/actions). GitHub Docs.
-
-Google Cloud. (s. f.-a). [*Cloud Run documentation*](https://cloud.google.com/run/docs). Google Cloud Documentation.
-
-Google Cloud. (s. f.-b). [*Deploy services from source code*](https://cloud.google.com/run/docs/deploying-source-code). Google Cloud Documentation.
-
-Google Cloud. (s. f.-c). [*What is Pub/Sub?*](https://cloud.google.com/pubsub/docs/overview). Google Cloud Documentation.
-
-Google GitHub Actions. (s. f.-a). [*Authenticate to Google Cloud*](https://github.com/google-github-actions/auth). GitHub.
-
-Google GitHub Actions. (s. f.-b). [*Set up gcloud Cloud SDK environment*](https://github.com/google-github-actions/setup-gcloud). GitHub.
-
-Instituto Nacional de Estadística e Informática. (2025a). [*Perú: Comportamiento de los indicadores del mercado laboral a nivel nacional y en 27 ciudades. Primer trimestre 2025*](https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional_1.pdf). INEI.
-
-Instituto Nacional de Estadística e Informática. (2025b). [*Perú: Comportamiento de los indicadores del mercado laboral a nivel nacional y en 27 ciudades. Segundo trimestre 2025*](https://m.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional_2.pdf). INEI.
-
-Lewis, J., & Fowler, M. (2014). [*Microservices: A definition of this new architectural term*](https://martinfowler.com/articles/microservices.html). Martin Fowler.
-
-Ministerio de Educación del Perú. (2021). [*Encuesta Nacional de Estudiantes de Educación Superior Universitaria 2019: principales resultados*](https://repositorio.minedu.gob.pe/handle/20.500.12799/7745). MINEDU.
-
-Ministerio de Educación del Perú. (2023). [*La universidad en cifras*](https://repositorio.minedu.gob.pe/bitstream/handle/20.500.12799/9077/La%20Universidad%20en%20Cifras.pdf). MINEDU.
-
-Ministerio de Educación del Perú. (2024). [*Reporte nacional de seguimiento al Proyecto Educativo Nacional: Análisis de indicadores al 2023*](https://repositorio.minedu.gob.pe/bitstream/handle/20.500.12799/10653/Reporte%20nacional%20de%20seguimiento%20al%20Proyecto%20Educativo%20Nacional%20an%C3%A1lisis%20de%20indicadores%20al%202023.pdf). MINEDU.
-
-OpenAPI Initiative. (s. f.). [*OpenAPI Specification*](https://swagger.io/specification/). Swagger.
-
-Organización Internacional del Trabajo. (2021). [*World Employment and Social Outlook 2021: The role of digital labour platforms in transforming the world of work*](https://www.ilo.org/publications/flagship-reports/role-digital-labour-platforms-transforming-world-work). OIT.
-
-Organización Internacional del Trabajo. (2025). [*Jóvenes en el mercado laboral: entre la informalidad y la falta de oportunidades*](https://www.ilo.org/es/resource/news/jovenes-entre-informalidad-y-falta-de-oportunidades). OIT.
-
-Spring. (s. f.-a). [*Production-ready features*](https://docs.spring.io/spring-boot/reference/actuator/index.html). Spring Boot.
-
-Spring. (s. f.-b). [*Spring Security reference*](https://docs.spring.io/spring-security/reference/index.html). Spring.
-
-Spring. (s. f.-c). [*Testcontainers support in Spring Boot*](https://docs.spring.io/spring-boot/reference/testing/testcontainers.html). Spring Boot.
-
-Supabase. (s. f.-a). [*The Postgres development platform*](https://supabase.com/). Supabase.
-
-Supabase. (s. f.-b). [*Pricing & Fees*](https://supabase.com/pricing). Supabase.
-
-Supabase. (s. f.-c). [*About billing on Supabase*](https://supabase.com/docs/guides/platform/billing-on-supabase). Supabase.
-
-Universidad Peruana de Ciencias Aplicadas. (2025a). *Attribute-Driven Design: SI657 Fundamentos de Arquitectura de Software*. Material del curso.
-
-Universidad Peruana de Ciencias Aplicadas. (2025b). *Final Project Statement: Fundamentos de Arquitectura de Software*. Material del curso.
-
-Vercel. (s. f.-a). [*Rewrites on Vercel*](https://vercel.com/docs/routing/rewrites). Vercel Documentation.
-
-Vercel. (s. f.-b). [*Vercel Hobby Plan*](https://vercel.com/docs/plans/hobby). Vercel Documentation.
-
-# Anexos
-
-En este anexo se presenta el video demo del producto **GigU**, donde se evidencia el funcionamiento principal de la plataforma desplegada. La demostración muestra el flujo de uso del sistema desde la perspectiva del usuario, incluyendo el acceso a la plataforma, navegación por el marketplace, visualización de servicios, solicitud de contratación y validación de las funcionalidades principales implementadas durante el Trabajo Final.
-
-El video permite comprobar que GigU no se limita a una propuesta documentada, sino que cuenta con una versión funcional y desplegada, integrada con frontend, microservicios backend, persistencia, almacenamiento, mensajería, comunicación en tiempo real y servicios cloud.
-
-**Enlace del video demo:** [Video Demo - GigU](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310222_upc_edu_pe/IQCmGv-D_1RWSZys-0xCVsJcAaeb0nv_KXcBPnqOd1oe7fs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBQHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=GmytOD)
-
-<div style="page-break-before: always;"></div>
-
-# Links
-
-**Repositorios GitHub**
-
-- Backend de microservicios: https://github.com/1ASI0657-2610-7940-Final-Project/backend-microservices
-- Frontend Web App: https://github.com/1ASI0657-2610-7940-Final-Project/frontend
-- Landing Page: https://github.com/1ASI0657-2610-7940-Final-Project/landing-page
-
-**Despliegues en producción**
-
-- Landing Page (Vercel): https://landing-page-nine-beryl-19.vercel.app/
-- Frontend Web App (Vercel): https://gigu-ivory.vercel.app/
-- AccessProfileService (Swagger UI): https://gigu-access-profile-service-149855215912.us-central1.run.app/swagger-ui/index.html
-- GigMarketplaceService (Swagger UI): https://gigu-gig-marketplace-service-149855215912.us-central1.run.app/swagger-ui/index.html
-- PullEngagementService (Swagger UI): https://gigu-pulls-service-149855215912.us-central1.run.app/swagger-ui/index.html
-- ChatNotificationService (Swagger UI): https://gigu-chat-notification-service-149855215912.us-central1.run.app/swagger-ui/index.html
+<img src="imgs/cap4/4.3.4. Deployment Diagram.png" alt="Deployment Diagram" title="Deployment Diagram"/>
