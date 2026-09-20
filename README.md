@@ -30,6 +30,13 @@
 
 <div style="page-break-before: always;"></div>
 
+# Project Report Collaboration Insights
+
+Para realizar el informe de este proyecto, utilizaremos un repositorio llamado “1ASI0728-2620-9075-Report” el cual está colocado en nuestra organización llamada  
+“1ASI0728-2620-9075-Triple B” en GitHub. Se puede observar en el siguiente enlace:
+https://github.com/1ASI0728-2620-9075-Triple-B/1ASI0728-2620-9075-Report
+
+
 # Registro de versiones del informe
 
 | Versión | Fecha | Autores | Descripción |
