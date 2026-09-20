@@ -14,6 +14,7 @@
 # <p align="center">TRABAJO FINAL</p>
 
 <p align="center"><strong>Nombre del Producto: </strong> Triple B</p>
+<p align="center"><strong>Startup: </strong> NodoB</p>
 
 ### Integrantes:
 
