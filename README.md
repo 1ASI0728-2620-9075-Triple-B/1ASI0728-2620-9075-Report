@@ -166,18 +166,15 @@ Nuestro producto principal es **Triple B**, una plataforma que conecta a estudia
 
 | Nombre | Detalle |
 | :--- | :--- |
-| **Gonza Morales, Anderson** <br>**Código:** U202120836 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Apasionado por el diseño de arquitecturas de software emergentes y el desarrollo de soluciones tecnológicas innovadoras. Interesado en la integración de agentes de inteligencia artificial en plataformas de trabajo digital. Aporta habilidades en backend con Spring Boot, diseño arquitectónico y documentación técnica. |
+| **Gonza Morales, Anderson** <br>**Código:** U202120836 <br>**Carrera:** Ingeniería de Software | Estudiante de la carrera de Ingeniería de Software. Destaca por su capacidad de liderazgo y organizacion en equipos de trabajo. Tiene conocimiento en python, Java, HTML, CSS, MySQL, analisis de datos, arquitectura de software, seguimiento de actividades orientadas a cumplir objetivos del proyecto. |
 | **Guerrero Tomas, Nelson** <br>**Código:** U202222745 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Con enfoque en el análisis de requisitos, especificación de User Stories y modelado de negocio. Interesado en la automatización de procesos con IA y en el diseño de productos centrados en el usuario. Aporta habilidades en Lean UX, needfinding, product backlog y comunicación de ideas técnicas a audiencias diversas. |
 | **Gutierrez Tume, Stanley Jeremy** <br>**Código:** U202118152 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con experiencia en proyectos desarrollados con C++, Python, HTML y CSS, además de conocimientos en JavaScript, TypeScript y Java. Se considera una persona responsable y comprometida, que aporta su mayor esfuerzo al proyecto y mantiene una comunicación efectiva para el trabajo en equipo. |
 | **Rafael Augusto Tasayco Almonacid** <br>**Código:** U20231f226 <br>**Carrera:** Ingeniería de Software |  |
-| **Andy Alejandro Mio Mejia** <br>**Código:** u202218531 <br>**Carrera:** Ingeniería de Software ||
+| **Andy Alejandro Mio Mejia** <br>**Código:** u202218531 <br>**Carrera:** Ingeniería de Software | Soy estudiante de Ingeniería de Software, apasionado por la tecnología, la lógica y el aprendizaje constante. Me considero una persona curiosa, tranquila y siempre motivada por seguir desarrollando nuevas habilidades.|
 
 ## 1.2. Solution Profile
 
-### 1.2.1. Nombre del producto
-Triple B
-
-### 1.2.2. Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
 
 ##### **¿Cuál es el problema?**
 
@@ -225,10 +222,10 @@ Los indicadores laborales recientes refuerzan esta situación. Según el Institu
 
 En el 2.º trimestre de 2025, el INEI reportó que la tasa de desempleo nacional fue de 5.9%, mientras que en jóvenes de 14 a 24 años alcanzó 13.0%. Además, la tasa de desempleo entre personas con educación superior universitaria fue de 7.0%. Estos datos no corresponden exclusivamente a estudiantes universitarios, pero sí describen el entorno laboral del grupo etario y educativo al que pertenece gran parte de ellos (Instituto Nacional de Estadística e Informática, 2025b).
 
-### 1.2.3. Lean UX Process
+### 1.2.2. Lean UX Process
 
 
-#### 1.2.3.1. Lean UX Problem Statement
+#### 1.2.2.1. Lean UX Problem Statement
 
 En el contexto universitario peruano, los estudiantes enfrentan grandes desafíos para insertarse en el mercado laboral mientras cursan sus estudios. Esta situación se relaciona con factores económicos, académicos y laborales: el 65% de los estudiantes universitarios tiene entre 18 y 25 años, el 24% pertenece a hogares en situación de pobreza o pobreza extrema, y la falta de recursos económicos aparece como una causa relevante de interrupción de estudios universitarios (Ministerio de Educación del Perú, 2023).
 
@@ -238,7 +235,7 @@ Este problema afecta principalmente a estudiantes universitarios que necesitan g
 
 ¿Cómo podemos ayudar a los estudiantes universitarios en Perú y Latinoamérica a insertarse en el mercado laboral de forma formal, flexible y proactiva durante su etapa académica, permitiéndoles desarrollar habilidades prácticas, generar ingresos y mejorar su empleabilidad sin que tengan que dedicar tiempo extra a la búsqueda manual de oportunidades?
 
-#### 1.2.3.2. Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
 
 **¿Quién es el usuario?**
 Estudiantes universitarios peruanos y latinoamericanos, principalmente entre los 17 y 25 años, que buscan generar ingresos y experiencia profesional compatible con sus horarios académicos. También son usuarios los empleadores, microempresas y emprendedores de Latinoamérica que publican servicios requeridos o puestos de practicante.
@@ -278,7 +275,7 @@ El estudiante actualiza su perfil y CV en la plataforma. A partir de ahí, el Ag
 **¿Cómo debe verse nuestro producto y cómo comportarse?**
 Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser fluido, transparente sobre las acciones del Agente IA y con notificaciones claras sobre el estado de cada postulación. El estudiante debe sentir que tiene control en todo momento, pudiendo ver, pausar o rechazar cualquier acción del Agente IA antes de que se materialice.
 
-#### 1.2.3.3. Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 * Creemos que al conectar estudiantes universitarios con oportunidades laborales compatibles con sus carreras y horarios mediante el Agente IA, lograremos que desarrollen experiencia profesional antes de egresar sin que tengan que invertir tiempo en la búsqueda manual.
   Sabremos que hemos tenido éxito cuando más del 50% de los usuarios activos reciba al menos una entrevista gestionada por el Agente IA en su primer mes.
@@ -292,7 +289,7 @@ Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser
 * Creemos que implementar un sistema de reputación y transparencia sobre las acciones del Agente IA aumentará la confianza del estudiante en la plataforma y reducirá el abandono.
   Sabremos que hemos tenido éxito cuando el tiempo promedio de uso semanal supere los 30 minutos y la tasa de retención al tercer mes sea superior al 60%.
 
-#### 1.2.3.4. Lean UX Canvas
+#### 1.2.2.4. Lean UX Canvas
 
 <img src="imgs/LeanUX_Canvas.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
 
@@ -419,7 +416,6 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 
 **Resumen:** Bruno ofrece servicios de diseño gráfico y edición de video desde hace algunos meses, motivado por la necesidad económica y por ganar experiencia. Consigue clientes sobre todo vía Instagram y TikTok, pero lidia con la desconfianza hacia estudiantes. Cobra por Yape, Plin y transferencias, y a veces sufre retrasos. Una plataforma ideal, según él, debería permitir reseñas reales, chat integrado y contratos.
 
-![imgs](imgs/Seg1EntrevistaWener.png)
 
 **Entrevistado N°2: Werner Lang**
 
@@ -430,7 +426,6 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 
 **Resumen:** Werner trabaja en diseño gráfico y desarrollo web como freelancer para aplicar lo aprendido y ganar experiencia antes de egresar. Consigue clientes por conocidos, redes sociales y Workana, pero siente que no lo toman en serio por ser estudiante; además carece de un portafolio sólido. Cobra por Yape o transferencia, con demoras ocasionales. Dedica 8–12 horas semanales. Considera que una plataforma ideal debe facilitar mostrar habilidades, cotizar, asegurar pagos y permitir comunicación fluida, además de sugerirle proyectos alineados a su perfil.
 
-![imgs](imgs/Seg1Entrevista2.png)
 
 **Entrevistado N°3: Gabriela Diaz**
 
@@ -455,11 +450,9 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 * Sexo: Femenino
 * Edad: 19
 * Ubicación: Surco
-* Link: [YouTube](https://youtu.be/MFs44DHr8_Q) · Instante de inicio: 0:01 · Duración: 5:46
+* Instante de inicio: 0:01 · Duración: 5:46
 
-![imgs](imgs/Seg2Entrevista1a.png)
 
-![imgs](imgs/Seg2Entrevista1b.png)
 
 **Resumen:** Yulia tiene un emprendimiento de cuadros personalizados (*Quack_cuadros*). Aún no ha contratado freelancers pero está interesada en tercerizar marketing digital (reels) y diseño web. Actualmente busca talento por Instagram y contactos, lo cual considera poco confiable.
 
@@ -476,7 +469,6 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 * Ubicación: La Molina
 * Instante de inicio: 25:32 min · Duración: 31:17 min
 
-![imgs](imgs/Seg2EntrevistaFabrizio.png)
 
 **Resumen:** Fabrizio dirige un negocio de venta de vapes y contrata freelancers para marketing y ventas, principalmente por Facebook y LinkedIn, apoyándose también en recomendaciones cercanas.
 
@@ -486,7 +478,6 @@ Para el proceso de *needfinding* se diseñaron dos guías de entrevista, una por
 * **Funciones deseadas:** perfiles completos, herramientas de negociación, reuniones dentro de la plataforma, chats formales con acuerdos visibles.
 * **Factores de decisión:** el portafolio visual es lo más determinante; si un resultado impacta positivamente, acepta pagar más de lo previsto.
 
-Link de entrevista: [SharePoint UPC](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_upc_edu_pe/ERWRYYotMDNKrb9UZXiaV90BczcuHnygJ1UOZNQE1nmmxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=v3wSIJ)
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -1285,7 +1276,7 @@ Las epics definidas para el proyecto Triple B están orientadas a cubrir las nec
 
 ## 3.3. Impact Map
 
-Se realizaron los siguientes cuadros en la herramienta Miro, el link original puede ser observado aquí: [LINK Impact Mapping](https://miro.com/app/board/uXjVIE5Pk5Q=/?share_link_id=296495865120)
+Se realizaron los siguientes cuadros en la herramienta Miro.
 
 **Impact Map Segmento 1:** Estudiantes Universitarios Freelancers  
 El impact map de Triple B para los estudiantes universitarios freelancers busca proporcionar un sistema robusto con la integración del Agente IA como habilitador principal. Esto permite la delegación de búsqueda y postulación automática, adaptación dinámica de CVs y coordinación de entrevistas, aliviando la carga operativa y mejorando la empleabilidad sin afectar su horario académico.  
@@ -1298,8 +1289,6 @@ El impact map de Triple B para las personas y emprendimientos que buscan contrat
 
 ## 3.4. Product Backlog
 Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **231** Story Points (incluyendo las estimaciones de las funcionalidades del Agente IA).
-
-**Tablero del Product Backlog (Notion):** https://www.notion.so/38aff0862f2c8064a987e23cf2b39555?v=38aff0862f2c8116a822000c80166dd1
 
 | # Orden | User Story ID | Título                                                      | Story Points |
 | :-----: | :-----------: | ----------------------------------------------------------- | :----------: |
@@ -1517,6 +1506,6 @@ Organización Internacional del Trabajo. (2025). *Panorama Laboral 2025: Améric
 - Gabriela Diaz — https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCYZtcqd5fXSLvFSwvj0aurAVTUJ0an7Q1sDr3I0NYXtVo
 
 **Segmento 2 — Personas y Emprendimientos**
-- Yulia Estephania Martinez Martinez — https://youtu.be/MFs44DHr8_Q
-- Fabrizio Morales — https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_upc_edu_pe/ERWRYYotMDNKrb9UZXiaV90BczcuHnygJ1UOZNQE1nmmxQ
+- Yulia Estephania Martinez Martinez 
+- Fabrizio Morales
 
