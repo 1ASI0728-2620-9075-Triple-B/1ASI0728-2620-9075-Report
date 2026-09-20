@@ -24,7 +24,7 @@
 | U202222745 | Guerrero Tomas, Nelson         |
 | U202118152 | Gutierrez Tume Stanley Jeremy         |
 | U20231f226 | Rafael Augusto Tasayco Almonacid         |
-| U | Pierna rota        |
+| u202218531| Andy Alejandro Mio Mejia       |
 
 <p align="center"><strong>Septiembre 2026</strong></p>
 
@@ -34,7 +34,7 @@
 
 | Versión | Fecha | Autores | Descripción |
 | :------ | :--------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TB1 | 19/09/2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson; Gutierrez Tume, Stanley  Jeremy ;Tasayco Almonacid, Rafael Augusto; Pierna Rota | Se elaboró la primera versión del informe del Trabajo Final de Triple B para el curso de Arquitecturas de Software Emergentes. Se adaptó el informe previo del curso de Fundamentos de Arquitectura de Software, actualizando la carátula, el registro de versiones, el Student Outcome (SO3) y los Capítulos I, II y III para reflejar el nuevo nombre del producto y la incorporación de la Inteligencia Artificial como componente emergente central: el Agente IA autónomo que actúa como intermediario entre estudiantes y empleadores. Se añadió el Epic EP13 (Agente IA Autónomo) con las User Stories US51–US56. Se desarrolló íntegramente el nuevo Capítulo IV (Strategic-Level Software Design), incluyendo las secciones de Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design (EventStorming, Candidate Contexts, Domain Message Flows, Bounded Context Canvases, Context Mapping) y Software Architecture (System Landscape, Context Level, Container Level y Deployment Diagrams). |
+| TB1 | 19/09/2026 | Gonza Morales, Anderson; Guerrero Tomas, Nelson; Gutierrez Tume, Stanley  Jeremy ;Tasayco Almonacid, Rafael Augusto; Andy Alejandro Mio Mejia | Se elaboró la primera versión del informe del Trabajo Final de Triple B para el curso de Arquitecturas de Software Emergentes. Se adaptó el informe previo del curso de Fundamentos de Arquitectura de Software, actualizando la carátula, el registro de versiones, el Student Outcome (SO3) y los Capítulos I, II y III para reflejar el nuevo nombre del producto y la incorporación de la Inteligencia Artificial como componente emergente central: el Agente IA autónomo que actúa como intermediario entre estudiantes y empleadores. Se añadió el Epic EP13 (Agente IA Autónomo) con las User Stories US51–US56. Se desarrolló íntegramente el nuevo Capítulo IV (Strategic-Level Software Design), incluyendo las secciones de Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design (EventStorming, Candidate Contexts, Domain Message Flows, Bounded Context Canvases, Context Mapping) y Software Architecture (System Landscape, Context Level, Container Level y Deployment Diagrams). |
 
 <div style="page-break-before: always;"></div>
 
@@ -162,6 +162,8 @@ Nuestro producto principal es **Triple B**, una plataforma que conecta a estudia
 | **Gonza Morales, Anderson** <br>**Código:** U202120836 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Apasionado por el diseño de arquitecturas de software emergentes y el desarrollo de soluciones tecnológicas innovadoras. Interesado en la integración de agentes de inteligencia artificial en plataformas de trabajo digital. Aporta habilidades en backend con Spring Boot, diseño arquitectónico y documentación técnica. |
 | **Guerrero Tomas, Nelson** <br>**Código:** U202222745 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la UPC. Con enfoque en el análisis de requisitos, especificación de User Stories y modelado de negocio. Interesado en la automatización de procesos con IA y en el diseño de productos centrados en el usuario. Aporta habilidades en Lean UX, needfinding, product backlog y comunicación de ideas técnicas a audiencias diversas. |
 | **Gutierrez Tume, Stanley Jeremy** <br>**Código:** U202118152 <br>**Carrera:** Ingeniería de Software | Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con experiencia en proyectos desarrollados con C++, Python, HTML y CSS, además de conocimientos en JavaScript, TypeScript y Java. Se considera una persona responsable y comprometida, que aporta su mayor esfuerzo al proyecto y mantiene una comunicación efectiva para el trabajo en equipo. |
+| **Rafael Augusto Tasayco Almonacid** <br>**Código:** U20231f226 <br>**Carrera:** Ingeniería de Software |  |
+| **Andy Alejandro Mio Mejia** <br>**Código:** u202218531 <br>**Carrera:** Ingeniería de Software ||
 
 ## 1.2. Solution Profile
 
@@ -1455,3 +1457,59 @@ Muestra la arquitectura de alto nivel de Triple B, evidenciando los microservici
 Ilustra cómo los contenedores se mapean a la infraestructura física o virtual en la nube.
 
 <img src="imgs/cap4/4.3.4. Deployment Diagram.png" alt="Deployment Diagram" title="Deployment Diagram"/>
+
+# Conclusiones y recomendaciones
+
+El desarrollo de este primer avance permitió validar que la problemática de Triple B —la dificultad de los estudiantes universitarios para generar ingresos y experiencia profesional durante su etapa académica— está respaldada por evidencia oficial y no es solo una percepción del equipo. Los indicadores del INEI muestran un desempleo juvenil de 11.3% en el 1.er trimestre de 2025 y de 13.0% en el 2.º trimestre, con un subempleo de 58.2% en la PEA joven ocupada (Instituto Nacional de Estadística e Informática, 2025a, 2025b), en un contexto regional donde la informalidad afecta al 60% de los jóvenes que trabajan (Organización Internacional del Trabajo, 2025).
+
+El proceso de Lean UX y Needfinding, aplicado a los dos segmentos objetivo (estudiantes freelancers y clientes/emprendedores), permitió contrastar la hipótesis inicial del equipo con evidencia real recogida en cinco entrevistas (Bruno, Werner y Gabriela en el Segmento 1; Yulia y Fabrizio en el Segmento 2). De ahí surgieron los hallazgos que guiaron los User Personas, Empathy Maps y el As-Is/To-Be Scenario Mapping: la desconfianza hacia perfiles estudiantiles, la preferencia por que la plataforma gestione pagos y acuerdos, y la necesidad de delegar la búsqueda y postulación a un Agente IA autónomo, que se confirmó como el principal diferenciador frente a Fiverr, Freelancer y Workana en el análisis competitivo.
+
+Estos hallazgos se tradujeron en un Product Backlog de 50 historias de usuario priorizadas (231 story points, incluyendo las funcionalidades del Agente IA), organizado mediante Impact Mapping y Scenario Mapping para ambos segmentos. A nivel de arquitectura, el uso de Attribute-Driven Design (ADD) y Strategic Domain-Driven Design permitió priorizar atributos de calidad críticos para el modelo de negocio —seguridad en los pagos, disponibilidad del Agente IA y escalabilidad regional— y trasladarlos a una primera propuesta de arquitectura en C4 (contexto, contenedores y despliegue), coherente con la estrategia de diferenciación planteada en el Capítulo II.
+
+Como recomendaciones para el siguiente avance (TP1):
+
+1. Complementar las cinco entrevistas cualitativas con una encuesta cuantitativa de mayor alcance, que permita dimensionar con más precisión el segmento de estudiantes freelancers en Lima.
+2. Avanzar del nivel de contenedores (C4) al de componentes, detallando en particular el diseño interno del Agente IA (matching, adaptación de CV, agendamiento), que es el núcleo de la propuesta de valor.
+3. Iniciar el diseño de mockups o un prototipo navegable a partir de las historias de usuario ya priorizadas, para validar con usuarios reales el flujo de postulación automática.
+4. Profundizar el modelo de monetización (comisión del 10% a freelancers, plataforma gratuita para clientes) evaluando su sostenibilidad frente a comisiones de competidores como Fiverr (20%) y Workana (escalonada).
+
+En conjunto, este avance deja a Triple B con un problema validado con datos, dos segmentos comprendidos a profundidad mediante entrevistas reales, un backlog priorizado y una arquitectura inicial alineada a su diferenciador principal (el Agente IA), lo que constituye una base sólida para continuar con el diseño detallado del sistema en las siguientes fases del curso.
+
+# Referencias bibliográficas
+
+Banco Mundial. (2023). *Informe sobre el desarrollo mundial 2023: Migrantes, refugiados y sociedades*. https://www.worldbank.org/
+
+Banco Mundial. (2024). *Plataformas de trabajo digital y empleo juvenil en América Latina*. https://www.worldbank.org/
+
+Instituto Nacional de Estadística e Informática. (2025a). *Comportamiento de los indicadores de mercado laboral a nivel nacional: enero-febrero-marzo 2025*. https://www.gob.pe/institucion/inei/
+
+Instituto Nacional de Estadística e Informática. (2025b). *Comportamiento de los indicadores de mercado laboral a nivel nacional: abril-mayo-junio 2025*. https://www.gob.pe/institucion/inei/
+
+Ministerio de Educación del Perú. (2021). *Encuesta Nacional de Estudiantes de Educación Superior Universitaria 2019*. https://www.gob.pe/minedu
+
+Ministerio de Educación del Perú. (2023). *Caracterización de la población universitaria peruana*. https://www.gob.pe/minedu
+
+Ministerio de Educación del Perú. (2024). *Ley Universitaria N.º 30220 y mecanismos de empleabilidad*. https://www.gob.pe/minedu
+
+Organización Internacional del Trabajo. (2021). *El empleo y las cuestiones sociales en el mundo: el papel de las plataformas digitales en la transformación del mundo del trabajo*. https://www.ilo.org/
+
+Organización Internacional del Trabajo. (2025). *Panorama Laboral 2025: América Latina y el Caribe*. https://www.ilo.org/
+# Anexos
+
+## Tableros de diseño (Miro / Notion)
+
+- **As-Is / To-Be Scenario Mapping (Miro):** https://miro.com/app/board/uXjVIFvzuZo=/?share_link_id=785027992176
+- **Impact Mapping (Miro):** https://miro.com/app/board/uXjVIE5Pk5Q=/?share_link_id=296495865120
+- **Product Backlog (Notion):** https://www.notion.so/38aff0862f2c8064a987e23cf2b39555?v=38aff0862f2c8116a822000c80166dd1
+
+## Grabaciones de entrevistas
+
+**Segmento 1 — Estudiantes Universitarios Freelancers**
+- Bruno Sebastián Gamarra Torres — captura adjunta en la sección 2.2.2 (sin link de video en el repo)
+- Werner Lang — captura adjunta en la sección 2.2.2 (sin link de video en el repo)
+- Gabriela Diaz — https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCYZtcqd5fXSLvFSwvj0aurAVTUJ0an7Q1sDr3I0NYXtVo
+
+**Segmento 2 — Personas y Emprendimientos**
+- Yulia Estephania Martinez Martinez — https://youtu.be/MFs44DHr8_Q
+- Fabrizio Morales — https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_upc_edu_pe/ERWRYYotMDNKrb9UZXiaV90BczcuHnygJ1UOZNQE1nmmxQ
+
