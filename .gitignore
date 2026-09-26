@@ -1,0 +1,5 @@
+# Herramientas descargadas y archivos intermedios de los diagramas
+architecture/.tools/
+architecture/build/
+diagrams/__pycache__/
+diagrams/html/

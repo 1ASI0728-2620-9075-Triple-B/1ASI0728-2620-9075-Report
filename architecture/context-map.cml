@@ -1,0 +1,79 @@
+/* Context Map de Triple B (NodoB) en ContextMapper DSL — https://contextmapper.org
+ * Upstream [U] -> Downstream [D]. OHS: Open Host Service, PL: Published Language,
+ * ACL: Anticorruption Layer, CF: Conformist.
+ */
+ContextMap TripleBContextMap {
+    type = SYSTEM_LANDSCAPE
+    state = TO_BE
+
+    contains AIAgent, ProfilesAndReputation, Marketplace, HiringAndEngagements, Communications
+
+    /* R1 */ ProfilesAndReputation [U,S,OHS,PL] -> [D,C,ACL] AIAgent
+    /* R2 */ Marketplace [U,S,OHS,PL] -> [D,C,ACL] AIAgent
+    /* R3 */ HiringAndEngagements [U,OHS,PL] -> [D,CF] AIAgent
+    /* R4 */ Marketplace [U,OHS,PL] -> [D,CF] HiringAndEngagements
+    /* R5 */ ProfilesAndReputation [U,OHS,PL] -> [D,CF] Marketplace
+    /* R6 */ HiringAndEngagements [U,S,PL] -> [D,C] ProfilesAndReputation
+    /* R7 */ AIAgent [U,PL] -> [D,CF] Communications
+    /* R8 */ Marketplace [U,PL] -> [D,CF] Communications
+    /* R9 */ HiringAndEngagements [U,PL] -> [D,CF] Communications
+    /*    */ ProfilesAndReputation [U,PL] -> [D,CF] Communications
+}
+
+BoundedContext AIAgent implements AIAgentDomain {
+    type = FEATURE
+    domainVisionStatement = "Reduce el tiempo de búsqueda y postulación del estudiante y de preselección del empleador, actuando dentro del mandato del estudiante."
+    responsibilities = "Agent Mandate", "Opportunity Matching", "CV Tailoring and Fact Validation", "Application Drafting", "Candidate Shortlisting", "Interview Slot Proposal"
+    implementationTechnology = "NestJS, Vertex AI, PostgreSQL + pgvector"
+}
+
+BoundedContext ProfilesAndReputation implements TrustDomain {
+    type = FEATURE
+    domainVisionStatement = "Fuente de verdad de la identidad profesional verificada y de la reputación de estudiantes y empleadores."
+    responsibilities = "Student and Employer Verification", "Master CV", "Portfolio", "Reviews and Reputation", "Badges"
+    implementationTechnology = "NestJS, PostgreSQL, Firebase Authentication (ACL)"
+}
+
+BoundedContext Marketplace implements MarketplaceDomain {
+    type = FEATURE
+    domainVisionStatement = "Publicar y descubrir servicios de estudiantes y ofertas de empleadores."
+    responsibilities = "Gig Publishing", "Job Offer Publishing", "Catalog Search", "Price Suggestion", "Skill Taxonomy"
+    implementationTechnology = "NestJS, PostgreSQL"
+}
+
+BoundedContext HiringAndEngagements implements HiringDomain {
+    type = FEATURE
+    domainVisionStatement = "Llevar una postulación o solicitud de contratación hasta un encargo completado y pagado de forma segura."
+    responsibilities = "Applications", "Interview Scheduling", "Hire Requests", "Engagement Tracking", "Escrow Payments"
+    implementationTechnology = "NestJS, PostgreSQL, Google Calendar API (ACL), Mercado Pago (ACL)"
+}
+
+BoundedContext Communications implements CommunicationsDomain {
+    type = FEATURE
+    domainVisionStatement = "Mantener informadas y comunicadas a las partes y resguardar la convivencia en la plataforma."
+    responsibilities = "Notifications", "Messaging", "Reports and Moderation", "Support Tickets"
+    implementationTechnology = "NestJS, WebSocket, SendGrid (ACL), Firebase Cloud Messaging (ACL)"
+}
+
+Domain TripleB {
+    Subdomain AIAgentDomain {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Agente IA supervisado por el estudiante."
+    }
+    Subdomain TrustDomain {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Identidad profesional verificada y reputación."
+    }
+    Subdomain MarketplaceDomain {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Catálogo de servicios y ofertas."
+    }
+    Subdomain HiringDomain {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Contratación, encargos y pagos en custodia."
+    }
+    Subdomain CommunicationsDomain {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Mensajería, notificaciones y soporte."
+    }
+}
